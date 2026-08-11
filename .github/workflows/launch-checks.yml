@@ -1,0 +1,38 @@
+name: Launch candidate checks
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Syntax check JavaScript
+        run: |
+          node --check app.js
+          node --check studio-v2.js
+          node --check media-upload-v3.js
+          node --check launch-writer.js
+          node --check launch-social.js
+      - name: Verify launch files
+        run: |
+          test -s index.html
+          test -s styles.css
+          test -s terms.html
+          test -s privacy.html
+          test -s guidelines.html
+          grep -q 'launch-writer.js' index.html
+          grep -q 'launch-social.js' index.html
+          grep -q 'media-upload-v3.js' index.html
+      - name: Guard against server secrets in frontend
+        run: |
+          if grep -R --line-number -E 'service_role|sb_secret_' --include='*.js' --include='*.html' .; then
+            echo 'Server-only secret marker found in frontend.' >&2
+            exit 1
+          fi
