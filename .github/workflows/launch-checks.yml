@@ -20,6 +20,7 @@ jobs:
           node --check media-upload-v3.js
           node --check launch-writer.js
           node --check launch-social.js
+          node --check account-nav-v4.js
       - name: Verify launch files
         run: |
           test -s index.html
@@ -30,6 +31,7 @@ jobs:
           grep -q 'launch-writer.js' index.html
           grep -q 'launch-social.js' index.html
           grep -q 'media-upload-v3.js' index.html
+          grep -q 'account-nav-v4.js' index.html
       - name: Guard against server secrets in frontend
         run: |
           if grep -R --line-number -E 'service_role|sb_secret_' --include='*.js' --include='*.html' .; then
