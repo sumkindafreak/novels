@@ -1,0 +1,133 @@
+name: Make mobile account navigation structural
+
+on:
+  push:
+    branches: [agent/static-mobile-account-nav]
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/static-mobile-account-nav
+      - name: Patch permanent mobile navigation
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          index = Path('index.html')
+          html = index.read_text(encoding='utf-8')
+          old = '''      <nav class="main-nav" aria-label="Main navigation">
+        <button class="nav-link active" data-view="discover">Discover</button>
+        <button class="nav-link" data-view="write">Write</button>
+        <button class="nav-link" data-view="profile">Profile</button>
+      </nav>'''
+          new = '''      <nav class="main-nav" aria-label="Main navigation">
+        <button class="nav-link active" data-view="discover">Discover</button>
+        <button class="nav-link" data-view="write">Write</button>
+        <button id="mobileAlertsStatic" class="nav-link mobile-only-nav" type="button">Alerts</button>
+        <button class="nav-link" data-view="profile">Profile</button>
+        <button id="mobileSettingsStatic" class="nav-link mobile-only-nav" type="button">Settings</button>
+      </nav>'''
+          if 'mobileAlertsStatic' not in html:
+              if old not in html:
+                  raise SystemExit('Expected main navigation block not found')
+              html = html.replace(old, new, 1)
+              index.write_text(html, encoding='utf-8')
+
+          styles = Path('styles.css')
+          css = styles.read_text(encoding='utf-8')
+          marker = '/* static-mobile-account-nav-v5 */'
+          if marker not in css:
+              css += r'''
+
+/* static-mobile-account-nav-v5
+   Core account navigation lives in HTML so Profile never depends on enhancement JS. */
+.mobile-only-nav { display: none; }
+@media (max-width:820px) {
+  body { padding-bottom: 84px; }
+  .main-nav {
+    display: grid !important;
+    position: fixed;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    z-index: 220;
+    grid-template-columns: repeat(5, minmax(0,1fr));
+    gap: 4px;
+    margin: 0;
+    padding: 6px 6px calc(6px + env(safe-area-inset-bottom));
+    background: rgba(16,20,29,.97);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(255,255,255,.13);
+    border-radius: 18px;
+    box-shadow: 0 16px 50px rgba(0,0,0,.48);
+  }
+  .main-nav .nav-link {
+    display: grid !important;
+    place-items: center;
+    gap: 2px;
+    min-width: 0;
+    padding: 7px 2px 5px;
+    color: var(--muted);
+    font-size: 10px;
+    line-height: 1.1;
+    border-radius: 12px;
+  }
+  .main-nav .nav-link::before {
+    display: block;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 400;
+  }
+  .main-nav [data-view="discover"]::before { content: "⌂"; }
+  .main-nav [data-view="write"]::before { content: "✎"; }
+  #mobileAlertsStatic::before { content: "🔔"; }
+  .main-nav [data-view="profile"]::before { content: "👤"; }
+  #mobileSettingsStatic::before { content: "⚙"; }
+  .main-nav .mobile-only-nav { display: grid !important; }
+  .main-nav .nav-link.active { color: var(--text); background: rgba(255,255,255,.07); }
+  .mobile-nav-v4 { display: none !important; }
+  .toast { bottom: 94px; }
+  .notify-drawer-launch { bottom: 88px; top: auto; }
+}
+'''
+              styles.write_text(css, encoding='utf-8')
+
+          nav = Path('account-nav-v4.js')
+          js = nav.read_text(encoding='utf-8')
+          marker_js = '/* bind-static-mobile-account-nav-v5 */'
+          anchor = "    window.addEventListener('hashchange', updateMobileActive);"
+          if marker_js not in js:
+              if anchor not in js:
+                  raise SystemExit('Expected account-nav anchor not found')
+              addition = """    /* bind-static-mobile-account-nav-v5 */
+    $('mobileAlertsStatic')?.addEventListener('click', () => state.user ? openNotifications() : requestSignIn());
+    $('mobileSettingsStatic')?.addEventListener('click', () => state.user ? openSettings() : requestSignIn());
+"""
+              js = js.replace(anchor, addition + anchor, 1)
+              nav.write_text(js, encoding='utf-8')
+          PY
+      - name: Verify mobile profile is structural
+        run: |
+          grep -q 'data-view="profile"' index.html
+          grep -q 'mobileAlertsStatic' index.html
+          grep -q 'mobileSettingsStatic' index.html
+          grep -q 'static-mobile-account-nav-v5' styles.css
+          grep -q 'bind-static-mobile-account-nav-v5' account-nav-v4.js
+          node --check account-nav-v4.js
+      - name: Commit patched navigation
+        run: |
+          if git diff --quiet; then
+            echo 'Navigation already patched.'
+            exit 0
+          fi
+          git config user.name 'Toby Brandon'
+          git config user.email '84815613+sumkindafreak@users.noreply.github.com'
+          git add index.html styles.css account-nav-v4.js
+          git commit -m 'Keep Profile visible on mobile'
+          git push origin HEAD:agent/static-mobile-account-nav
