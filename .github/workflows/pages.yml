@@ -1,0 +1,45 @@
+name: Deploy Novels community
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'app.js'
+      - 'balance-due/final/Balance_Due_FINAL.txt'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Prepare site artifact
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p _site/balance-due/final
+          cp index.html styles.css app.js .nojekyll _site/
+          cp balance-due/final/Balance_Due_FINAL.txt _site/balance-due/final/
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

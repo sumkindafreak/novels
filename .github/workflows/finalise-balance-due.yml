@@ -1,0 +1,73 @@
+name: Finalise Novels launch files
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.upload_chunks/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  finalise-launch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Restore canonical launch sources
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p balance-due/final
+          cat .upload_chunks/txt.part0 .upload_chunks/txt.part1 \
+            | base64 --decode \
+            | gzip -d \
+            > balance-due/final/Balance_Due_FINAL.txt
+          cat .upload_chunks/app.part0 .upload_chunks/app.part1 .upload_chunks/app.part2 .upload_chunks/app.part3 > app.js
+          echo "d95f7c35b269ea806b0b1784af5b3384575884ac48f229701fd97e07b2cc5628  balance-due/final/Balance_Due_FINAL.txt" | sha256sum -c -
+          echo "78e045c0e340d96f1fcdaa27c9760b65df808426d74549488ffb701ec93099ba  app.js" | sha256sum -c -
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Install book builders
+        run: python -m pip install --disable-pip-version-check python-docx==1.2.0 EbookLib==0.20
+
+      - name: Build DOCX and EPUB from canonical TXT
+        run: python tools/build_balance_due.py
+
+      - name: Verify release files
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s balance-due/final/Balance_Due_FINAL.txt
+          test -s balance-due/final/Balance_Due_FINAL.docx
+          test -s balance-due/final/Balance_Due_FINAL.epub
+          node --check app.js
+          python - <<'PY'
+          import zipfile
+          for path in ['balance-due/final/Balance_Due_FINAL.docx','balance-due/final/Balance_Due_FINAL.epub']:
+              with zipfile.ZipFile(path) as z:
+                  assert z.testzip() is None, path
+              print('OK', path)
+          PY
+
+      - name: Commit final launch files
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf .upload_chunks
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          if git diff --cached --quiet; then
+            echo 'Nothing to commit.'
+            exit 0
+          fi
+          git commit -m 'Add Balance Due final masters and app bundle'
+          git push

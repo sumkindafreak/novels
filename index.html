@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Novels is a community for writers and readers to publish, discover and discuss stories." />
+  <meta name="theme-color" content="#0e1118" />
+  <title>Novels — write. share. be read.</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="site-header">
+      <a class="brand" href="#discover" aria-label="Novels home">
+        <span class="brand-mark">N</span>
+        <span><strong>novels</strong><small>write. share. be read.</small></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="nav-link active" data-view="discover">Discover</button>
+        <button class="nav-link" data-view="write">Write</button>
+        <button class="nav-link" data-view="profile">Profile</button>
+      </nav>
+      <div class="header-actions">
+        <button id="authButton" class="button ghost">Sign in</button>
+        <button id="newStoryButton" class="button primary">Publish a story</button>
+      </div>
+    </header>
+
+    <main>
+      <section id="discoverView" class="view active">
+        <div class="hero">
+          <div class="hero-copy">
+            <span class="eyebrow">A home for unfinished ideas and finished worlds.</span>
+            <h1>Stories deserve<br /><em>readers.</em></h1>
+            <p>Publish a short story, build a serial one chapter at a time, follow writers you love, and find the next voice you cannot stop reading.</p>
+            <div class="hero-actions">
+              <button class="button primary large" data-view-jump="write">Start writing</button>
+              <button class="button secondary large" id="browseButton">Browse stories</button>
+            </div>
+          </div>
+          <div id="featuredStory" class="featured-card skeleton-card" aria-live="polite">
+            <div class="skeleton tall"></div>
+          </div>
+        </div>
+
+        <section class="feed-section" id="storyFeedSection">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Fresh ink</span>
+              <h2>Discover stories</h2>
+            </div>
+            <div class="filters">
+              <label class="search-box">
+                <span class="sr-only">Search stories</span>
+                <input id="storySearch" type="search" placeholder="Search title, writer or genre…" autocomplete="off" />
+              </label>
+              <select id="genreFilter" aria-label="Filter by genre">
+                <option value="">All genres</option>
+              </select>
+            </div>
+          </div>
+          <div id="storyGrid" class="story-grid" aria-live="polite"></div>
+          <div id="feedEmpty" class="empty-state hidden">
+            <h3>No stories match that search.</h3>
+            <p>Try another title, writer or genre.</p>
+          </div>
+        </section>
+      </section>
+
+      <section id="readerView" class="view reader-view">
+        <button id="readerBack" class="back-link">← Back to stories</button>
+        <div class="reader-layout">
+          <aside class="reader-sidebar">
+            <div id="readerCover" class="reader-cover"></div>
+            <div id="readerMeta"></div>
+            <div class="reader-actions">
+              <button id="likeButton" class="button secondary full">♡ Like <span id="likeCount"></span></button>
+              <button id="bookmarkButton" class="button ghost full">＋ Save</button>
+              <button id="followButton" class="button ghost full hidden">＋ Follow writer</button>
+            </div>
+            <nav id="chapterNav" class="chapter-nav" aria-label="Chapters"></nav>
+          </aside>
+          <article class="reader-paper">
+            <div id="readerChapter" class="reader-chapter"></div>
+            <div class="reader-pagination">
+              <button id="prevChapter" class="button ghost">← Previous</button>
+              <button id="nextChapter" class="button ghost">Next →</button>
+            </div>
+            <section class="comments-section">
+              <div class="comments-heading">
+                <h3>Reader notes</h3>
+                <span id="commentCount" class="muted"></span>
+              </div>
+              <form id="commentForm" class="comment-form hidden">
+                <textarea id="commentBody" maxlength="2000" rows="3" placeholder="Leave a thoughtful comment…" required></textarea>
+                <button class="button primary" type="submit">Post comment</button>
+              </form>
+              <div id="commentSignIn" class="inline-notice">Sign in to join the discussion.</div>
+              <div id="commentsList" class="comments-list"></div>
+            </section>
+          </article>
+        </div>
+      </section>
+
+      <section id="writeView" class="view content-view">
+        <div class="page-intro">
+          <span class="eyebrow">Writer studio</span>
+          <h1>Your words, your shelf.</h1>
+          <p>Draft privately, publish when you are ready, then add chapters whenever the story grows.</p>
+        </div>
+        <div id="writeSignedOut" class="gate-card">
+          <h2>Sign in to start writing</h2>
+          <p>Your drafts and published stories are protected by your account.</p>
+          <button class="button primary" data-open-auth="signup">Create your writer account</button>
+        </div>
+        <div id="writerStudio" class="writer-studio hidden">
+          <div class="studio-grid">
+            <section class="panel">
+              <div class="panel-heading">
+                <div><span class="eyebrow">New work</span><h2>Create a story</h2></div>
+              </div>
+              <form id="storyForm" class="stack-form">
+                <label>Title<input id="storyTitle" maxlength="160" required placeholder="Your story title" /></label>
+                <label>Summary<textarea id="storySummary" maxlength="1000" rows="4" placeholder="Give readers a reason to open the first page…"></textarea></label>
+                <div class="form-row">
+                  <label>Genre<input id="storyGenre" maxlength="60" placeholder="Horror, romance, sci-fi…" /></label>
+                  <label>Status<select id="storyStatus"><option value="draft">Draft</option><option value="published">Published</option></select></label>
+                </div>
+                <label>Cover image URL <span class="field-note">optional</span><input id="storyCover" type="url" placeholder="https://…" /></label>
+                <button class="button primary" type="submit">Create story</button>
+              </form>
+            </section>
+
+            <section class="panel">
+              <div class="panel-heading"><div><span class="eyebrow">Your shelf</span><h2>My stories</h2></div></div>
+              <div id="myStories" class="my-stories"></div>
+            </section>
+          </div>
+
+          <section class="panel chapter-editor-panel">
+            <div class="panel-heading">
+              <div><span class="eyebrow">Keep writing</span><h2>Add a chapter</h2></div>
+            </div>
+            <form id="chapterForm" class="stack-form">
+              <div class="form-row">
+                <label>Story<select id="chapterStory" required></select></label>
+                <label>Chapter title<input id="chapterTitle" maxlength="160" required placeholder="Chapter title" /></label>
+              </div>
+              <label>Chapter text<textarea id="chapterContent" class="manuscript-input" rows="18" required placeholder="Start writing…"></textarea></label>
+              <button class="button primary" type="submit">Add chapter</button>
+            </form>
+          </section>
+        </div>
+      </section>
+
+      <section id="profileView" class="view content-view">
+        <div id="profileSignedOut" class="gate-card">
+          <h2>Your writer profile starts here</h2>
+          <p>Create an account to publish stories, follow writers and build a reading list.</p>
+          <button class="button primary" data-open-auth="signup">Join Novels</button>
+        </div>
+        <div id="profileContent" class="hidden">
+          <div class="profile-hero">
+            <div id="profileAvatar" class="avatar large"></div>
+            <div class="profile-summary">
+              <span class="eyebrow">Writer profile</span>
+              <h1 id="profileDisplayName"></h1>
+              <p id="profileUsername" class="muted"></p>
+              <p id="profileBio"></p>
+              <div id="profileStats" class="profile-stats"></div>
+            </div>
+          </div>
+          <div class="profile-grid">
+            <section class="panel">
+              <div class="panel-heading"><div><h2>Edit profile</h2></div></div>
+              <form id="profileForm" class="stack-form">
+                <label>Username<input id="profileUsernameInput" minlength="3" maxlength="30" pattern="[A-Za-z0-9_-]+" required /></label>
+                <label>Display name<input id="profileDisplayInput" maxlength="80" /></label>
+                <label>Bio<textarea id="profileBioInput" maxlength="500" rows="5"></textarea></label>
+                <label>Avatar image URL <span class="field-note">optional</span><input id="profileAvatarInput" type="url" /></label>
+                <button class="button primary" type="submit">Save profile</button>
+              </form>
+            </section>
+            <section class="panel">
+              <div class="panel-heading"><div><h2>Saved stories</h2></div></div>
+              <div id="bookmarkedStories" class="my-stories"></div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div><strong>novels</strong><span>Built for writers, not algorithms.</span></div>
+      <div class="muted">Community beta · © 2026</div>
+    </footer>
+  </div>
+
+  <dialog id="authDialog" class="auth-dialog">
+    <button id="closeAuth" class="dialog-close" aria-label="Close">×</button>
+    <div class="auth-brand"><span class="brand-mark">N</span><strong>novels</strong></div>
+    <div class="auth-tabs">
+      <button class="auth-tab active" data-auth-tab="signin">Sign in</button>
+      <button class="auth-tab" data-auth-tab="signup">Create account</button>
+    </div>
+    <form id="signInForm" class="auth-form">
+      <label>Email<input id="signInEmail" type="email" autocomplete="email" required /></label>
+      <label>Password<input id="signInPassword" type="password" autocomplete="current-password" minlength="6" required /></label>
+      <button class="button primary full" type="submit">Sign in</button>
+    </form>
+    <form id="signUpForm" class="auth-form hidden">
+      <label>Writer name<input id="signUpDisplay" maxlength="80" required placeholder="How readers will know you" /></label>
+      <label>Username<input id="signUpUsername" minlength="3" maxlength="30" pattern="[A-Za-z0-9_-]+" required placeholder="letters, numbers, _ or -" /></label>
+      <label>Email<input id="signUpEmail" type="email" autocomplete="email" required /></label>
+      <label>Password<input id="signUpPassword" type="password" autocomplete="new-password" minlength="6" required /></label>
+      <button class="button primary full" type="submit">Create writer account</button>
+      <p class="auth-help">You may be asked to confirm your email before your first sign-in.</p>
+    </form>
+    <div id="authMessage" class="form-message hidden"></div>
+  </dialog>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="app.js"></script>
+</body>
+</html>

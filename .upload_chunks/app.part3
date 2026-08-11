@@ -1,0 +1,49 @@
+    setBusy(btn,false);toast('Could not create a unique story URL. Try a slightly different title.');
+  }
+  async function submitChapter(event) {
+    event.preventDefault(); if(!state.user)return openAuth('signin'); const storyId=el('chapterStory').value;if(!storyId)return toast('Create a story first.'); const btn=event.submitter;setBusy(btn,true,'Adding chapter…');
+    const {data,error}=await client.from('chapters').select('position').eq('story_id',storyId).order('position',{ascending:false}).limit(1);
+    if(error){setBusy(btn,false);return toast('Could not determine chapter position.');}
+    const position=(data?.[0]?.position||0)+1;
+    const response=await client.from('chapters').insert({story_id:storyId,position,title:el('chapterTitle').value.trim(),content:el('chapterContent').value.trim()});
+    setBusy(btn,false);if(response.error)return toast(response.error.message);el('chapterTitle').value='';el('chapterContent').value='';toast(`Chapter ${position} added.`);
+  }
+  async function submitProfile(event) {
+    event.preventDefault(); const btn=event.submitter;setBusy(btn,true,'Saving…');
+    const payload={username:el('profileUsernameInput').value.trim(),display_name:el('profileDisplayInput').value.trim(),bio:el('profileBioInput').value.trim(),avatar_url:el('profileAvatarInput').value.trim()||null};
+    const {data,error}=await client.from('profiles').update(payload).eq('id',state.user.id).select().single();setBusy(btn,false);if(error)return toast(error.message);state.profile=data;toast('Profile saved.');await loadProfileView();
+  }
+  async function submitComment(event) {
+    event.preventDefault(); if(!state.user)return openAuth('signin'); const body=el('commentBody').value.trim();if(!body)return;const btn=event.submitter;setBusy(btn,true,'Posting…');
+    const {error}=await client.from('comments').insert({story_id:state.readerStory.id,user_id:state.user.id,body});setBusy(btn,false);if(error)return toast(error.message);el('commentBody').value='';await refreshStorySocial();
+  }
+
+  function wireEvents() {
+    document.querySelectorAll('[data-view]').forEach(btn=>btn.addEventListener('click',()=>showView(btn.dataset.view)));
+    document.querySelectorAll('[data-view-jump]').forEach(btn=>btn.addEventListener('click',()=>showView(btn.dataset.viewJump)));
+    document.querySelectorAll('[data-open-auth]').forEach(btn=>btn.addEventListener('click',()=>openAuth(btn.dataset.openAuth)));
+    document.querySelectorAll('.auth-tab').forEach(btn=>btn.addEventListener('click',()=>switchAuthTab(btn.dataset.authTab)));
+    el('closeAuth').onclick=()=>el('authDialog').close();
+    el('authButton').onclick=async()=>{if(state.user){await client.auth.signOut();state.user=null;state.profile=null;updateAuthUI();showView('discover');toast('Signed out.');}else openAuth('signin');};
+    el('newStoryButton').onclick=()=>state.user?showView('write'):openAuth('signup');
+    el('browseButton').onclick=()=>el('storyFeedSection').scrollIntoView({behavior:'smooth'});
+    el('readerBack').onclick=()=>{history.replaceState(null,'',location.pathname+'#discover');showView('discover',{pushHash:false});};
+    el('prevChapter').onclick=()=>{if(state.readerChapterIndex>0){state.readerChapterIndex--;renderReaderChapter();}};
+    el('nextChapter').onclick=()=>{if(state.readerChapterIndex<state.readerChapters.length-1){state.readerChapterIndex++;renderReaderChapter();}};
+    el('likeButton').onclick=toggleLike;el('bookmarkButton').onclick=toggleBookmark;el('followButton').onclick=toggleFollow;
+    el('storySearch').addEventListener('input',renderFeed);el('genreFilter').addEventListener('change',renderFeed);
+    el('signInForm').addEventListener('submit',submitSignIn);el('signUpForm').addEventListener('submit',submitSignUp);el('storyForm').addEventListener('submit',submitStory);el('chapterForm').addEventListener('submit',submitChapter);el('profileForm').addEventListener('submit',submitProfile);el('commentForm').addEventListener('submit',submitComment);
+    window.addEventListener('hashchange',()=>{const name=location.hash.replace('#','');if(['discover','write','profile'].includes(name))showView(name,{pushHash:false});});
+    client.auth.onAuthStateChange(async(_event,session)=>{state.user=session?.user||null;if(state.user){try{await ensureProfile();await loadPersonalFlags();}catch(e){console.error(e);}}else{state.profile=null;}updateAuthUI();});
+  }
+
+  async function boot() {
+    wireEvents();
+    await refreshSession();
+    await loadStories();
+    const params=new URLSearchParams(location.search); const slug=params.get('story');
+    if(slug) await openStory(slug); else { const initial=location.hash.replace('#',''); showView(['write','profile'].includes(initial)?initial:'discover',{pushHash:false}); }
+  }
+
+  boot().catch(err=>{console.error(err);toast('Novels hit a loading problem. Refresh to try again.');});
+})();

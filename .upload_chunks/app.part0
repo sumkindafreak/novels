@@ -1,0 +1,179 @@
+/* Novels Community — static frontend powered by Supabase */
+(() => {
+  'use strict';
+
+  const SUPABASE_URL = 'https://efftrxqdsrmyuaubjumh.supabase.co';
+  const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_C2qPiCHALCK9bvhFc8CpvA_Vc6tTGYo';
+
+  const client = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY, {
+    auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true },
+  });
+
+  const state = {
+    user: null,
+    profile: null,
+    stories: [],
+    ownStories: [],
+    readerStory: null,
+    readerChapters: [],
+    readerChapterIndex: 0,
+    likes: new Set(),
+    bookmarks: new Set(),
+  };
+
+  const el = (id) => document.getElementById(id);
+  const views = {
+    discover: el('discoverView'),
+    reader: el('readerView'),
+    write: el('writeView'),
+    profile: el('profileView'),
+  };
+
+  function escapeText(value) { return value == null ? '' : String(value); }
+  function initials(value) {
+    return escapeText(value).trim().split(/\s+/).filter(Boolean).slice(0,2).map(x => x[0]).join('').toUpperCase() || 'N';
+  }
+  function formatDate(value) {
+    if (!value) return '';
+    return new Intl.DateTimeFormat('en-GB', { day:'numeric', month:'short', year:'numeric' }).format(new Date(value));
+  }
+  function slugify(value) {
+    return escapeText(value).toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'').slice(0,90) || 'untitled';
+  }
+  function toast(message) {
+    const node = el('toast');
+    node.textContent = message;
+    node.classList.add('show');
+    clearTimeout(toast.timer);
+    toast.timer = setTimeout(() => node.classList.remove('show'), 3000);
+  }
+  function setBusy(button, busy, label) {
+    if (!button) return;
+    if (busy) { button.dataset.oldText = button.textContent; button.textContent = label || 'Working…'; button.disabled = true; }
+    else { button.textContent = button.dataset.oldText || button.textContent; button.disabled = false; }
+  }
+  function showAuthMessage(message, kind='error') {
+    const node = el('authMessage');
+    node.textContent = message;
+    node.className = `form-message ${kind}`;
+  }
+  function clearAuthMessage() { el('authMessage').className = 'form-message hidden'; }
+
+  function showView(name, { pushHash = true } = {}) {
+    Object.values(views).forEach(v => v.classList.remove('active'));
+    const view = views[name] || views.discover;
+    view.classList.add('active');
+    document.querySelectorAll('.nav-link').forEach(btn => btn.classList.toggle('active', btn.dataset.view === name));
+    if (pushHash && name !== 'reader') history.replaceState(null, '', `#${name}`);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (name === 'write') loadWriterStudio();
+    if (name === 'profile') loadProfileView();
+  }
+
+  function openAuth(mode='signin') {
+    switchAuthTab(mode);
+    clearAuthMessage();
+    if (!el('authDialog').open) el('authDialog').showModal();
+  }
+  function switchAuthTab(tab) {
+    document.querySelectorAll('.auth-tab').forEach(b => b.classList.toggle('active', b.dataset.authTab === tab));
+    el('signInForm').classList.toggle('hidden', tab !== 'signin');
+    el('signUpForm').classList.toggle('hidden', tab !== 'signup');
+  }
+
+  async function ensureProfile() {
+    if (!state.user) { state.profile = null; return null; }
+    const { data, error } = await client.from('profiles').select('*').eq('id', state.user.id).maybeSingle();
+    if (error) throw error;
+    if (data) { state.profile = data; return data; }
+
+    const meta = state.user.user_metadata || {};
+    const base = slugify(meta.username || state.user.email?.split('@')[0] || `writer-${state.user.id.slice(0,6)}`).replace(/-/g,'_').slice(0,24);
+    let username = base.length >= 3 ? base : `writer_${state.user.id.slice(0,6)}`;
+    let inserted = null;
+    for (let attempt=0; attempt<4 && !inserted; attempt++) {
+      const candidate = attempt === 0 ? username : `${username}_${Math.floor(Math.random()*900+100)}`.slice(0,30);
+      const payload = { id: state.user.id, username: candidate, display_name: escapeText(meta.display_name || meta.full_name || candidate).slice(0,80) };
+      const response = await client.from('profiles').insert(payload).select().single();
+      if (!response.error) inserted = response.data;
+      else if (response.error.code !== '23505') throw response.error;
+    }
+    if (!inserted) throw new Error('Could not create a unique writer profile.');
+    state.profile = inserted;
+    return inserted;
+  }
+
+  async function refreshSession() {
+    const { data: { session } } = await client.auth.getSession();
+    state.user = session?.user || null;
+    if (state.user) {
+      try { await ensureProfile(); } catch (err) { console.error(err); toast('Signed in, but your profile could not be prepared.'); }
+      await loadPersonalFlags();
+    } else {
+      state.profile = null;
+      state.likes.clear(); state.bookmarks.clear();
+    }
+    updateAuthUI();
+  }
+
+  function updateAuthUI() {
+    el('authButton').textContent = state.user ? 'Sign out' : 'Sign in';
+    el('writeSignedOut').classList.toggle('hidden', !!state.user);
+    el('writerStudio').classList.toggle('hidden', !state.user);
+    el('profileSignedOut').classList.toggle('hidden', !!state.user);
+    el('profileContent').classList.toggle('hidden', !state.user);
+    el('commentForm').classList.toggle('hidden', !state.user);
+    el('commentSignIn').classList.toggle('hidden', !!state.user);
+  }
+
+  async function loadPersonalFlags() {
+    if (!state.user) return;
+    const [likes, bookmarks] = await Promise.all([
+      client.from('story_likes').select('story_id').eq('user_id', state.user.id),
+      client.from('bookmarks').select('story_id').eq('user_id', state.user.id),
+    ]);
+    if (!likes.error) state.likes = new Set((likes.data || []).map(x => x.story_id));
+    if (!bookmarks.error) state.bookmarks = new Set((bookmarks.data || []).map(x => x.story_id));
+  }
+
+  async function loadStories() {
+    const { data, error } = await client.from('stories')
+      .select('id,owner_id,author_name,title,slug,summary,genre,cover_url,is_featured,published_at,created_at')
+      .eq('status','published')
+      .order('is_featured',{ascending:false})
+      .order('published_at',{ascending:false})
+      .limit(60);
+    if (error) {
+      console.error(error); el('storyGrid').innerHTML = '<div class="empty-state"><h3>Stories could not be loaded.</h3><p>Please try again in a moment.</p></div>'; return;
+    }
+    state.stories = data || [];
+    populateGenres();
+    renderFeatured();
+    renderFeed();
+  }
+
+  function populateGenres() {
+    const select = el('genreFilter');
+    const current = select.value;
+    const genres = [...new Set(state.stories.map(s => s.genre).filter(Boolean))].sort((a,b)=>a.localeCompare(b));
+    select.innerHTML = '<option value="">All genres</option>';
+    genres.forEach(genre => { const o=document.createElement('option'); o.value=genre; o.textContent=genre; select.append(o); });
+    select.value = genres.includes(current) ? current : '';
+  }
+
+  function renderFeatured() {
+    const story = state.stories.find(s => s.is_featured) || state.stories[0];
+    const card = el('featuredStory'); card.replaceChildren();
+    if (!story) {
+      const box=document.createElement('div'); box.className='featured-content';
+      const h=document.createElement('h2'); h.textContent='Your story could start here.'; box.append(h);
+      const p=document.createElement('p'); p.textContent='Create an account and publish the first chapter.'; box.append(p); card.append(box); return;
+    }
+    const art=document.createElement('div'); art.className=`featured-art ${story.cover_url?'':'fallback'}`;
+    if (story.cover_url) art.style.backgroundImage=`url("${story.cover_url.replace(/"/g,'')}")`;
+    const content=document.createElement('div'); content.className='featured-content';
+    const badge=document.createElement('span'); badge.className='badge'; badge.textContent='Featured story';
+    const h=document.createElement('h2'); h.textContent=story.title;
+    const author=document.createElement('div'); author.className='story-author'; author.textContent=`by ${story.author_name || 'Anonymous writer'}`;
+    const p=document.createElement('p'); p.textContent=story.summary || 'Open the story and start reading.';
+    const meta=document.createElement('div'); meta.className='featured-meta'; meta.textContent=[story.genre, formatDate(story.published_at)].filter(Boolean).join(' · ');

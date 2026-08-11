@@ -1,0 +1,140 @@
+    const btn=document.createElement('button'); btn.className='button primary'; btn.textContent='Read now →'; btn.onclick=()=>openStory(story.slug);
+    content.append(badge,h,author,p,meta,btn); card.append(art,content);
+  }
+
+  function renderFeed() {
+    const query=el('storySearch').value.trim().toLowerCase();
+    const genre=el('genreFilter').value;
+    const filtered=state.stories.filter(s => {
+      const hay=[s.title,s.author_name,s.genre,s.summary].join(' ').toLowerCase();
+      return (!query || hay.includes(query)) && (!genre || s.genre===genre);
+    });
+    const grid=el('storyGrid'); grid.replaceChildren();
+    el('feedEmpty').classList.toggle('hidden', filtered.length !== 0);
+    filtered.forEach(story => grid.append(createStoryCard(story)));
+  }
+
+  function createStoryCard(story) {
+    const card=document.createElement('article'); card.className='story-card'; card.tabIndex=0;
+    const cover=document.createElement('div'); cover.className=`story-cover ${story.cover_url?'':'fallback'}`;
+    if (story.cover_url) cover.style.backgroundImage=`url("${story.cover_url.replace(/"/g,'')}")`;
+    const genre=document.createElement('span'); genre.className='story-genre'; genre.textContent=story.genre || 'Story'; cover.append(genre);
+    const body=document.createElement('div'); body.className='story-card-body';
+    const h=document.createElement('h3'); h.textContent=story.title;
+    const author=document.createElement('div'); author.className='story-author'; author.textContent=`${story.author_name || 'Anonymous writer'}`;
+    const p=document.createElement('p'); p.className='story-summary'; p.textContent=story.summary || 'No summary yet.';
+    const footer=document.createElement('div'); footer.className='story-footer';
+    const date=document.createElement('span'); date.textContent=formatDate(story.published_at);
+    const action=document.createElement('span'); action.textContent='Read →'; footer.append(date,action);
+    body.append(h,author,p,footer); card.append(cover,body);
+    const open=()=>openStory(story.slug); card.onclick=open; card.onkeydown=e=>{ if(e.key==='Enter'||e.key===' ') open(); };
+    return card;
+  }
+
+
+  function parseBalanceDueMaster(text, storyId) {
+    const lines = text.replace(/\r/g, '').split('\n');
+    const heading = /^(Prologue|Chapter \d+|Epilogue)$/;
+    const starts = [];
+    lines.forEach((line, index) => { if (heading.test(line.trim())) starts.push(index); });
+    return starts.map((start, idx) => {
+      const end = starts[idx + 1] ?? lines.length;
+      const base = lines[start].trim();
+      let bodyStart = start + 1;
+      let title = base;
+      if (base === 'Prologue' && lines[bodyStart]?.trim() === 'The Historical Record') { title += ' — The Historical Record'; bodyStart++; }
+      if (base === 'Chapter 3' && lines[bodyStart]?.trim() === 'The Double Event') { title += ' — The Double Event'; bodyStart++; }
+      return { id: `static-${idx + 1}`, story_id: storyId, position: idx + 1, title, content: lines.slice(bodyStart, end).join('\n').trim() };
+    }).filter(chapter => chapter.content);
+  }
+
+  async function openStory(slug) {
+    const { data: story, error } = await client.from('stories').select('*').eq('slug',slug).single();
+    if (error) { toast('That story could not be opened.'); return; }
+    const { data: chapters, error: chapterError } = await client.from('chapters').select('*').eq('story_id',story.id).order('position');
+    if (chapterError) { toast('The chapters could not be loaded.'); return; }
+    let resolvedChapters = chapters || [];
+    // The launch edition of Balance Due is also kept as a version-controlled master in this repo.
+    // Prefer that complete master when available, so the public reader always matches the published book files.
+    if (story.slug === 'balance-due') {
+      try {
+        const response = await fetch('balance-due/final/Balance_Due_FINAL.txt', { cache: 'no-cache' });
+        if (response.ok) {
+          const staticChapters = parseBalanceDueMaster(await response.text(), story.id);
+          if (staticChapters.length > resolvedChapters.length) resolvedChapters = staticChapters;
+        }
+      } catch (err) { console.warn('Static Balance Due master unavailable; using database chapters.', err); }
+    }
+    state.readerStory=story; state.readerChapters=resolvedChapters; state.readerChapterIndex=0;
+    renderReaderMeta(); renderChapterNav(); renderReaderChapter(); await refreshStorySocial();
+    showView('reader',{pushHash:false});
+    history.replaceState(null,'',`?story=${encodeURIComponent(story.slug)}#reader`);
+  }
+
+  function renderReaderMeta() {
+    const s=state.readerStory; if(!s) return;
+    const cover=el('readerCover'); cover.style.backgroundImage=s.cover_url?`url("${s.cover_url.replace(/"/g,'')}")`:'';
+    const meta=el('readerMeta'); meta.replaceChildren();
+    const h=document.createElement('h1'); h.textContent=s.title;
+    const a=document.createElement('div'); a.className='story-author'; a.textContent=`by ${s.author_name || 'Anonymous writer'}`;
+    const info=document.createElement('p'); info.className='muted'; info.textContent=[s.genre,formatDate(s.published_at)].filter(Boolean).join(' · ');
+    const sum=document.createElement('p'); sum.className='reader-summary'; sum.textContent=s.summary || '';
+    meta.append(h,a,info,sum);
+    updateSocialButtons();
+    el('followButton').classList.toggle('hidden', !state.user || !s.owner_id || s.owner_id===state.user?.id);
+  }
+
+  function renderChapterNav() {
+    const nav=el('chapterNav'); nav.replaceChildren();
+    state.readerChapters.forEach((chapter,index)=>{
+      const b=document.createElement('button'); b.className='chapter-link'; b.textContent=chapter.title; b.onclick=()=>{state.readerChapterIndex=index;renderReaderChapter();}; nav.append(b);
+    });
+  }
+
+  function renderReaderChapter() {
+    const chapter=state.readerChapters[state.readerChapterIndex];
+    const container=el('readerChapter'); container.replaceChildren();
+    document.querySelectorAll('.chapter-link').forEach((b,i)=>b.classList.toggle('active',i===state.readerChapterIndex));
+    if (!chapter) {
+      const h=document.createElement('h2'); h.textContent='This story is waiting for its first chapter.'; container.append(h);
+    } else {
+      const h=document.createElement('h2'); h.textContent=chapter.title; container.append(h);
+      escapeText(chapter.content).split(/\n\s*\n|\n/).map(x=>x.trim()).filter(Boolean).forEach(text=>{ const p=document.createElement('p'); p.textContent=text; container.append(p); });
+    }
+    el('prevChapter').disabled=state.readerChapterIndex<=0;
+    el('nextChapter').disabled=state.readerChapterIndex>=state.readerChapters.length-1;
+    window.scrollTo({top:0,behavior:'smooth'});
+  }
+
+  async function refreshStorySocial() {
+    const s=state.readerStory; if(!s) return;
+    const [likes,comments] = await Promise.all([
+      client.from('story_likes').select('user_id',{count:'exact',head:true}).eq('story_id',s.id),
+      client.from('comments').select('id,body,created_at,user_id,profiles!comments_user_id_fkey(username,display_name,avatar_url)').eq('story_id',s.id).order('created_at',{ascending:false}).limit(100),
+    ]);
+    el('likeCount').textContent=likes.count ? `(${likes.count})` : '';
+    renderComments(comments.error?[]:(comments.data||[]));
+    if (comments.error) console.warn(comments.error);
+    updateSocialButtons();
+  }
+
+  function renderComments(comments) {
+    el('commentCount').textContent=`${comments.length} comment${comments.length===1?'':'s'}`;
+    const list=el('commentsList'); list.replaceChildren();
+    comments.forEach(c=>{
+      const row=document.createElement('article'); row.className='comment';
+      const head=document.createElement('div'); head.className='comment-head';
+      const strong=document.createElement('strong'); strong.textContent=c.profiles?.display_name || c.profiles?.username || 'Writer';
+      const date=document.createElement('span'); date.textContent=formatDate(c.created_at); head.append(strong,date);
+      const p=document.createElement('p'); p.textContent=c.body; row.append(head,p); list.append(row);
+    });
+  }
+
+  function updateSocialButtons() {
+    const s=state.readerStory; if(!s) return;
+    const liked=state.likes.has(s.id); const saved=state.bookmarks.has(s.id);
+    el('likeButton').childNodes[0].nodeValue = liked ? '♥ Liked ' : '♡ Like ';
+    el('bookmarkButton').textContent=saved?'✓ Saved':'＋ Save';
+  }
+
+  async function toggleLike() {
