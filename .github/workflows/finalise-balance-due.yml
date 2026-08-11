@@ -27,7 +27,7 @@ jobs:
             | gzip -d \
             > balance-due/final/Balance_Due_FINAL.txt
           cat .upload_chunks/app.part0 .upload_chunks/app.part1 .upload_chunks/app.part2 .upload_chunks/app.part3 > app.js
-          echo "d95f7c35b269ea806b0b1784af5b3384575884ac48f229701fd97e07b2cc5628  balance-due/final/Balance_Due_FINAL.txt" | sha256sum -c -
+          echo "d95fd172a7ae1269d2a4d202314c72a0be06bf533fbcbf27a27ad64e2bdc37a6  balance-due/final/Balance_Due_FINAL.txt" | sha256sum -c -
           echo "78e045c0e340d96f1fcdaa27c9760b65df808426d74549488ffb701ec93099ba  app.js" | sha256sum -c -
 
       - name: Set up Python
