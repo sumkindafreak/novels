@@ -1,8 +1,30 @@
-/* Novels Community — Writer Studio navigation V6 */
+/* Writelite Community — Writer Studio navigation V6 */
 (() => {
   'use strict';
 
   const $ = (id) => document.getElementById(id);
+
+  function applyWriteliteBrand() {
+    document.title = 'Writelite — write. share. be read.';
+    const description = document.querySelector('meta[name="description"]');
+    if (description) description.content = 'Writelite is a community for writers and readers to publish, discover and discuss stories.';
+
+    const headerName = document.querySelector('.brand strong');
+    const headerMark = document.querySelector('.brand .brand-mark');
+    const footerName = document.querySelector('.site-footer strong');
+    const authName = document.querySelector('.auth-brand strong');
+    const authMark = document.querySelector('.auth-brand .brand-mark');
+    const brandLink = document.querySelector('.brand');
+    const joinButton = document.querySelector('#profileSignedOut [data-open-auth="signup"]');
+
+    if (headerName) headerName.textContent = 'writelite';
+    if (headerMark) headerMark.textContent = 'W';
+    if (footerName) footerName.textContent = 'writelite';
+    if (authName) authName.textContent = 'writelite';
+    if (authMark) authMark.textContent = 'W';
+    if (brandLink) brandLink.setAttribute('aria-label', 'Writelite home');
+    if (joinButton) joinButton.textContent = 'Join Writelite';
+  }
 
   function installStyles() {
     if ($('studioNavV6Styles')) return;
@@ -96,6 +118,7 @@
   }
 
   function boot() {
+    applyWriteliteBrand();
     installStyles();
     if (!injectQuickActions()) {
       setTimeout(boot, 80);
