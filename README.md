@@ -2,20 +2,30 @@
 
 **write. share. be read.**
 
-A lightweight community for writers and readers, built with plain HTML/CSS/JavaScript, Supabase Auth/Postgres/RLS, and GitHub Pages.
+Novels is a lightweight social publishing community for writers and readers, built with plain HTML/CSS/JavaScript, Supabase Auth/Postgres/Storage/RLS, and GitHub Pages.
 
-## Community beta
+## Launch candidate
 
-The app includes:
+The current launch candidate includes:
 
-- reader discovery/feed and genre/search filters
-- email sign-up and sign-in
-- writer profiles
+- public story discovery, search and genre filtering
+- email sign-up/sign-in and password reset/change controls
+- full writer profiles with avatar, banner, bio, tagline, location, genres and social links
+- public writer pages with published work and follow controls
+- direct image uploads from phone/computer for avatars, banners and story covers
+- optional external image URL fallback
 - private drafts and published stories
-- chapter-based story publishing
-- likes, bookmarks, comments, and follows
-- a writer studio for creating and updating work
-- a book-style reader
+- editable story metadata and covers
+- chapter manager with create, edit, preview, local autosave recovery, word count, reorder and delete
+- version-controlled protection for the locked `Balance Due` manuscript
+- likes, bookmarks, follows and reader comments
+- automatic notifications for follows, likes, comments and new chapters
+- reader font sizing, light/sepia/dark modes and saved reading progress
+- story/profile/comment reporting
+- author comment moderation and an admin moderation queue
+- Terms of Use, Privacy Policy and Community Guidelines
+- Row Level Security on exposed user/community data
+- GitHub Actions syntax/security-marker checks before deployment
 
 `Balance Due` by Toby Brandon is the featured launch story.
 
@@ -37,10 +47,14 @@ The locked release masters are generated into:
 
 Supabase project: `novels-community` (`efftrxqdsrmyuaubjumh`), London `eu-west-2`.
 
-Every exposed table uses Row Level Security. The browser uses only a Supabase publishable key; no service-role/admin key is shipped to the client.
+The browser uses only a Supabase publishable key; no service-role/admin key is shipped to the client. Public media is stored in a dedicated Supabase Storage bucket with per-user upload/update/delete policies.
+
+The only current Supabase security-advisor warning is leaked-password protection, which is unavailable while the organisation remains on the Supabase Free plan.
 
 ## Deployment
 
-GitHub Actions builds the final book formats and deploys the community app to GitHub Pages.
+GitHub Pages deploys from `main` → `/`.
 
-Expected Pages address: `https://sumkindafreak.github.io/novels/`
+Live address: `https://sumkindafreak.github.io/novels/`
+
+The `Launch candidate checks` GitHub Action syntax-checks all frontend JavaScript, verifies required launch files and guards against server-secret markers being committed into client files.
