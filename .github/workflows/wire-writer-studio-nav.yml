@@ -1,0 +1,39 @@
+name: Wire Writer Studio shortcuts
+
+on:
+  push:
+    branches:
+      - agent/writer-studio-nav
+
+permissions:
+  contents: write
+
+jobs:
+  wire:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/writer-studio-nav
+      - name: Add shortcut bundle to page and launch checks
+        shell: bash
+        run: |
+          set -euo pipefail
+          if ! grep -q 'studio-nav-v6.js' index.html; then
+            sed -i '/<script src="account-nav-v4.js"><\/script>/a\  <script src="studio-nav-v6.js"></script>' index.html
+          fi
+          if ! grep -q 'node --check studio-nav-v6.js' .github/workflows/launch-checks.yml; then
+            sed -i '/node --check account-nav-v4.js/a\          node --check studio-nav-v6.js' .github/workflows/launch-checks.yml
+          fi
+          if ! grep -q "grep -q 'studio-nav-v6.js' index.html" .github/workflows/launch-checks.yml; then
+            sed -i "/grep -q 'account-nav-v4.js' index.html/a\\          grep -q 'studio-nav-v6.js' index.html" .github/workflows/launch-checks.yml
+          fi
+          node --check studio-nav-v6.js
+          grep -q 'studio-nav-v6.js' index.html
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if ! git diff --quiet; then
+            git add index.html .github/workflows/launch-checks.yml
+            git commit -m 'Expose Edit My Stories in Writer Studio'
+            git push origin HEAD:agent/writer-studio-nav
+          fi
