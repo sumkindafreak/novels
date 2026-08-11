@@ -29,7 +29,13 @@ jobs:
           test -s terms.html
           test -s privacy.html
           test -s guidelines.html
+          test -s CNAME
           test -s balance-due/final/Balance_Due_FINAL.txt
+          grep -qx 'writelite.co.uk' CNAME
+          grep -q 'Writelite' studio-nav-v6.js
+          grep -q 'Writelite' terms.html
+          grep -q 'Writelite' privacy.html
+          grep -q 'Writelite' guidelines.html
           grep -q 'launch-writer.js' index.html
           grep -q 'launch-social.js' index.html
           grep -q 'media-upload-v3.js' index.html
