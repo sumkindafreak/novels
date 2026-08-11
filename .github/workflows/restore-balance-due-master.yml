@@ -1,0 +1,57 @@
+name: Restore Balance Due master
+
+on:
+  push:
+    branches:
+      - agent/fix-reader-final
+    paths:
+      - .github/workflows/restore-balance-due-master.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Reconstruct locked manuscript
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import base64, gzip, hashlib
+
+          root = Path('.')
+          encoded = ''.join((root / '.upload_chunks' / name).read_text(encoding='utf-8').strip() for name in ('txt.part0', 'txt.part1'))
+          data = gzip.decompress(base64.b64decode(encoded))
+          digest = hashlib.sha256(data).hexdigest()
+          expected = 'd95fd172ed65282c21ca52ae62082b1e4667005b7bbf061aa8ac6a9bf2e3f87a'
+          if digest != expected:
+              raise SystemExit(f'Checksum mismatch: {digest} != {expected}')
+
+          target = root / 'balance-due' / 'final' / 'Balance_Due_FINAL.txt'
+          target.parent.mkdir(parents=True, exist_ok=True)
+          target.write_bytes(data)
+
+          text = data.decode('utf-8')
+          headings = [line.strip() for line in text.splitlines() if line.strip() in {'Prologue', 'Epilogue'} or (line.strip().startswith('Chapter ') and line.strip()[8:].isdigit())]
+          expected_headings = ['Prologue'] + [f'Chapter {i}' for i in range(1, 10)] + ['Epilogue']
+          if headings != expected_headings:
+              raise SystemExit(f'Unexpected chapter headings: {headings}')
+          print('Restored exact final manuscript:', digest)
+          print('Sections:', len(headings), headings)
+          PY
+
+      - name: Commit restored master
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add balance-due/final/Balance_Due_FINAL.txt
+          if git diff --cached --quiet; then
+            echo "Master already restored."
+            exit 0
+          fi
+          git commit -m "Restore locked Balance Due final master"
+          git push
