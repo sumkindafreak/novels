@@ -151,9 +151,11 @@
     });
     window.addEventListener('hashchange', updateMobileActive);
     window.addEventListener('popstate', updateMobileActive);
-    db.auth.onAuthStateChange(async (_event, session) => {
+    db.auth.onAuthStateChange((_event, session) => {
       state.user = session?.user || null;
-      await loadIdentity();
+      setTimeout(() => {
+        loadIdentity().catch((error) => console.error('Account identity refresh failed.', error));
+      }, 0);
     });
     state.injected = true;
   }
