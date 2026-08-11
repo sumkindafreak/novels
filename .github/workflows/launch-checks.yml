@@ -28,10 +28,31 @@ jobs:
           test -s terms.html
           test -s privacy.html
           test -s guidelines.html
+          test -s balance-due/final/Balance_Due_FINAL.txt
           grep -q 'launch-writer.js' index.html
           grep -q 'launch-social.js' index.html
           grep -q 'media-upload-v3.js' index.html
           grep -q 'account-nav-v4.js' index.html
+      - name: Verify Balance Due reader source
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib
+
+          path = Path('balance-due/final/Balance_Due_FINAL.txt')
+          data = path.read_bytes()
+          expected_sha = 'd95fd172ed65282c21ca52ae62082b1e4667005b7bbf061aa8ac6a9bf2e3f87a'
+          digest = hashlib.sha256(data).hexdigest()
+          if digest != expected_sha:
+              raise SystemExit(f'Balance Due checksum mismatch: {digest}')
+
+          text = data.decode('utf-8')
+          headings = [line.strip() for line in text.splitlines() if line.strip() in {'Prologue', 'Epilogue'} or (line.strip().startswith('Chapter ') and line.strip()[8:].isdigit())]
+          expected_headings = ['Prologue'] + [f'Chapter {i}' for i in range(1, 10)] + ['Epilogue']
+          if headings != expected_headings:
+              raise SystemExit(f'Unexpected Balance Due headings: {headings}')
+          print('Balance Due reader source OK:', digest, headings)
+          PY
       - name: Guard against server secrets in frontend
         run: |
           if grep -R --line-number -E 'service_role|sb_secret_' --include='*.js' --include='*.html' .; then
