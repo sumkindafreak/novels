@@ -11,6 +11,21 @@
   let scheduled = false;
   let lastStoryId = null;
 
+  function loadPlatformEnhancements() {
+    if (!document.querySelector('link[href="comments-contrast-v3.css"]')) {
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = 'comments-contrast-v3.css';
+      document.head.append(link);
+    }
+    if (!document.querySelector('script[src="search-v2.js"]')) {
+      const script = document.createElement('script');
+      script.src = 'search-v2.js';
+      script.defer = true;
+      document.body.append(script);
+    }
+  }
+
   function initials(value) {
     return String(value || '').trim().split(/\s+/).filter(Boolean).slice(0, 2).map(x => x[0]).join('').toUpperCase() || 'W';
   }
@@ -303,6 +318,7 @@
   }
 
   function boot() {
+    loadPlatformEnhancements();
     installStyles();
     const list = document.getElementById('commentsList');
     if (list) {
