@@ -48,7 +48,7 @@ Jamie hadn't even removed his coat.
 
 “The one people wear immediately before asking me something tiresome.”
 
-“I've been researching.”
+“I've been researching,” Jamie said.
 
 “That is precisely what I feared.”
 
@@ -56,7 +56,7 @@ Izzy appeared behind Evelyn carrying a bowl of cereal.
 
 “He’s been Googling you.”
 
-“I have not been Googling her.”
+“I have not been Googling her,” Jamie said.
 
 Evelyn looked at him.
 
@@ -118,7 +118,7 @@ Evelyn looked between them.
 
 “That was a joke.”
 
-“Oh.”
+“Oh,” Jamie said.
 
 “Your disappointment is insulting.”
 
@@ -134,7 +134,7 @@ Evelyn poured hot water into a teapot.
 
 “We did not arrest people. The police do that.”
 
-“So what did you do?”
+“So what did you do?” Jamie asked.
 
 “Found out what was true.”
 
@@ -156,7 +156,7 @@ Evelyn sat.
 
 “In the seventies, a great deal of our concern involved Soviet intelligence. People operating in Britain under perfectly respectable titles while doing rather less respectable work.”
 
-“Like diplomats?”
+“Like diplomats?” Jamie asked.
 
 “Sometimes.”
 
@@ -204,7 +204,7 @@ Izzy raised her spoon.
 
 “I also vote story.”
 
-“You do not have a vote.”
+“You do not have a vote,” Evelyn told her.
 
 “Democracy is dying in this kitchen.”
 
@@ -242,7 +242,7 @@ Izzy lowered her spoon.
 
 “Sorry.”
 
-“On three occasions Sergei entered the shop. On three occasions another man entered within twenty minutes. They never spoke. They were never seen together outside.”
+“On three occasions Sergei entered the shop,” Evelyn continued. “On three occasions another man entered within twenty minutes. They never spoke. They were never seen together outside.”
 
 Jamie frowned.
 
@@ -254,7 +254,7 @@ Jamie frowned.
 
 “We thought information might be passing between them.”
 
-“How?”
+“How?” Jamie asked.
 
 Evelyn smiled faintly.
 
@@ -264,7 +264,7 @@ Jamie waited.
 
 “The fourth time, Sergei changed his routine. Different Underground station. Different route. He stopped twice for no obvious reason. Entered a café. Left by another door.”
 
-“He knew he was being followed.”
+“He knew he was being followed,” Jamie said.
 
 “Perhaps.”
 
@@ -320,7 +320,7 @@ Jamie sat back.
 
 “That is actually cool.”
 
-“It mostly involved standing in rain.”
+“It mostly involved standing in rain,” Evelyn said.
 
 “Still cool.”
 
@@ -408,6 +408,8 @@ Izzy leaned against the staircase.
 
 “She used to do this to me when I was little.”
 
+Jamie looked over at her.
+
 “Why?”
 
 “Because she’s mental.”
@@ -448,7 +450,7 @@ Jamie smiled.
 
 “Again.”
 
-She raised an eyebrow.
+Evelyn raised an eyebrow.
 
 “You have work to do.”
 
