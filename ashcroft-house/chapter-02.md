@@ -352,6 +352,42 @@ Jamie tried the scraper at a shallower angle.
 
 Another piece lifted cleanly.
 
+Beneath it, faint against the old timber, was a tiny pencil drawing.
+
+Jamie leaned closer.
+
+It was a boy.
+
+No bigger than his thumb, sketched directly onto the wood years ago and hidden beneath layer after layer of paint.
+
+He rubbed the dust away with the side of his hand.
+
+“What’s that?”
+
+The girl slid off the windowsill and crouched beside him.
+
+“Huh.”
+
+“You’ve never seen it?”
+
+“No.”
+
+Jamie tilted his head.
+
+“Looks like a little boy.”
+
+“Excellent detective work.”
+
+“Think your gran knows it’s there?”
+
+The girl stood again.
+
+“Gran knows everything.”
+
+“That’s terrifying.”
+
+“You’ll get used to it.”
+
 “That’s better,” she said.
 
 “Thanks, supervisor.”
@@ -454,7 +490,33 @@ Jamie closed his eyes.
 
 “Oh, for God’s sake.”
 
-Mrs Ashcroft handed him another scraper.
+Then he remembered the drawing.
+
+“Mrs Ashcroft?”
+
+“What?”
+
+He pointed down at the skirting.
+
+“Who’s that?”
+
+She followed his finger.
+
+For perhaps two seconds, Evelyn Ashcroft said nothing.
+
+Then something softened behind her eyes.
+
+“Goodness,” she said. “I haven’t seen him in years.”
+
+Jamie looked at the tiny pencil boy again.
+
+“So who is he?”
+
+Evelyn straightened.
+
+“Nobody you know.”
+
+She handed him another scraper.
 
 “Use both hands, artillery division.”
 
