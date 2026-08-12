@@ -153,7 +153,7 @@
     if (!poems.length) {
       const empty = document.createElement('div');
       empty.className = 'poetry-empty-v1';
-      empty.innerHTML = '<h3>No poems published yet.</h3><p>The shelf is ready when the next poet is.</p>';
+      empty.innerHTML = '<h3>No poems published yet.</h3><p>The shelf is ready when the next poet is.</p></div>';
       grid.append(empty);
       return;
     }
@@ -229,39 +229,58 @@
       .order('position');
     if (chaptersError || !chapters?.length) return;
 
+    let patching = false;
+
     const patch = () => {
       const container = document.getElementById('readerChapter');
-      if (!container) return;
+      if (!container || patching) return;
       const currentTitle = container.querySelector('h2')?.textContent?.trim();
       const chapter = chapters.find(item => item.title === currentTitle) || chapters[0];
-      if (!chapter || container.dataset.poetryPatchedV2 === String(chapter.id)) return;
-      container.dataset.poetryPatchedV2 = String(chapter.id);
-      container.replaceChildren();
-      const heading = document.createElement('h2');
-      heading.textContent = chapter.title;
-      container.append(heading);
-      String(chapter.content || '').replace(/\r/g, '').split(/\n\s*\n+/).map(s => s.trim()).filter(Boolean).forEach(stanza => {
-        const block = document.createElement('p');
-        block.className = 'poetry-stanza-v1';
-        block.textContent = stanza;
-        container.append(block);
-      });
-      document.getElementById('readerView')?.classList.add('poetry-reader-v1');
+      if (!chapter) return;
 
-      if (story.owner_id === VON_BOOM_PROFILE_ID) {
-        const meta = document.getElementById('readerMeta');
-        if (meta && !meta.querySelector('.poetry-reader-badge-v1')) {
-          const badge = document.createElement('div');
-          badge.className = 'poetry-reader-badge-v1';
-          badge.textContent = 'Writelite exclusive · 50% of planned collection profits to MIND / ADHD charities';
-          meta.append(badge);
+      // The normal story reader can render after this poetry patch during page load.
+      // Only skip when the DOM is still genuinely using the poetry renderer.
+      const isAlreadyPoetry =
+        container.dataset.poetryPatchedV2 === String(chapter.id) &&
+        !!container.querySelector('.poetry-copy-v3');
+      if (isAlreadyPoetry) return;
+
+      patching = true;
+      try {
+        container.dataset.poetryPatchedV2 = String(chapter.id);
+        container.replaceChildren();
+
+        const heading = document.createElement('h2');
+        heading.textContent = chapter.title;
+
+        // Keep the author's text exactly as saved. A poetry line is not a prose paragraph:
+        // single line breaks, blank lines, indentation and spacing all remain meaningful.
+        const copy = document.createElement('div');
+        copy.className = 'poetry-copy-v3';
+        copy.textContent = String(chapter.content || '').replace(/\r/g, '');
+
+        container.append(heading, copy);
+        document.getElementById('readerView')?.classList.add('poetry-reader-v1');
+
+        if (story.owner_id === VON_BOOM_PROFILE_ID) {
+          const meta = document.getElementById('readerMeta');
+          if (meta && !meta.querySelector('.poetry-reader-badge-v1')) {
+            const badge = document.createElement('div');
+            badge.className = 'poetry-reader-badge-v1';
+            badge.textContent = 'Writelite exclusive · 50% of planned collection profits to MIND / ADHD charities';
+            meta.append(badge);
+          }
         }
+      } finally {
+        patching = false;
       }
     };
 
     const reader = document.getElementById('readerChapter');
-    if (reader) new MutationObserver(() => setTimeout(patch, 0)).observe(reader, { childList: true, subtree: false });
-    [100, 350, 800, 1500].forEach(delay => setTimeout(patch, delay));
+    if (reader) {
+      new MutationObserver(() => setTimeout(patch, 0)).observe(reader, { childList: true, subtree: false });
+    }
+    [50, 100, 250, 500, 900, 1500, 2500].forEach(delay => setTimeout(patch, delay));
   }
 
   function installReaderStyles() {
@@ -270,7 +289,8 @@
     style.id = 'poetryReaderStylesV2';
     style.textContent = `
       .poetry-reader-v1 .reader-paper{background:#f6f1e8}
-      .reader-chapter .poetry-stanza-v1{white-space:pre-line;text-indent:0!important;margin:0 0 1.65em!important;line-height:1.8;text-align:left}
+      .reader-chapter .poetry-copy-v3{white-space:pre-wrap;text-indent:0!important;margin:0!important;line-height:1.8;text-align:left;overflow-wrap:break-word}
+      .reader-chapter .poetry-stanza-v1{white-space:pre-wrap;text-indent:0!important;margin:0 0 1.65em!important;line-height:1.8;text-align:left}
       .poetry-reader-badge-v1{margin:14px 0 0;padding:9px 10px;border:1px solid rgba(232,168,86,.28);border-radius:10px;color:var(--accent-2);font-size:11px;line-height:1.4}
     `;
     document.head.append(style);
