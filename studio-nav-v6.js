@@ -26,21 +26,6 @@
     if (joinButton) joinButton.textContent = 'Join Writelite';
   }
 
-  function loadPoetryAssets() {
-    if (!document.querySelector('link[href="poetry-v1.css"]')) {
-      const link = document.createElement('link');
-      link.rel = 'stylesheet';
-      link.href = 'poetry-v1.css';
-      document.head.append(link);
-    }
-    if (!document.querySelector('script[src="poetry-v1.js"]')) {
-      const script = document.createElement('script');
-      script.src = 'poetry-v1.js';
-      script.defer = true;
-      document.body.append(script);
-    }
-  }
-
   function installStyles() {
     if ($('studioNavV6Styles')) return;
     const style = document.createElement('style');
@@ -134,7 +119,6 @@
 
   function boot() {
     applyWriteliteBrand();
-    loadPoetryAssets();
     installStyles();
     if (!injectQuickActions()) {
       setTimeout(boot, 80);
