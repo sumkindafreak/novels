@@ -352,6 +352,8 @@ Jamie tried the scraper at a shallower angle.
 
 Another piece lifted cleanly.
 
+“That’s better,” she said.
+
 Beneath it, faint against the old timber, was a tiny pencil drawing.
 
 Jamie leaned closer.
@@ -387,8 +389,6 @@ The girl stood again.
 “That’s terrifying.”
 
 “You’ll get used to it.”
-
-“That’s better,” she said.
 
 “Thanks, supervisor.”
 
