@@ -108,7 +108,7 @@
     byline.textContent = vonBoom ? (vonBoom.author_name || 'Writelite poet') : 'A new section for poetry';
     const charity = document.createElement('div');
     charity.className = 'poetry-charity-v1';
-    charity.innerHTML = '<span aria-hidden="true">♡</span><div><strong>Writing with purpose.</strong><br>Von Boom has chosen Writelite as the exclusive online home for his poetry. Profits from the work he sells support charities.</div>';
+    charity.innerHTML = '<span aria-hidden="true">♡</span><div><strong>Writing with purpose.</strong><br>Von Boom is publishing his poetry exclusively on Writelite. He is planning a self-published collection of 10 poems, each with accompanying artwork, with 50% of profits going to MIND and ADHD charities.</div>';
     node.append(kicker, name, byline, charity);
 
     if (vonBoom) {
@@ -236,7 +236,7 @@
         if (meta && !meta.querySelector('.poetry-reader-badge-v1')) {
           const badge = document.createElement('div');
           badge.className = 'poetry-reader-badge-v1';
-          badge.textContent = 'Writelite exclusive · Profits from sold work support charities';
+          badge.textContent = 'Writelite exclusive · Planned 10-poem collection · 50% of profits to MIND and ADHD charities';
           meta.append(badge);
         }
       }
