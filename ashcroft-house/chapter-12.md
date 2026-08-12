@@ -74,6 +74,30 @@ Jamie smiled.
 
 He marked the timber.
 
+An enormous old ledger sat on the corner of Evelyn's desk, half buried beneath correspondence.
+
+Jamie moved it aside to make room for the offcut he was using as a guide.
+
+The thing was heavier than it looked.
+
+Its cover was black leather, cracked pale along the edges, with a tarnished brass clasp and faded gold lettering pressed into the front.
+
+**HARROW & SONS**
+
+Jamie turned it slightly towards the light.
+
+“This yours?”
+
+Evelyn glanced across the desk.
+
+“Good Lord, no.”
+
+“What is it?”
+
+“Something that should probably have been thrown away a very long time ago.”
+
+Jamie shrugged and put it back exactly where he had found it.
+
 A folder slipped from the desk behind him and hit the floor.
 
 Several pages spread across the rug.
