@@ -1,0 +1,78 @@
+/* Writelite — reader comment contrast fix V3 */
+.comments-section,
+.comments-section .comments-list,
+.comments-section .comment-v2,
+.comments-section .comment-v2-body,
+.comments-section .comment-v2-name,
+.comments-section .comment-v2-reply-btn,
+.comments-section .comment-v2-form button,
+.comments-section .inline-notice,
+.comments-section .muted {
+  color: inherit !important;
+}
+
+.comments-section .comment-v2-username,
+.comments-section .comment-v2-date,
+.comments-section .comment-v2-reply-btn,
+.comments-section .inline-notice,
+.comments-section .muted,
+.comments-section .comment-v2-empty {
+  color: inherit !important;
+  opacity: .68;
+}
+
+.comments-section .comment-v2-name {
+  opacity: 1;
+  font-weight: 800;
+}
+
+.comments-section .comment-v2-author {
+  color: #f0b45f !important;
+  background: rgba(232,168,86,.14);
+  border-color: rgba(232,168,86,.36);
+}
+
+.comments-section .comment-v2,
+.comments-section .comment-v2.reply-v2,
+.comments-section .inline-notice {
+  border-color: rgba(127,127,127,.28) !important;
+}
+
+.comments-section .comment-v2.reply-v2 {
+  background: rgba(127,127,127,.08) !important;
+}
+
+.comments-section .comment-v2-avatar {
+  background-color: rgba(127,127,127,.24) !important;
+  color: inherit !important;
+  border: 1px solid rgba(127,127,127,.28);
+}
+
+.comments-section .comment-v2-form textarea,
+.comments-section .comment-form textarea {
+  color: inherit !important;
+  background: rgba(127,127,127,.08) !important;
+  border-color: rgba(127,127,127,.32) !important;
+}
+
+.comments-section .comment-v2-form textarea::placeholder,
+.comments-section .comment-form textarea::placeholder {
+  color: inherit;
+  opacity: .5;
+}
+
+.comments-section .comment-v2-form button {
+  border-color: rgba(127,127,127,.34) !important;
+  background: rgba(127,127,127,.08) !important;
+}
+
+.comments-section .comment-v2-form button.primary-v2 {
+  color: #17120c !important;
+  background: linear-gradient(135deg, var(--accent-2,#f1c986), var(--accent,#e8a856)) !important;
+  border-color: transparent !important;
+}
+
+.comments-section .comment-v2-reply-btn:hover,
+.comments-section .comment-v2-name:hover {
+  opacity: 1;
+}
