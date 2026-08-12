@@ -78,7 +78,7 @@ Jamie stood.
 
 She appeared in the doorway holding a mug.
 
-“What’ve you found?”
+“What’ve you found?” Izzy asked.
 
 He held up the photograph.
 
@@ -104,7 +104,7 @@ She studied it for a moment.
 
 “Where was it?”
 
-“Behind the drawer.”
+“Behind the drawer,” Jamie said.
 
 “She’ll murder you.”
 
@@ -124,7 +124,7 @@ Izzy shrugged.
 
 “I definitely know Gran doesn't like people going through her stuff.”
 
-“I was looking for a screwdriver.”
+“I was looking for a screwdriver,” Jamie protested.
 
 “Classic burglar defence.”
 
@@ -138,7 +138,7 @@ Near the edge of the picture, a uniformed policeman stood half out of frame.
 
 “This isn't a family thing.”
 
-“No.”
+“No,” Izzy said.
 
 “What is it?”
 
@@ -168,7 +168,7 @@ Then she wiped the knife carefully on a cloth.
 
 Only then did she look down.
 
-“Where did you find that?”
+“Where did you find that?” Evelyn asked.
 
 “Behind the library table drawer.”
 
@@ -194,7 +194,7 @@ Jamie sat opposite her.
 
 “London.”
 
-“What building?”
+“What building?” Jamie asked.
 
 Evelyn returned to the mushrooms.
 
@@ -218,7 +218,7 @@ Jamie tapped the photograph.
 
 “What were you doing in London in 1974?”
 
-“Living.”
+“Living,” Evelyn said.
 
 “You lived there?”
 
@@ -242,7 +242,7 @@ Jamie immediately tried to correct himself.
 
 “I mean, not weird weird.”
 
-“Excellent recovery.”
+“Excellent recovery,” Evelyn said dryly.
 
 “You live in a giant house, you know when people are lying, you have photos with men who look like cabinet ministers and you won't tell anyone what your job was.”
 
@@ -266,7 +266,7 @@ Jamie pointed at another.
 
 “Diplomat.”
 
-“See!”
+“See!” Jamie said.
 
 “Diplomats are allowed to exist in photographs.”
 
@@ -306,7 +306,7 @@ His face fell slightly.
 
 “I know.”
 
-“I am not telling you to stop asking questions.”
+“I am not telling you to stop asking questions,” Evelyn continued.
 
 “You sort of are.”
 
@@ -332,7 +332,7 @@ Jamie blinked.
 
 Izzy smiled into her mug.
 
-“The what?”
+“The what?” Jamie asked.
 
 Evelyn held his gaze.
 
@@ -360,7 +360,7 @@ Evelyn's mouth tightened.
 
 “But spies.”
 
-“Sometimes the people we dealt with were spies.”
+“Sometimes the people we dealt with were spies,” Evelyn said.
 
 Jamie leaned forward so quickly the chair legs scraped the floor.
 
@@ -386,7 +386,7 @@ Jamie looked at her.
 
 “You knew?”
 
-“Since I was about eleven.”
+“Since I was about eleven,” Izzy said.
 
 “And you didn't tell me?”
 
@@ -404,7 +404,7 @@ Jamie stared at the back of her head.
 
 “Were you actually a spy?”
 
-“No.”
+“No,” Evelyn said.
 
 “Did you catch spies?”
 
