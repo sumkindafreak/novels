@@ -2,7 +2,7 @@
 
 ## Chapter Two — Saturday Morning
 
-At nine fifty-seven on Saturday morning, Jamie Morgan stood outside Ashcroft House holding a toolbox he was reasonably certain had been packed by somebody preparing him for military service.
+At nine fifty-seven on Saturday morning, Jamie Morgan sat in the passenger seat outside Ashcroft House holding a toolbox he was reasonably certain had been packed by somebody preparing him for military service.
 
 His father had put everything in it.
 
@@ -18,13 +18,13 @@ Gareth leaned across the steering wheel and looked at the house through the wind
 
 “No.”
 
-“Why not?”
+“Why not?” Jamie asked.
 
 “Because I’m going home.”
 
 “You said you’d show me what to do.”
 
-“I showed you how to sand wood yesterday.”
+“I showed you how to sand wood yesterday,” Gareth said.
 
 “For six minutes.”
 
@@ -48,7 +48,7 @@ Gareth smiled.
 
 “Then you’re early. Evelyn will be delighted.”
 
-Jamie turned sharply.
+Jamie turned sharply in his seat.
 
 “Evelyn?”
 
@@ -64,13 +64,15 @@ Jamie stared at him.
 
 “What for?”
 
-“To make sure you were coming.”
+“To make sure you were coming,” Gareth said.
 
 “Did you tell her I’d died?”
 
 “No.”
 
 “Could have.”
+
+Gareth pointed towards the passenger door.
 
 “Out.”
 
@@ -80,7 +82,7 @@ Gareth lowered the window.
 
 “And Jamie?”
 
-Jamie bent down.
+Jamie bent down to the open window.
 
 “What?”
 
@@ -91,6 +93,8 @@ Jamie glanced up at Ashcroft House.
 One of the chimneys leaned just enough to be concerning.
 
 “What if she asks me to go in the cellar?”
+
+Gareth considered that.
 
 “Depends.”
 
@@ -120,7 +124,7 @@ Jamie stopped on the top step.
 
 “You said ten.”
 
-“I know what I said.”
+“I know what I said,” Mrs Ashcroft replied.
 
 “So I’m early.”
 
@@ -146,11 +150,11 @@ Jamie looked up at it.
 
 “Someone took the glass?”
 
-“The restorer collected the loose pieces yesterday.”
+“The restorer collected the loose pieces yesterday,” Mrs Ashcroft said.
 
 “Can it definitely be fixed?”
 
-Mrs Ashcroft watched him for a moment.
+She watched him for a moment.
 
 “Mostly.”
 
@@ -230,7 +234,7 @@ Jamie looked at it.
 
 “That’s normally where paint goes.”
 
-“Not twelve layers of it.”
+“Not twelve layers of it,” she said.
 
 She handed him a scraper.
 
@@ -254,7 +258,7 @@ Mrs Ashcroft began to leave.
 
 She looked back.
 
-“How much of it?”
+“How much of it?” Jamie asked.
 
 “The room.”
 
@@ -269,6 +273,8 @@ Skirting ran along three walls, disappeared behind a pair of heavy cabinets and 
 “I rarely joke before lunch.”
 
 “What happens after lunch?”
+
+Mrs Ashcroft's mouth twitched.
 
 “I become hilarious.”
 
@@ -302,7 +308,7 @@ Jamie recovered what remained of his dignity.
 
 “How long have you been there?”
 
-“Long enough.”
+“Long enough,” the girl said.
 
 “You walk quietly.”
 
@@ -342,7 +348,7 @@ Jamie stopped.
 
 “You’re related to her, aren’t you?”
 
-“What gave it away?”
+“What gave it away?” she asked.
 
 “Immediate criticism.”
 
@@ -370,7 +376,7 @@ The girl slid off the windowsill and crouched beside him.
 
 “Huh.”
 
-“You’ve never seen it?”
+“You’ve never seen it?” Jamie asked.
 
 “No.”
 
@@ -424,11 +430,11 @@ Jamie wiped his dusty palm on his jeans before shaking it.
 
 “Everyone keeps saying that.”
 
-“Gran gave a very detailed description.”
+“Gran gave a very detailed description,” Isabella said.
 
 Jamie groaned.
 
-Isabella grinned.
+She grinned.
 
 “Izzy.”
 
@@ -456,7 +462,7 @@ Izzy raised her voice.
 
 “Love you!”
 
-“I doubt it.”
+“I doubt it,” Evelyn called back.
 
 Jamie laughed again.
 
@@ -472,7 +478,7 @@ Jamie froze.
 
 Izzy walked towards the door.
 
-“How do you know that?”
+“How do you know that?” he asked.
 
 She turned backwards as she walked.
 
@@ -484,7 +490,7 @@ Jamie stared after her.
 
 A second later Mrs Ashcroft appeared in the doorway.
 
-“The Witch House?”
+“The Witch House?” she repeated.
 
 Jamie closed his eyes.
 
