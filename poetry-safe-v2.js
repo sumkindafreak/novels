@@ -238,8 +238,6 @@
       const chapter = chapters.find(item => item.title === currentTitle) || chapters[0];
       if (!chapter) return;
 
-      // The normal story reader can render after this poetry patch during page load.
-      // Only skip when the DOM is still genuinely using the poetry renderer.
       const isAlreadyPoetry =
         container.dataset.poetryPatchedV2 === String(chapter.id) &&
         !!container.querySelector('.poetry-copy-v3');
@@ -253,8 +251,6 @@
         const heading = document.createElement('h2');
         heading.textContent = chapter.title;
 
-        // Keep the author's text exactly as saved. A poetry line is not a prose paragraph:
-        // single line breaks, blank lines, indentation and spacing all remain meaningful.
         const copy = document.createElement('div');
         copy.className = 'poetry-copy-v3';
         copy.textContent = String(chapter.content || '').replace(/\r/g, '');
@@ -292,8 +288,81 @@
       .reader-chapter .poetry-copy-v3{white-space:pre-wrap;text-indent:0!important;margin:0!important;line-height:1.8;text-align:left;overflow-wrap:break-word}
       .reader-chapter .poetry-stanza-v1{white-space:pre-wrap;text-indent:0!important;margin:0 0 1.65em!important;line-height:1.8;text-align:left}
       .poetry-reader-badge-v1{margin:14px 0 0;padding:9px 10px;border:1px solid rgba(232,168,86,.28);border-radius:10px;color:var(--accent-2);font-size:11px;line-height:1.4}
+      .poetry-editor-hint-v3{margin:-4px 0 12px;padding:10px 12px;border:1px solid rgba(232,168,86,.28);border-radius:10px;background:rgba(232,168,86,.06);color:var(--muted,#aeb5c4);font-size:12px;line-height:1.5}
+      .poetry-editor-hint-v3 strong{color:var(--text,#eef2f7)}
+      .poetry-spacing-warning-v3{display:block;margin-top:6px;color:var(--accent-2,#f0bd6c);font-weight:700}
+      .poetry-editor-v3 textarea#chapterBodyLaunch{line-height:1.65}
     `;
     document.head.append(style);
+  }
+
+  function installPoetryEditorAid(attempt = 0) {
+    const storySelect = document.getElementById('chapterStoryLaunch');
+    const chapterBody = document.getElementById('chapterBodyLaunch');
+    const chapterForm = document.getElementById('chapterEditLaunch');
+
+    if (!storySelect || !chapterBody || !chapterForm) {
+      if (attempt < 40) setTimeout(() => installPoetryEditorAid(attempt + 1), 150);
+      return;
+    }
+    if (chapterForm.dataset.poetryAidV3 === 'ready') return;
+    chapterForm.dataset.poetryAidV3 = 'ready';
+
+    const hint = document.createElement('div');
+    hint.id = 'poetryEditorHintV3';
+    hint.className = 'poetry-editor-hint-v3 hidden';
+    hint.innerHTML = '<strong>Poetry spacing:</strong> Enter = next poetic line · Enter twice = new stanza. Writelite preserves your line breaks exactly.<span id="poetrySpacingWarningV3" class="poetry-spacing-warning-v3 hidden"></span>';
+    chapterBody.closest('label')?.insertAdjacentElement('afterend', hint);
+
+    const warning = document.getElementById('poetrySpacingWarningV3');
+    let poetryMode = false;
+    let requestNumber = 0;
+
+    const checkSpacing = () => {
+      if (!poetryMode || !warning) return;
+      const lines = chapterBody.value.replace(/\r\n?/g, '\n').split('\n');
+      const nonEmpty = lines.filter(line => line.trim()).length;
+      let blankBetweenLines = 0;
+      for (let i = 0; i < lines.length - 2; i += 1) {
+        if (lines[i].trim() && !lines[i + 1].trim() && lines[i + 2].trim()) blankBetweenLines += 1;
+      }
+      const looksOverSpaced = nonEmpty >= 8 && blankBetweenLines >= Math.max(4, Math.floor(nonEmpty * 0.45));
+      warning.classList.toggle('hidden', !looksOverSpaced);
+      warning.textContent = looksOverSpaced ? 'This poem currently has a blank line after most lines. Remove those extra blank lines unless that spacing is intentional.' : '';
+    };
+
+    const refreshMode = async () => {
+      const selectedId = storySelect.value;
+      const thisRequest = ++requestNumber;
+      if (!selectedId) {
+        poetryMode = false;
+        hint.classList.add('hidden');
+        chapterForm.classList.remove('poetry-editor-v3');
+        return;
+      }
+      const { data, error } = await client.from('stories').select('genre').eq('id', selectedId).maybeSingle();
+      if (thisRequest !== requestNumber || error) return;
+      poetryMode = String(data?.genre || '').trim().toLowerCase() === 'poetry';
+      hint.classList.toggle('hidden', !poetryMode);
+      chapterForm.classList.toggle('poetry-editor-v3', poetryMode);
+      if (poetryMode) {
+        chapterBody.placeholder = 'Write each poetic line on its own line.\n\nLeave one blank line between stanzas.';
+        checkSpacing();
+      }
+    };
+
+    storySelect.addEventListener('change', () => setTimeout(refreshMode, 0));
+    chapterBody.addEventListener('input', checkSpacing);
+
+    chapterForm.addEventListener('submit', () => {
+      if (!poetryMode) return;
+      chapterBody.value = chapterBody.value.replace(/\r\n?/g, '\n');
+    }, true);
+
+    const manager = document.getElementById('chapterListLaunch');
+    if (manager) new MutationObserver(() => setTimeout(() => { refreshMode(); checkSpacing(); }, 30)).observe(manager, { childList: true, subtree: true });
+
+    refreshMode();
   }
 
   function boot() {
@@ -303,6 +372,7 @@
     installReaderStyles();
     loadPoetry();
     installPoetryReader();
+    installPoetryEditorAid();
     window.addEventListener('hashchange', () => {
       if (location.hash === '#poetry') showPoetry(false);
     });
