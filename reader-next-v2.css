@@ -1,0 +1,117 @@
+/* WriteLite reader chapter navigation V2 — visible on every reader theme */
+.reader-view .reader-pagination {
+  align-items: stretch;
+  gap: 14px;
+  margin-top: 56px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(255,255,255,.14);
+}
+
+/* Safe fallback: these styles work even if the enhancement JS does not run. */
+.reader-view .reader-pagination #prevChapter,
+.reader-view .reader-pagination #nextChapter {
+  min-height: 54px;
+  border-radius: 14px;
+  font-weight: 800;
+  opacity: 1;
+}
+
+.reader-view .reader-pagination #prevChapter {
+  background: #242833 !important;
+  border-color: #4a5161 !important;
+  color: #f3f5f8 !important;
+}
+
+.reader-view .reader-pagination #nextChapter {
+  background: #f0bd6c !important;
+  border-color: #f0bd6c !important;
+  color: #18140f !important;
+  box-shadow: 0 10px 24px rgba(0,0,0,.22);
+}
+
+.reader-view .reader-pagination button:disabled {
+  opacity: .42 !important;
+  box-shadow: none !important;
+}
+
+.reader-view .reader-pagination #nextChapter.reader-next-cta-v2 {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+    "label arrow"
+    "title arrow";
+  gap: 3px 18px;
+  align-items: center;
+  min-width: min(100%, 410px);
+  margin-left: auto;
+  padding: 15px 19px;
+  text-align: left;
+}
+
+.reader-next-label-v2 {
+  grid-area: label;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  opacity: .72;
+}
+
+.reader-next-title-v2 {
+  grid-area: title;
+  display: block;
+  max-width: 310px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.reader-next-arrow-v2 {
+  grid-area: arrow;
+  font-size: 29px;
+  line-height: 1;
+}
+
+.reader-next-end-v2 {
+  grid-column: 1 / -1;
+  width: 100%;
+  text-align: center;
+  font-family: var(--serif);
+  font-size: 17px;
+}
+
+@media (max-width: 560px) {
+  .reader-view .reader-pagination {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .reader-view .reader-pagination #prevChapter,
+  .reader-view .reader-pagination #nextChapter {
+    width: 100%;
+  }
+
+  .reader-view .reader-pagination #prevChapter {
+    order: 2;
+  }
+
+  .reader-view .reader-pagination #nextChapter {
+    order: 1;
+  }
+
+  .reader-view .reader-pagination #nextChapter.reader-next-cta-v2 {
+    min-width: 0;
+    margin-left: 0;
+    min-height: 70px;
+    padding: 16px 18px;
+  }
+
+  .reader-next-title-v2 {
+    max-width: calc(100vw - 145px);
+    font-size: 17px;
+  }
+}
