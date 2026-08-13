@@ -358,6 +358,32 @@ He read the sentence twice.
 
 **That mattered.**
 
+**At the time of writing this letter, you are fifteen and, to my considerable surprise, a valued member of my rather limited friendship circle. Isabella trusts you. Because she trusts you, I trust you.**
+
+Jamie stared at the sentence for a long moment.
+
+He could hear Evelyn saying it plainly, as though trust were something that ought to be stated once and then left alone.
+
+It hurt more than he expected.
+
+He read on.
+
+**If Margaret has referred to you as James at any point, forgive her. Solicitors are professionally committed to making perfectly ordinary names unnecessarily formal. You are Jamie.**
+
+Jamie stopped again.
+
+“Finally.”
+
+Gareth glanced over.
+
+“What?”
+
+“She gets it.”
+
+Gareth smiled.
+
+“Keep reading.”
+
 **You once asked why I had allowed the house to deteriorate when I could afford to repair it. I gave you several evasive answers before eventually telling you the truth. After Catherine died, I stopped caring whether Ashcroft House survived.**
 
 **What I did not tell you was that houses are rather like people in one unfortunate respect: it is very difficult to save one when nobody particularly minds whether it remains standing.**
@@ -380,7 +406,7 @@ Almost annoyed by the emotion of her own letter.
 
 He read on.
 
-**Do not interpret any inheritance from me as payment. You paid your debt long ago. Nor is it a reward for being good. You are fifteen. The evidence is insufficient.**
+**Do not interpret any inheritance from me as payment. You paid your debt long ago. Nor is it a reward for being good. At the time of writing, the evidence remains insufficient.**
 
 Jamie laughed again.
 
