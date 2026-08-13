@@ -25,12 +25,12 @@
   const formatNumber = (value) => new Intl.NumberFormat('en-GB').format(Number(value) || 0);
 
   function toast(message) {
-    const node = $('toast');
-    if (!node) return;
-    node.textContent = message;
-    node.classList.add('show');
+    const n = $('toast');
+    if (!n) return;
+    n.textContent = message;
+    n.classList.add('show');
     clearTimeout(toast.timer);
-    toast.timer = setTimeout(() => node.classList.remove('show'), 3200);
+    toast.timer = setTimeout(() => n.classList.remove('show'), 3200);
   }
 
   function node(tag, className, text) {
@@ -49,8 +49,7 @@
 
   function statusPill(value) {
     const safe = String(value || 'unknown');
-    const pill = node('span', `admin-status-v2 status-${safe.replace(/[^a-z0-9_-]/gi, '-').toLowerCase()}`, safe);
-    return pill;
+    return node('span', `admin-status-v2 status-${safe.replace(/[^a-z0-9_-]/gi, '-').toLowerCase()}`, safe);
   }
 
   async function rpc(name, args = {}) {
@@ -80,10 +79,10 @@
       .admin-section-title-v2{display:flex;justify-content:space-between;gap:12px;align-items:center;margin:22px 0 10px}.admin-section-title-v2 h3{margin:0;font-family:var(--serif,Georgia,serif);font-size:24px;font-weight:500}
       .admin-list-v2{display:grid;gap:10px}.admin-card-v2{padding:15px;border:1px solid rgba(255,255,255,.1);background:#151b27;border-radius:14px}.admin-card-head-v2{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}.admin-card-head-v2 h4{margin:0 0 4px;font-size:16px}.admin-card-meta-v2{color:var(--muted,#969eb0);font-size:12px;line-height:1.45}.admin-card-body-v2{margin-top:10px;color:#c7ccd7;line-height:1.55;white-space:pre-wrap;word-break:break-word}.admin-actions-v2{display:flex;gap:7px;flex-wrap:wrap;margin-top:13px}.admin-actions-v2 .button{padding:7px 10px;font-size:12px}.admin-danger-v2{border-color:rgba(255,119,119,.35)!important;color:#ff9b9b!important}.admin-good-v2{border-color:rgba(123,216,164,.35)!important;color:#9ce7bc!important}.admin-warning-v2{border-color:rgba(241,201,134,.35)!important;color:#f1c986!important}
       .admin-status-v2{display:inline-flex;align-items:center;padding:4px 8px;border-radius:999px;border:1px solid rgba(255,255,255,.12);font-size:10px;text-transform:uppercase;letter-spacing:.7px;color:#cbd1dc;white-space:nowrap}.status-open,.status-held,.status-hidden,.status-restricted{color:#f1c986}.status-actioned,.status-clear,.status-visible,.status-active,.status-published{color:#9ce7bc}.status-removed,.status-suspended{color:#ff9b9b}.status-dismissed,.status-reviewed,.status-draft{color:#b9c0cf}
-      .admin-two-col-v2{display:grid;grid-template-columns:1fr 1fr;gap:14px}.admin-note-v2{padding:12px 13px;border-radius:12px;background:rgba(241,201,134,.06);border:1px solid rgba(241,201,134,.16);color:#d9d2c4;font-size:12px;line-height:1.5;margin-top:10px}
+      .admin-note-v2{padding:12px 13px;border-radius:12px;background:rgba(241,201,134,.06);border:1px solid rgba(241,201,134,.16);color:#d9d2c4;font-size:12px;line-height:1.5;margin-top:10px}
       .admin-empty-v2{padding:38px;text-align:center;border:1px dashed rgba(255,255,255,.14);border-radius:14px;color:var(--muted,#969eb0)}
       .admin-audit-v2{display:grid;gap:8px}.admin-audit-row-v2{display:grid;grid-template-columns:145px 110px 1fr;gap:12px;padding:11px 13px;border-bottom:1px solid rgba(255,255,255,.07);font-size:12px}.admin-audit-row-v2 strong{color:#e7eaf0}.admin-audit-row-v2 span{color:var(--muted,#969eb0)}
-      @media(max-width:900px){.admin-shell-v2{grid-template-columns:1fr;grid-template-rows:auto minmax(0,1fr)}.admin-sidebar-v2{padding:10px;border-right:0;border-bottom:1px solid rgba(255,255,255,.08);display:block}.admin-brand-v2{display:none}.admin-tabs-v2{display:flex;overflow:auto;gap:5px}.admin-tab-v2{white-space:nowrap;padding:9px 10px}.admin-sidebar-foot-v2{display:none}.admin-stats-v2{grid-template-columns:repeat(2,minmax(0,1fr))}.admin-head-v2{padding:14px 14px 10px}.admin-toolbar-v2{padding:0 14px 12px}.admin-content-v2{padding:14px}.admin-two-col-v2{grid-template-columns:1fr}.admin-audit-row-v2{grid-template-columns:1fr;gap:4px}}
+      @media(max-width:900px){.admin-shell-v2{grid-template-columns:1fr;grid-template-rows:auto minmax(0,1fr)}.admin-sidebar-v2{padding:10px;border-right:0;border-bottom:1px solid rgba(255,255,255,.08);display:block}.admin-brand-v2{display:none}.admin-tabs-v2{display:flex;overflow:auto;gap:5px}.admin-tab-v2{white-space:nowrap;padding:9px 10px}.admin-sidebar-foot-v2{display:none}.admin-stats-v2{grid-template-columns:repeat(2,minmax(0,1fr))}.admin-head-v2{padding:14px 14px 10px}.admin-toolbar-v2{padding:0 14px 12px}.admin-content-v2{padding:14px}.admin-audit-row-v2{grid-template-columns:1fr;gap:4px}}
       @media(max-width:560px){.admin-control-v2{width:100vw;height:100vh;max-height:100vh;border-radius:0;border:0}.admin-toolbar-v2{align-items:stretch;flex-direction:column}.admin-toolbar-v2 select{width:100%}.admin-stats-v2{grid-template-columns:1fr 1fr}.admin-head-actions-v2 .button{padding:8px 10px}.admin-card-head-v2{display:grid}.admin-actions-v2 .button{flex:1 1 auto}}
     `;
     document.head.append(style);
@@ -148,7 +147,7 @@
   function hijackLegacyButton() {
     const legacy = $('adminLaunchButton');
     if (!legacy) return;
-    legacy.textContent = 'Open admin control centre';
+    if (legacy.textContent !== 'Open admin control centre') legacy.textContent = 'Open admin control centre';
     legacy.onclick = openAdminControl;
     legacy.classList.toggle('hidden', !state.isAdmin);
   }
@@ -218,8 +217,7 @@
 
   function showLoading() {
     const content = $('adminContentV2');
-    if (!content) return;
-    content.replaceChildren(node('div', 'admin-loading-v2', 'Loading admin data…'));
+    if (content) content.replaceChildren(node('div', 'admin-loading-v2', 'Loading admin data…'));
   }
 
   function showError(error) {
@@ -458,44 +456,25 @@
     const list = node('div', 'admin-audit-v2');
     actions.forEach((entry) => {
       const row = node('div', 'admin-audit-row-v2');
-      row.append(
-        node('span', '', formatDateTime(entry.created_at)),
-        node('strong', '', entry.target_type || 'target'),
-        node('div', '', `${entry.action}${entry.note ? ` — ${entry.note}` : ''}`)
-      );
+      row.append(node('span', '', formatDateTime(entry.created_at)), node('strong', '', entry.target_type || 'target'), node('div', '', `${entry.action}${entry.note ? ` — ${entry.note}` : ''}`));
       list.append(row);
     });
     content.append(list);
   }
 
   function adminNote(actionLabel) {
-    const value = window.prompt(`${actionLabel}\n\nOptional private admin note:`, '');
-    return value;
-  }
-
-  async function mutate(buttonNode, fn, successMessage) {
-    const old = buttonNode?.textContent;
-    if (buttonNode) { buttonNode.disabled = true; buttonNode.textContent = 'Working…'; }
-    try {
-      await fn();
-      toast(successMessage);
-      state.loading = false;
-      await loadCurrentTab();
-    } catch (error) {
-      console.error(error);
-      toast(error?.message || 'Admin action failed.');
-    } finally {
-      if (buttonNode) { buttonNode.disabled = false; buttonNode.textContent = old; }
-    }
+    return window.prompt(`${actionLabel}\n\nOptional private admin note:`, '');
   }
 
   async function changeReportStatus(report, status) {
     const note = adminNote(`Mark report as ${status}?`);
     if (note === null) return;
-    await rpc('admin_set_report_status_v2', { p_report_id: report.id, p_status: status, p_note: note });
-    toast(`Report marked ${status}.`);
-    state.loading = false;
-    await loadCurrentTab();
+    try {
+      await rpc('admin_set_report_status_v2', { p_report_id: report.id, p_status: status, p_note: note });
+      toast(`Report marked ${status}.`);
+      state.loading = false;
+      await loadCurrentTab();
+    } catch (error) { toast(error?.message || 'Report action failed.'); }
   }
 
   async function storyAction(id, action, confirmation) {
@@ -554,10 +533,9 @@
     db.auth.onAuthStateChange(() => {
       setTimeout(() => refreshIdentity().catch((error) => console.error('Admin identity refresh failed.', error)), 0);
     });
-
-    const observer = new MutationObserver(() => hijackLegacyButton());
-    observer.observe(document.body, { childList: true, subtree: true });
   }
+
+  window.WriteLiteAdminV2 = { open: openAdminControl };
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot);
   else boot();
