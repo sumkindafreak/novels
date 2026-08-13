@@ -6,7 +6,9 @@ Catherine's window went back into Ashcroft House on the first Saturday in Decemb
 
 Everybody came to watch.
 
-Peter and Ruth arrived before nine with the restored glass secured upright in the back of their van.
+Peter and Ruth arrived before nine with crates of tools, lead, sealants and the careful expressions of people about to handle something irreplaceable.
+
+Catherine's restored glass was already waiting in the hall beneath its protective covering, exactly where it had been since Peter and Ruth brought it back for the final frame work.
 
 Martin the glazier came half an hour later.
 
