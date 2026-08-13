@@ -24,6 +24,7 @@ jobs:
           node --check studio-nav-v6.js
           node --check visitor-stats-v1.js
           node --check admin-control-v2.js
+          node --check writer-studio-v3.js
       - name: Verify launch files
         run: |
           test -s index.html
@@ -35,6 +36,9 @@ jobs:
           test -s balance-due/final/Balance_Due_FINAL.txt
           test -s supabase/visitor_stats_v1.sql
           test -s supabase/admin_control_centre_v2.sql
+          test -s docs/writer-studio-v3-spec.md
+          test -s writer-studio-v3.js
+          test -s writer-studio-v3.css
           grep -qx 'writelite.co.uk' CNAME
           grep -q 'Writelite' studio-nav-v6.js
           grep -q 'Writelite' terms.html
@@ -47,6 +51,8 @@ jobs:
           grep -q 'studio-nav-v6.js' index.html
           grep -q 'visitor-stats-v1.js' index.html
           grep -q 'admin-control-v2.js' index.html
+          grep -q 'writer-studio-v3.js' index.html
+          grep -q 'writer-studio-v3.css' index.html
       - name: Verify Balance Due reader source
         run: |
           python - <<'PY'
