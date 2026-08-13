@@ -336,7 +336,11 @@ The years when Evelyn had allowed the house to decay around her.
 
 But this time Evelyn answered differently.
 
-“Because I stopped caring whether it survived.”
+“The house was old long before Catherine died,” she said. “It already leaked. It already demanded more attention than any sensible person would willingly give it. But while she was alive, I kept on top of what mattered.”
+
+Evelyn looked towards the window.
+
+“After Catherine died, I stopped caring whether it survived.”
 
 The sentence landed quietly.
 
@@ -344,7 +348,7 @@ Jamie looked at her.
 
 Evelyn's eyes stayed on the window.
 
-“After Catherine died, rooms became obligations. Repairs became obligations. The house became an enormous list of things requiring attention from somebody who no longer had much attention to give.”
+“Rooms became obligations. Repairs became obligations. The house became an enormous list of things requiring attention from somebody who no longer had much attention to give.”
 
 Izzy stared into her tea.
 
