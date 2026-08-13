@@ -316,6 +316,8 @@ Jamie swallowed.
 
 That was barely five months.
 
+And it had been almost five years ago.
+
 “She came back here after the diagnosis. Isabella with her.”
 
 “So Izzy's lived here since then?”
