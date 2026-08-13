@@ -3,16 +3,24 @@
 
   function initReaderNext() {
     const chapterNav = document.getElementById('chapterNav');
+    const readerChapter = document.getElementById('readerChapter');
     const nextButton = document.getElementById('nextChapter');
-    if (!chapterNav || !nextButton) return;
+    if (!chapterNav || !readerChapter || !nextButton) return;
 
     nextButton.classList.add('reader-next-cta');
 
     function syncNextButton() {
       const links = Array.from(chapterNav.querySelectorAll('.chapter-link'));
-      const activeIndex = links.findIndex(link => link.classList.contains('active'));
-      const nextLink = activeIndex >= 0 ? links[activeIndex + 1] : null;
+      if (!links.length) return;
 
+      let activeIndex = links.findIndex(link => link.classList.contains('active'));
+      if (activeIndex < 0) {
+        const currentTitle = readerChapter.querySelector('h2')?.textContent?.trim();
+        activeIndex = links.findIndex(link => link.textContent.trim() === currentTitle);
+      }
+      if (activeIndex < 0) activeIndex = 0;
+
+      const nextLink = links[activeIndex + 1] || null;
       nextButton.replaceChildren();
 
       if (!nextLink) {
@@ -43,15 +51,25 @@
       nextButton.setAttribute('aria-label', `Next chapter: ${title.textContent}`);
     }
 
-    const observer = new MutationObserver(syncNextButton);
+    const observer = new MutationObserver(() => requestAnimationFrame(syncNextButton));
     observer.observe(chapterNav, {
       childList: true,
       subtree: true,
       attributes: true,
       attributeFilter: ['class'],
     });
+    observer.observe(readerChapter, {
+      childList: true,
+      subtree: true,
+      characterData: true,
+    });
 
-    syncNextButton();
+    nextButton.addEventListener('click', () => {
+      setTimeout(syncNextButton, 0);
+      setTimeout(syncNextButton, 80);
+    });
+
+    [0, 80, 250, 600, 1200].forEach(delay => setTimeout(syncNextButton, delay));
   }
 
   if (document.readyState === 'loading') {
