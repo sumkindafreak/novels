@@ -392,8 +392,6 @@ After a while she leaned against him.
 
 Jamie squeezed her fingers.
 
-He thought she meant the trip.
+Across the road, Ashcroft House stood above the trees, most of its windows dark.
 
-He did not yet understand that she meant Ashcroft House.
-
-All of it.
+He said nothing.
