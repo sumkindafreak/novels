@@ -1,6 +1,6 @@
 # Ashcroft House
 
-**Status:** Complete first draft — 28 chapters
+**Status:** Final manuscript — publication pass complete — 28 chapters
 
 A coming-of-age gothic thriller set around Ashcroft House, Jamie Morgan, Evelyn Ashcroft and Isabella “Izzy” Ashcroft.
 
@@ -35,6 +35,6 @@ A coming-of-age gothic thriller set around Ashcroft House, Jamie Morgan, Evelyn 
 27. [Chapter Twenty-Seven — The Truth](chapter-27.md)
 28. [Chapter Twenty-Eight — Ashcroft](chapter-28.md)
 
-## Draft note
+## Release note
 
-This is the complete first-pass story draft. The next pass should focus on continuity, pacing, character motivation, clue placement, legal/historical accuracy, prose tightening and any scenes that deserve expansion before manuscript formatting.
+Final publication pass completed 19 August 2026, with continuity, pacing, character voice, clue placement, legal/historical plausibility and prose naturalism reviewed across all 28 chapters. The final edits deliberately preserve the story's conversational humour, imperfect dialogue and emotional restraint while removing unnecessary narrator hand-holding around later reveals.

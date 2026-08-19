@@ -396,6 +396,10 @@ Evelyn's laughter carried faintly from the dining room.
 
 Izzy was no longer smiling.
 
-Jamie noticed.
+Jamie almost asked why.
 
-He just didn't yet know what it meant.
+Izzy reached for the door.
+
+“Text me,” she said again.
+
+Then it closed.

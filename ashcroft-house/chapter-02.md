@@ -444,13 +444,7 @@ She grinned.
 
 Jamie laughed.
 
-The words meant nothing then.
-
-Not really.
-
-He would remember them later.
-
-For now they were just a joke made by a girl sitting in a dusty window, eating an apple while he worked off the cost of a broken one.
+For now it was just a joke made by a girl sitting in a dusty window, eating an apple while he worked off the cost of a broken one.
 
 “Is she actually your gran?” Jamie asked.
 
