@@ -467,7 +467,3 @@ All he could see was a granddaughter worried about her grandmother.
 And an old woman pretending she did not enjoy being worried about.
 
 Jamie followed them inside.
-
-He would remember Evelyn's words later.
-
-By then, they would mean something entirely different.
