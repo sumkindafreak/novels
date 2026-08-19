@@ -464,8 +464,6 @@ Only slightly.
 
 On the dresser behind Evelyn, Margaret Pryce's sealed envelope remained untouched.
 
-Jamie did not know what was inside.
+Jamie looked at it once, then back at Evelyn.
 
-He did not know that the documents signed that morning would decide who owned Ashcroft House after Evelyn died.
-
-He only knew that, for the first time since he'd met her, Evelyn seemed afraid of something she could not solve by asking the right questions.
+For the first time since he'd met her, she seemed afraid of something she could not solve by asking the right questions.
