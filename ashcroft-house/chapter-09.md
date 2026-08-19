@@ -476,6 +476,4 @@ Jamie waited.
 
 He nodded.
 
-Years later, he would remember that sentence more clearly than almost anything else she taught him.
-
-At fifteen, he simply went back to the morning room and found his scraper.
+Then he went back to the morning room and found his scraper.
