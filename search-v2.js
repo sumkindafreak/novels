@@ -272,3 +272,51 @@
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot);
   else boot();
 })();
+
+/* WriteLite — Von Boom homepage featured-poet presentation */
+(() => {
+  'use strict';
+
+  const FEATURED_POEM_TITLE = 'I Know The Only Way';
+
+  function polishFeaturedPoet() {
+    const card = document.getElementById('featuredStory');
+    if (!card) return;
+
+    const title = card.querySelector('h2');
+    const badge = card.querySelector('.badge');
+    const author = card.querySelector('.story-author');
+    const meta = card.querySelector('.featured-meta');
+    const button = card.querySelector('.button.primary');
+
+    const isVonBoomPoem =
+      title?.textContent?.trim() === FEATURED_POEM_TITLE &&
+      /poetry/i.test(meta?.textContent || '');
+
+    if (!isVonBoomPoem) return;
+
+    if (badge) badge.textContent = 'Featured Poet';
+    if (author) author.textContent = 'Von Boom · Gavin Robinson';
+    if (button) button.textContent = 'Read the poem →';
+    card.dataset.featuredPoet = 'von-boom';
+  }
+
+  function bootFeaturedPoet() {
+    const card = document.getElementById('featuredStory');
+    if (!card) return;
+
+    polishFeaturedPoet();
+    new MutationObserver(polishFeaturedPoet).observe(card, {
+      childList: true,
+      subtree: true,
+      characterData: true,
+    });
+    [100, 300, 800, 1600].forEach(delay => setTimeout(polishFeaturedPoet, delay));
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', bootFeaturedPoet);
+  } else {
+    bootFeaturedPoet();
+  }
+})();
