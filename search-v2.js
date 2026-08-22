@@ -295,9 +295,9 @@
 
     if (!isVonBoomPoem) return;
 
-    if (badge) badge.textContent = 'Featured Poet';
-    if (author) author.textContent = 'Von Boom · Gavin Robinson';
-    if (button) button.textContent = 'Read the poem →';
+    if (badge && badge.textContent !== 'Featured Poet') badge.textContent = 'Featured Poet';
+    if (author && author.textContent !== 'Von Boom · Gavin Robinson') author.textContent = 'Von Boom · Gavin Robinson';
+    if (button && button.textContent !== 'Read the poem →') button.textContent = 'Read the poem →';
     card.dataset.featuredPoet = 'von-boom';
   }
 
