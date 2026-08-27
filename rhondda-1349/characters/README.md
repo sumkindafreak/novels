@@ -2,26 +2,24 @@
 
 This folder turns the historical world from Pass One into the people who will carry the novel.
 
-## Working family lock
+## Family lock
 
 - **Ieuan ap Dafydd** — protagonist, age 14 in spring 1349
 - **Dafydd ap Hywel** — father, approximately 38
 - **Angharad ferch Madog** — mother, approximately 34
 - **Gwenllian ferch Dafydd** — younger sister, age 8
 
-These are working locks for Pass Two, chosen to fit medieval Welsh patronymic practice and the period name pool established in Pass One.
-
 ## Core family status
 
 The family is a **modest Welsh tenant household** in Glynrhondda, living in the wider Ystradyfodwg–Gelli orbit of the Rhondda Fawr.
 
-Their home is fictional but placed inside an archaeologically defensible settlement landscape:
+Their world includes:
 
-- permanent holding on the west side of the Rhondda Fawr, above the immediate floodplain and below Mynydd Gelli;
-- local parish centre at Ystradyfodwg;
-- upland cattle work on the higher Mynydd Gelli / Mynydd Ton landscape;
-- Penrhys known as a sacred and travel location;
-- Llantrisant associated with wider lordship authority.
+- permanent holding on the west side of the Rhondda Fawr below Mynydd Gelli;
+- parish life at Ystradyfodwg;
+- upland cattle work toward Mynydd Gelli / Mynydd Ton;
+- Penrhys as a known sacred/travel place;
+- Llantrisant as the wider administrative world.
 
 ## Character principles
 
@@ -46,78 +44,106 @@ Their home is fictional but placed inside an archaeologically defensible settlem
 - `06-family-holding-layout.md` — specific fictional family home, Ieuan's separated 'little end', yard, animals, possessions and upland refuge
 - `07-community-outcomes.md` — who dies, flees, disappears or survives beyond Ieuan's knowledge
 - `08-transition-out-of-isolation.md` — Rhys ap Llywelyn, estate/stock work and the first believable doorway into service
+- `09-ieuan-voice-habits-and-memory.md` — prose continuity: speech, fear tells, anger, wetting, family memories, food/sleep habits
+- `10-rhys-ap-llywelyn.md` — Rhys's background, losses, horse skills, relationship with Ieuan and long-term role
 
-## Current Pass Two locks
+## Locked family chronology
 
-### Family catastrophe
-
-- final complete-family Easter: **12 April 1349**
+- complete-family Easter: **12 April 1349**
+- local mortality clearly underway: **18–21 May**
+- Dafydd ill: **23–24 May**
 - Dafydd dies: **27 May**
+- Angharad ill: **29–30 May**
+- Whitsunday household crisis: **31 May**
 - Angharad dies: **2 June**
+- Ieuan and Gwenllian leave the holding: **2–3 June**
 - Gwenllian becomes ill: **5 June**
 - Gwenllian dies: **7 June**
 
-### Ieuan alone
+These are chapter-planning locks, not claimed historical local death dates.
 
-- Gwenllian is buried near the upland refuge because Ieuan cannot safely/physically bring her to Ystradyfodwg churchyard;
-- Ieuan carries religious guilt about the unconsecrated burial;
-- he spends several days expecting his own plague symptoms;
-- a further bed-wetting episode becomes an unwanted sign that ordinary bodily life continues;
+## Ieuan-alone lock
+
+After Gwenllian dies:
+
+- Ieuan buries her near the upland refuge and carries guilt because she is not in consecrated ground;
+- he spends several days assuming the plague will take him next;
+- another wet night becomes an unwanted sign that ordinary bodily life continues;
 - hunger/thirst force him back toward the lower holdings;
-- his family's main house becomes emotionally uninhabitable;
-- abandoned food, tools and livestock — rather than woodland fantasy foraging — support early survival;
+- his own house becomes emotionally uninhabitable;
+- abandoned food, tools and livestock support survival;
+- one manageable dairy cow becomes more useful than an implausible herd;
+- hay/fodder pressure teaches him to think beyond the next meal;
+- Goronwy ap Tudur teaches him that another survivor may be competition rather than rescue;
 - by early July he has stopped simply waiting to die.
 
-### Family holding
+## Holding lock
 
-Working internal name: **Hendre Gelli** (fictional, may be renamed).
+Working internal name: **Hendre Gelli** — fictional and renameable.
 
 - modest rectangular permanent dwelling;
-- main hearth/living/sleeping space;
-- Ieuan sleeps in a colder, lightly separated downhill service bay — 'the little end' — because repeated wetting makes shared bedding impractical;
-- grain storage is not placed beside his pallet;
-- adjacent yard and modest animal shelter;
-- 2–3 cattle, a few sheep/access to sheep, chickens and possibly one pig as the working household economy;
-- seasonal cattle refuge higher toward Mynydd Gelli.
+- hearth-centred main domestic zone;
+- parents/Gwenllian sleep together in the warmer main space;
+- Ieuan sleeps in a colder, lightly separated downhill service bay — **the little end** — because wet bedding makes shared sleep impractical;
+- separate position/bedding turnover can alter plague exposure without guaranteeing safety;
+- adjacent yard and modest livestock shelter;
+- 2–3 cattle, limited additional stock and small mixed household economy;
+- known upland cattle refuge higher toward Mynydd Gelli.
 
-### Community
+## Community lock
 
-- **Madog ap Rhys** — dies around 20–21 May; first familiar local death
-- **Nest ferch Hywel** — flees after Madog's death; fate unknown
+- **Madog ap Rhys** — dies around 20–21 May
+- **Nest ferch Hywel** — flees; fate unknown
 - **Elen ferch Madog** — leaves with Nest; fate unknown
-- **Gruffudd ap Ieuan** — away/down-valley when the worst arrives; immediate fate unknown, preserved as a possible later survivor
-- **Meurig ap Cynan** — fictional local priest; disappears during the crisis and is presumed dead by Ieuan
-- **Goronwy ap Tudur** — surviving scavenger encountered in late June; proves living strangers may be competitors rather than rescuers
+- **Gruffudd ap Ieuan** — away/down-valley before the worst; preserved as possible later survivor
+- **Meurig ap Cynan** — fictional local priest; disappears and is presumed dead by Ieuan
+- **Goronwy ap Tudur** — late-June survivor/scavenger; not a mentor
 
-### First path into service
+## Ieuan continuity lock
 
-**Rhys ap Llywelyn**, about 32–36, is a fictional practical livestock/horse servant connected to the wider Llantrisant estate-administration world.
+Across the whole novel Ieuan remains recognisable through:
 
-He first values Ieuan because the boy:
+- short, practical speech;
+- bad lies that contain too much detail;
+- studying animals/weather/work before abstract status;
+- becoming very still when frightened;
+- storing humiliation and anger;
+- automatic awareness of food and waste;
+- light sleeping around unfamiliar people;
+- sensitivity to coughing/fever after 1349;
+- ongoing shame around nocturnal wetting, which may lessen with age but does not magically disappear;
+- Dafydd's knife;
+- guilt about Gwenllian's grave;
+- the lesson to **watch the beast before you move it**.
 
-- knows the upland routes;
-- knows local cattle and abandoned holdings;
-- can work;
-- remains calm around livestock;
-- is alive.
+## Rhys ap Llywelyn lock
 
-Rhys's first offer is temporary food/work helping with stock and routes.
+Rhys is about 34 in 1349 and works in practical livestock/horse/transport service connected to Llantrisant's estate-administration world.
 
-Ieuan initially refuses.
+He is not a knight or substitute father.
 
-He later accepts because solitary survival cannot carry him through harvest and winter.
+He has lost a younger brother in the mortality and was already widowed before 1349.
 
-This is the intended endpoint of Pass Two and the opening door for Pass Three.
+He values Ieuan because the boy is useful, knowledgeable and willing to work.
 
-## Pass Two status
+Rhys provides:
 
-**Advanced / near closure.**
+- the first temporary work offer;
+- the route toward Llantrisant;
+- pack/stable experience;
+- gradual horse training;
+- the first non-family adult who eventually discovers Ieuan's wetting and continues judging him primarily by his work.
 
-Remaining optional work before Pass Three:
+## Pass Two endpoint
 
-1. lock Ieuan's voice, habits, fears and small behavioural tells for prose continuity;
-2. define one or two memories for each dead family member that can recur without becoming sentimental flashback machinery;
-3. decide whether Nest/Elen or Gruffudd will definitely reappear later or remain genuinely unresolved;
-4. finalise Rhys's own losses and personal reason for remaining in estate work after the plague.
+Ieuan eventually accepts Rhys's temporary offer because he understands that one fourteen-year-old cannot preserve a household, livestock, harvest and winter future alone.
 
-None of these prevents Pass Three from beginning.
+He tells himself he is leaving **only to work**.
+
+That is the handoff into Pass Three.
+
+# Pass Two status
+
+**CLOSED for structural planning.**
+
+Small character details may still be refined during later passes, but the family, plague losses, survival month, home, community outcomes, behavioural continuity and first doorway into service are now stable enough to build the 1349–1356 rise.
