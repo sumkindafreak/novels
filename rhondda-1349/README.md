@@ -38,6 +38,7 @@ Research lives in `research/`:
 - `07-parish-faith-and-penrhys.md` — Ystradyfodwg parish functions, Penrhys shrine/grange, burial and religious geography
 - `08-travel-routes-and-isolation.md` — ridgeways, pack/foot travel, Llantrisant/Cardiff links and plague-era isolation
 - `09-candidate-home-zones.md` — ranks the strongest permanent-home and seasonal-upland zones; current favourite is Ystradyfodwg–Gelli
+- `10-tenure-rents-and-household-status.md` — tests the family's legal/economic status and replaces the over-specific “poor free tenant” label with a safer modest Welsh tenant model
 - `LOCKED-RULES.md` — authenticity rules already strong enough to treat as constraints
 - `SOURCES.md` — research bibliography and evidence notes
 
@@ -52,6 +53,11 @@ Current geographical working lock:
 - **Parish church:** Ystradyfodwg
 - **Sacred/travel location:** Penrhys
 - **Administrative anchor:** Llantrisant
+
+Current household-status wording:
+
+- **modest Welsh tenant household in the uplands of the Lordship of Glamorgan**
+- exact legal tenure remains deliberately unlocked until stronger c.1300–1360 local rental/court evidence is found
 
 Still to resolve before Pass Two:
 
