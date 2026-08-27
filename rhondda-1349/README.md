@@ -12,7 +12,7 @@ In 1349, fourteen-year-old **Ieuan ap Dafydd** lives in Glynrhondda, Glamorgan. 
 - **Opening age:** 14
 - **Ending age:** about 22
 - **Opening setting:** Glynrhondda, Lordship of Glamorgan
-- **Target:** 15–20 chapters; working structure **18**
+- **Target:** 18 chapters
 - **Tone:** plague survival horror → survival/coming-of-age → household service → armed service → war horror → earned knighthood
 
 ## Evidence system
@@ -105,18 +105,6 @@ Full closure: `bridge/13-pass-three-closure.md`.
 → **Poitiers**  
 → **Edward le Despenser**
 
-### Sir Matthew de Soor — real historical bridge
-
-Evidence places Matthew:
-
-- in Despenser Glamorgan administration in the 1340s;
-- as Sheriff of Glamorgan;
-- on Welsh administrative work in the early 1350s;
-- on **26 April 1355** gathering supplies in Wales with historical Welshman **Ieuan ap Ruyn** for Warwick's Gascony retinue;
-- in reconstruction of **Warwick's 1355 vanguard** as Matthew de Sooz.
-
-Matthew's personal presence at Poitiers is **not securely proven**, so the novel does not claim it. He opens the route; Warwick's wider company carries Ieuan onward.
-
 ## Locked rise
 
 **1349, 14** — Rhys's stock/route helper  
@@ -130,116 +118,74 @@ Matthew's personal presence at Poitiers is **not securely proven**, so the novel
 **1356, 21** — second campaign and Poitiers  
 **spring/summer 1357, ~22** — knighthood
 
-## 1355 campaign
-
-The grande chevauchée is an endurance/logistics/moral trial rather than continuous battle.
-
-Ieuan experiences:
-
-- relentless horse/fodder/water problems;
-- rapid marches to Narbonne and a faster return;
-- deliberate burning/plundering of civilian resources;
-- the horror of an army deliberately creating the empty homes that plague once created around him.
-
-His promotion-defining deed occurs during a historically plausible fictional late-November skirmish/alarm: he solves a horse/route blockage, preserves a remount/pack group, obeys under pressure, fights when required and returns to the job rather than chasing glory.
-
-## Winter 1355–56
-
-The status change becomes real through:
-
-- proper man-at-arms duties;
-- improved armour and horse;
-- changed wages/social position;
-- responsibility for lower servants;
-- months of smaller armed operations before Poitiers.
-
-Promotion also makes Ieuan's lingering bed-wetting more socially dangerous because he now sleeps among higher-status armed men.
-
-### Iorwerth ap Morgan
-
-Fictional Welsh uchelwr/esquire and Ieuan's immediate military superior.
-
-Iorwerth discovers Ieuan's secret without humiliating him, professionalises his new status, fights beside him, and is wounded at Poitiers.
-
-Their relationship is professional trust, not substitute fatherhood.
-
-## 1356 road to Poitiers
-
-Major route anchors:
-
-**Bordeaux → La Réole → Bergerac → Vienne/Manot → Romorantin → Loire/Tours theatre → Chauvigny → Nouaillé-Maupertuis/Poitiers → Bordeaux**.
-
-Exact minor routes remain cautious where the historical itinerary is uncertain.
-
 ## Poitiers — 19 September 1356
 
 Ieuan fights **dismounted as an esquire/man-at-arms in Warwick's wider vanguard**.
 
-Climax:
+He helps recover wounded **Iorwerth ap Morgan**, defeats fictional minor French knight **Sir Guillaume de la Motte**, accepts his surrender, and gets both men clear.
 
-1. Iorwerth is badly wounded.
-2. Ieuan stays disciplined until able/order permits him to act.
-3. He helps recover Iorwerth.
-4. He fights fictional minor French knight **Sir Guillaume de la Motte**.
-5. Guillaume yields; Ieuan accepts surrender rather than killing him once surrender is possible.
-6. Ieuan gets both Iorwerth and his prisoner clear.
-
-The deed produces witnesses, loyalty, chivalric credibility and ransom rather than a superhero kill count.
-
-## Ransom lock
-
-Working Guillaume ransom: **100 marks (£66 13s 4d)**.
-
-Ieuan's eventual effective benefit after superior/retinue claims, prisoner costs and obligations: about **40–50 marks**.
-
-The ransom is capital, not permanent knightly income.
+Working Guillaume ransom: **100 marks (£66 13s 4d)**, with Ieuan eventually controlling roughly **40–50 marks** after obligations/costs.
 
 ## Final patron — Edward le Despenser
 
-Edward le Despenser:
+Edward is historically a knight in the 1355 army, present at Poitiers, and reaches the end of his minority in March 1357.
 
-- is only about a year younger than Ieuan;
-- is explicitly listed as **Edward Despenser, knight** in the 1355 Prince of Wales army;
-- is historically at Poitiers;
-- completes his seven-year minority in **March 1357** and returns/does homage for the Despenser inheritance.
-
-This makes him the final Glamorgan patron without inventing a childhood friendship.
-
-## Final economic mechanism
-
-Spring/summer 1357 working reward package:
+Working spring/summer 1357 reward package:
 
 - **£20 annual Despenser life fee/annuity**;
-- additional productive Glamorgan estate role/lease creating recurring income;
+- productive Glamorgan estate role/lease;
 - Ieuan's ransom capital;
-- knight-level military wages when serving in future campaigns.
-
-The exact legal form of the estate reward remains a Pass Four wording/detail question.
-
-## Final accolade
+- future knight-level military wages.
 
 **Patron/dubber:** Edward le Despenser  
-**Timing:** spring/summer **1357**  
 **Result:** **Sir Ieuan ap Dafydd**
-
-Poitiers makes him worthy; 1357 makes the status sustainable.
 
 ---
 
 # Pass Four — Chapter Architecture
 
-**NEXT.**
+**STARTED.** Work lives in `outline/`.
 
-The final 18-chapter architecture will assign every chapter:
+## Master structure
 
-- date/season;
-- Ieuan's age;
-- location;
-- historical anchors;
-- survival/social/military problem;
-- character change;
-- continuity notes;
-- A/B/C evidence tags;
-- final beat/cliffhanger.
+`outline/01-18-chapter-architecture.md` contains the first complete 18-chapter architecture.
 
-Finished prose begins only after that architecture is stable.
+### Movement One — plague / survival
+
+1. **The Little End**
+2. **Easter**
+3. **The First Bell**
+4. **Under the Arm**
+5. **Whitsun**
+6. **Up the Mountain**
+7. **The Waiting**
+8. **Empty Houses**
+9. **Only to Work**
+
+### Movement Two — service / transformation
+
+10. **The Horse Boy**
+11. **A Man's Place**
+12. **The Sea**
+13. **Fire**
+14. **The Return**
+15. **Winter Arms**
+
+### Movement Three — Poitiers / consequence
+
+16. **The Road North**
+17. **Maupertuis**
+18. **Sir Ieuan**
+
+The architecture currently gives **half the novel (Chapters 1–9)** to the Rhondda/plague survival movement so the military ending cannot swallow the story's emotional foundation.
+
+## Pass Four next checks
+
+1. day-by-day Chapters 1–9 continuity against disease timing/travel;
+2. chapter word-count targets and total manuscript size;
+3. recurring-object/memory continuity sheet;
+4. Ieuan appearance/equipment progression at 14 / 17 / 20 / 21 / 22;
+5. exact period-appropriate knighting ritual/vocabulary for Chapter 18;
+6. title shortlist after the structure survives review.
+
+Finished prose begins only after the architecture is stable.
