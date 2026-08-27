@@ -33,8 +33,27 @@ Research lives in `research/`:
 - `02-daily-life.md` — housing, food, work, clothes, money, animals, seasonal survival
 - `03-plague-and-religion.md` — plague biology, 1349 Wales, death, burial, belief and superstition
 - `04-language-names-and-society.md` — Welsh/Anglo-Norman/Latin, naming practice, lordship and class
+- `05-1349-calendar-and-seasons.md` — month-by-month working year, food pressure, agricultural jobs and outbreak-season consequences
+- `06-records-names-and-placeforms.md` — recorded Rhondda spellings, contemporary South-East Welsh personal names and patronymics
+- `07-parish-faith-and-penrhys.md` — Ystradyfodwg parish functions, Penrhys shrine/grange, burial and religious geography
+- `08-travel-routes-and-isolation.md` — ridgeways, pack/foot travel, Llantrisant/Cardiff links and plague-era isolation
 - `LOCKED-RULES.md` — authenticity rules already strong enough to treat as constraints
 - `SOURCES.md` — research bibliography and evidence notes
+
+### Pass One status
+
+Substantial foundation complete, but **not yet closed**.
+
+Still to resolve before Pass Two:
+
+- strongest defensible month/season for the first local plague deaths;
+- exact candidate zone for the protagonist's family holding;
+- nearest fourteenth-century domestic archaeology suitable for the house reconstruction;
+- Glynrhondda-specific tenant/rent evidence if surviving records can be found;
+- female personal names from fourteenth-century Glamorgan records;
+- parish clergy evidence for Ystradyfodwg/Llanwynno close to 1349;
+- exact Julian-calendar dates for major feasts in the chosen story year;
+- working map distinguishing documented sites from reconstructed routes/home zones.
 
 ## Pass Two — Characters
 
