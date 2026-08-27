@@ -1,6 +1,6 @@
 # Pass Four — Chapter Architecture
 
-**Status: ADVANCED — continuity spine locked; scene build next.**
+**Status: ADVANCED — Chapters 1–9 scene-built; service/military half in progress.**
 
 Pass Four converts the historical and character bibles into the final novel structure.
 
@@ -34,6 +34,26 @@ The military ending must not swallow the family story that made Ieuan who he is.
 - `02-chapters-1-9-day-by-day-continuity.md` — exact April–July 1349 chronology, plague incubation audit, burial/food/travel continuity and opening hard locks
 - `03-opening-movement-motifs-and-drafting-rules.md` — bells, Dafydd's knife, wet bedding, food, home, Gwenllian, faith, viewpoint knowledge and horror/pacing rules
 - `04-chapters-10-18-continuity-spine.md` — 1350–1357 service progression, 1355/1356 exact campaign anchors, Poitiers sequence, ransom and knighthood continuity
+- `05-scene-cards-chapters-1-3.md` — The Little End, Easter, The First Bell
+- `06-scene-cards-chapters-4-6.md` — Under the Arm, Whitsun, Up the Mountain
+- `07-scene-cards-chapters-7-9.md` — The Waiting, Empty Houses, Only to Work
+
+## Opening-half status
+
+**Chapters 1–9 are draft-ready at structural level.**
+
+The plague half now has:
+
+- exact internal dates;
+- disease/incubation continuity;
+- burial continuity;
+- food and livestock logic;
+- exact scene progression;
+- recurring-object/motif rules;
+- chapter-end hooks;
+- the full handoff from family life to solitary survival to Rhys's work network.
+
+Finished prose has **not** started yet.
 
 ## Current hard continuity corrections
 
@@ -64,18 +84,10 @@ These dates are story-continuity locks. The exact first Ystradyfodwg plague date
 
 ## Pass Four next step
 
-Build **scene cards** for Chapters 1–3 first.
+Build scene cards for **Chapters 10–12**:
 
-Each scene card will specify:
+- Chapter 10 — the multi-year horse/stable/service apprenticeship;
+- Chapter 11 — the visible social transition into armed household service;
+- Chapter 12 — Welsh mobilisation, horse shipping and the sea crossing to Gascony.
 
-- viewpoint location/time;
-- characters physically present;
-- practical work/action;
-- what Ieuan wants in the scene;
-- what changes by the end;
-- sensory/historical texture available;
-- continuity details that must appear;
-- details that must not appear yet;
-- final transition into the next scene.
-
-Only after scene cards are stable should finished Chapter One prose begin.
+The key drafting problem is to make 1350–1355 feel **lived**, not like a résumé montage.
