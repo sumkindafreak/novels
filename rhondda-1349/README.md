@@ -70,7 +70,7 @@ Political backdrop:
 
 Working home name: **Hendre Gelli** (fictional/renameable).
 
-Ieuan's colder separated service sleeping bay — **the little end** — exists because wet bedding makes shared family sleep impractical.
+Ieuan's colder separated service sleeping bay — **the little end** — exists because repeated wet bedding makes shared family sleep impractical.
 
 Dafydd's ordinary work knife remains Ieuan's central inherited object.
 
@@ -144,13 +144,11 @@ Working spring/summer 1357 reward package:
 
 # Pass Four — Chapter Architecture
 
-**STARTED.** Work lives in `outline/`.
+**CLOSED for structural planning.** Work lives in `outline/`.
+
+Full closure: `outline/11-pass-four-closure.md`.
 
 ## Master structure
-
-`outline/01-18-chapter-architecture.md` contains the first complete 18-chapter architecture.
-
-### Movement One — plague / survival
 
 1. **The Little End**
 2. **Easter**
@@ -161,31 +159,57 @@ Working spring/summer 1357 reward package:
 7. **The Waiting**
 8. **Empty Houses**
 9. **Only to Work**
-
-### Movement Two — service / transformation
-
 10. **The Horse Boy**
 11. **A Man's Place**
 12. **The Sea**
 13. **Fire**
 14. **The Return**
 15. **Winter Arms**
-
-### Movement Three — Poitiers / consequence
-
 16. **The Road North**
 17. **Maupertuis**
 18. **Sir Ieuan**
 
-The architecture currently gives **half the novel (Chapters 1–9)** to the Rhondda/plague survival movement so the military ending cannot swallow the story's emotional foundation.
+All eighteen chapters now have full scene cards.
 
-## Pass Four next checks
+### Scene-card sets
 
-1. day-by-day Chapters 1–9 continuity against disease timing/travel;
-2. chapter word-count targets and total manuscript size;
-3. recurring-object/memory continuity sheet;
-4. Ieuan appearance/equipment progression at 14 / 17 / 20 / 21 / 22;
-5. exact period-appropriate knighting ritual/vocabulary for Chapter 18;
-6. title shortlist after the structure survives review.
+- `outline/05-scene-cards-chapters-1-3.md`
+- `outline/06-scene-cards-chapters-4-6.md`
+- `outline/07-scene-cards-chapters-7-9.md`
+- `outline/08-scene-cards-chapters-10-12.md`
+- `outline/09-scene-cards-chapters-13-15.md`
+- `outline/10-scene-cards-chapters-16-18.md`
 
-Finished prose begins only after the architecture is stable.
+The entire novel is **draft-ready**.
+
+---
+
+# Prose Drafting
+
+**STARTED.** Finished/draft chapter prose lives in `chapters/`.
+
+Current files:
+
+- `chapters/01-the-little-end.md` — first full prose draft
+
+## Drafting rule
+
+Draft sequentially.
+
+Later memory, repeated phrases, object significance and emotional echoes must grow from prose that actually appeared earlier rather than from outline-only facts.
+
+The opening deliberately begins with Ieuan's private shame and ordinary work rather than historical exposition:
+
+> Ieuan knows he has wet the bedding before he opens his eyes.
+
+The pestilence remains only a distant rumour at the edge of Chapter One.
+
+---
+
+# Research/prose QA rule
+
+As prose is drafted, small material details are checked rather than assumed.
+
+Example: Chapter One currently treats Dafydd's utility knife as folding. Medieval archaeological evidence from London includes folding knives dated to the late thirteenth and late fourteenth centuries, so this is defensible rather than automatically modern.
+
+No prose detail becomes immune from revision merely because it has already been written.
