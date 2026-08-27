@@ -17,13 +17,13 @@ In 1349, a fourteen-year-old boy in Glynrhondda, Glamorgan, survives the first B
 
 ## Historical approach
 
-The novel will distinguish between:
+The novel distinguishes between:
 
-1. **Documented fact** — directly supported by contemporary records, archaeology, or strong modern scholarship.
-2. **Strong reconstruction** — not documented for the exact household or hamlet, but supported by regional/period evidence.
-3. **Fictional invention** — created for the story and designed not to contradict known history.
+1. **A — documented/local or direct historical evidence**
+2. **B — strong regional/period reconstruction**
+3. **C — fictional invention designed not to contradict known history**
 
-No invented detail will be promoted to “fact” merely because it sounds medieval.
+No invented detail is promoted to “fact” merely because it sounds medieval.
 
 ## Pass One — Historical World
 
@@ -37,66 +37,116 @@ Research lives in `research/`:
 - `06-records-names-and-placeforms.md` — recorded Rhondda spellings, contemporary South-East Welsh personal names and patronymics
 - `07-parish-faith-and-penrhys.md` — Ystradyfodwg parish functions, Penrhys shrine/grange, burial and religious geography
 - `08-travel-routes-and-isolation.md` — ridgeways, pack/foot travel, Llantrisant/Cardiff links and plague-era isolation
-- `09-candidate-home-zones.md` — ranks the strongest permanent-home and seasonal-upland zones; current favourite is Ystradyfodwg–Gelli
-- `10-tenure-rents-and-household-status.md` — tests the family's legal/economic status and replaces the over-specific “poor free tenant” label with a safer modest Welsh tenant model
-- `11-house-reconstruction.md` — uses late-13th/early-14th-century Gelligaer platform-house archaeology as the closest strong domestic comparator and builds a cautious permanent-home/upland-refuge model
-- `12-plague-arrival-window.md` — establishes 1349 Glamorgan and recommends May 1349 as the working local outbreak month while keeping the precise Glynrhondda date explicitly undocumented
-- `13-urine-medicine-and-bedwetting.md` — medieval uroscopy, Welsh urinary remedies, historical recognition of bed-wetting and rules for keeping the plague-survival superstition fictional rather than pseudo-medical
-- `LOCKED-RULES.md` — authenticity rules already strong enough to treat as constraints
-- `SOURCES.md` — research bibliography and evidence notes
+- `09-candidate-home-zones.md` — ranks permanent-home and seasonal-upland zones
+- `10-tenure-rents-and-household-status.md` — family legal/economic status and the safer modest Welsh tenant model
+- `11-house-reconstruction.md` — late-13th/early-14th-century Gelligaer archaeology and cautious house/refuge reconstruction
+- `12-plague-arrival-window.md` — 1349 Glamorgan and the late-April–June local reconstruction window
+- `13-urine-medicine-and-bedwetting.md` — medieval uroscopy, urinary remedies, historical recognition of bed-wetting and superstition rules
+- `14-micro-location-and-parish-personnel.md` — west-side Ystradyfodwg–Gelli micro-location and what can/cannot be said about local clergy
+- `15-liturgical-calendar-1349.md` — Julian calendar, Easter on 12 April, Lent/Holy Week/Rogation/Ascension/Whitsun and fixed feast anchors
+- `16-character-name-pool.md` — evidence-graded Welsh male/female name pool and patronymic practice
+- `17-glamorgan-material-culture.md` — Cosmeston/South Glamorgan pottery, knives, querns, possessions and status comparisons
+- `LOCKED-RULES.md` — authenticity constraints
+- `SOURCES.md` — core bibliography and evidence notes
 
-### Pass One status
+## Pass One current working locks
 
-Substantial foundation complete, but **not yet closed**.
+### Geography
 
-Current geographical working lock:
-
-- **Permanent-home zone:** Ystradyfodwg–Gelli orbit, Rhondda Fawr
-- **Likely upland work/refuge:** Mynydd Gelli / Mynydd Ton or related higher-ground cattle landscape
-- **Parish church:** Ystradyfodwg
+- **Permanent home:** fictional modest tenant holding on the lower **western side of the Rhondda Fawr in the Ystradyfodwg–Gelli orbit**, on rising ground just above the better river-terrace land
+- **Upland work/refuge:** higher ground toward **Mynydd Gelli / Mynydd Ton**, using the real medieval cattle/hafod landscape as the model
+- **Ordinary church:** Ystradyfodwg
 - **Sacred/travel location:** Penrhys
 - **Administrative anchor:** Llantrisant
 
-Current household-status wording:
+The exact house coordinate remains fictional and must not overwrite a known archaeological site.
+
+### Household status
 
 - **modest Welsh tenant household in the uplands of the Lordship of Glamorgan**
-- exact legal tenure remains deliberately unlocked until stronger c.1300–1360 local rental/court evidence is found
+- exact legal tenure remains deliberately unresolved because no sufficiently close Glynrhondda rental/court roll has yet been recovered
 
-Current domestic reconstruction:
+### House
 
-- exact family house remains fictional because valley-floor medieval archaeology is heavily lost to later development;
-- closest strong comparator is the excavated Gelligaer Common native Welsh settlement dated to the late 13th / early 14th century;
-- defensible material vocabulary includes turf/stone walling, timber ridge structure, thatch, open hearth, earth/limited paved floor and deliberate drainage;
-- the family's upland cattle shelter can draw more directly on known platform-house/hafod archaeology;
-- the boy's wetting changes sleeping arrangements and bedding turnover but never provides magical immunity.
+- exact family house is a reconstruction because later industrial development destroyed/buried much valley-floor medieval evidence
+- closest strong architectural comparator: excavated native Welsh houses on **Gelligaer Common**, late 13th/early 14th century
+- defensible building vocabulary: turf/stone components, timber roof structure, thatch, open hearth, earth/limited stone floor, deliberate drainage, sparse furnishings
+- upland cattle shelter can draw more directly on known platform-house/hafod archaeology
+- boy sleeps apart because of repeated bed-wetting; altered position/bedding may change exposure but never creates immunity
 
-Current outbreak working model:
+### Plague chronology
 
-- **rumours:** March–April 1349
-- **working local outbreak month:** May 1349
-- **defensible broader window:** late April–June 1349
-- exact first case/date in Ystradyfodwg/Glynrhondda remains undocumented and must not be presented as fact
+- **Glamorgan outbreak year:** 1349
+- **rumours in the story:** March–April 1349
+- **story outbreak month:** **May 1349**
+- broader historical reconstruction window remains late April–June
+- May is a **story lock**, not a claim that surviving evidence records the first Ystradyfodwg case in May
 
-Current bed-wetting/medical model:
+### Christian calendar
 
-- uncontrolled urination and bed-wetting were recognised medical problems in the medieval medical tradition;
-- uroscopy was an important fourteenth-century diagnostic practice;
-- late-medieval Welsh medical texts contain multiple urinary remedies;
-- any belief that the boy's urine protects against plague is **fictional superstition**, not historical or biological fact.
+- calendar: Julian
+- **Easter Sunday 1349: 12 April**
+- the family therefore has one final Easter together before the May catastrophe
+- Ascension: 21 May
+- Whitsunday/Pentecost: 31 May
+- Michaelmas: 29 September
+- All Souls: 2 November
 
-Still to resolve before Pass Two:
+Exact local ceremonies/processional routes remain reconstruction.
 
-- exact fictional holding within the chosen Ystradyfodwg–Gelli home zone;
-- Glynrhondda-specific tenant/rent evidence if surviving records can be found;
-- stronger female personal-name evidence from fourteenth-century Glamorgan records;
-- parish clergy evidence for Ystradyfodwg/Llanwynno close to 1349;
-- exact Julian-calendar dates for major feasts in the chosen story year;
-- working map distinguishing documented sites from reconstructed routes/home zones;
-- final decision whether May 1349 becomes a formal story lock or remains only the planning default.
+### Bed-wetting / medicine
+
+- underlying cause is unknown and will not be retro-diagnosed
+- medieval medicine recognised urinary-control problems and bed-wetting
+- uroscopy was a major fourteenth-century diagnostic practice
+- Welsh medical texts contain urinary remedies
+- urine does **not** biologically protect against plague
+- any survivor-urine belief is an emergent fictional superstition rooted in real medieval medical thinking, never narrator-endorsed medicine
+
+### Names
+
+Final names remain for Pass Two, but the pool is now historically grounded.
+
+Strong male pool includes:
+
+- Ieuan
+- Madog
+- Dafydd
+- Hywel
+- Llywelyn
+- Gruffudd
+
+Strong female pool includes:
+
+- Gwladus
+- Gwenllian
+- Margred
+- Angharad
+
+Welsh patronymics (`ap`, `ferch`) are the default; no modern inherited surname is given to the family.
+
+### Material world
+
+- Gelligaer remains the primary upland architectural comparator
+- Cosmeston and other South Glamorgan archaeology supply broader pottery/tool/material-culture comparisons
+- a modest household should own relatively few, useful, repairable objects
+- do not repeat the older simplistic claim that Cosmeston was proved to have been wholly abandoned because of the Black Death; later ceramic research rejects that interpretation
+
+## Pass One — remaining research gaps
+
+Pass One is now **near closure**. Remaining gaps are narrow rather than foundational:
+
+1. recover a Glynrhondda/Llantrisant rental, court roll, extent or account close to 1349 if one survives and is accessible;
+2. recover a secure named priest/chaplain for Ystradyfodwg near 1349 if possible (otherwise use a fictional cleric);
+3. create a compact evidence map/route sheet for chapter planning;
+4. optionally improve specifically Glamorgan tenant-level female-name evidence, though the current Welsh name pool is already usable;
+5. test whether any additional local food/crop archaeology materially changes the current cattle/oats/barley/pulses model.
+
+None of these gaps currently prevents Pass Two from beginning once Pass One is formally closed.
 
 ## Pass Two — Characters
 
-Not started. This will lock the boy, parents, sister, neighbours, family status, exact home site, emotional relationships and the chronology of the family deaths.
+Not started. This will lock the boy, parents, sister, neighbours, family status, exact fictional holding, emotional relationships, household possessions and chronology of the family deaths.
 
 ## Pass Three — 1349 to 1356 bridge
 
