@@ -46,6 +46,7 @@ Research lives in `research/`:
 - `15-liturgical-calendar-1349.md` — Julian calendar, Easter on 12 April, Lent/Holy Week/Rogation/Ascension/Whitsun and fixed feast anchors
 - `16-character-name-pool.md` — evidence-graded Welsh male/female name pool and patronymic practice
 - `17-glamorgan-material-culture.md` — Cosmeston/South Glamorgan pottery, knives, querns, possessions and status comparisons
+- `18-lordship-in-1349.md` — Hugh le Despenser's death, Edward's minority, custodial administration and the surviving 1349 Glamorgan IPM research lead
 - `LOCKED-RULES.md` — authenticity constraints
 - `SOURCES.md` — core bibliography and evidence notes
 
@@ -132,11 +133,19 @@ Welsh patronymics (`ap`, `ferch`) are the default; no modern inherited surname i
 - a modest household should own relatively few, useful, repairable objects
 - do not repeat the older simplistic claim that Cosmeston was proved to have been wholly abandoned because of the Black Death; later ceramic research rejects that interpretation
 
+### Lordship backdrop
+
+- Hugh le Despenser, lord of Glamorgan, died **8 February 1349**; his cause of death is not securely known
+- his nephew Edward le Despenser inherited as a minor, approximately twelve years old
+- the lordship was therefore administered through custodians during the opening period of the novel
+- Sir Roger de Berkerolles and Simon Basset are historically important 1349 custodial/administrative figures and are research leads for Pass Three, not yet plot characters
+- Hugh's surviving 1349 Inquisition Post Mortem contains detailed Glamorgan estate information and is now the highest-value archival lead for sharpening Glynrhondda tenure
+
 ## Pass One — remaining research gaps
 
 Pass One is now **near closure**. Remaining gaps are narrow rather than foundational:
 
-1. recover a Glynrhondda/Llantrisant rental, court roll, extent or account close to 1349 if one survives and is accessible;
+1. recover the Llantrisant/Glynrhondda detail, if present and accessible, from Hugh le Despenser's **1349 Inquisition Post Mortem** or a closely related rental/account;
 2. recover a secure named priest/chaplain for Ystradyfodwg near 1349 if possible (otherwise use a fictional cleric);
 3. create a compact evidence map/route sheet for chapter planning;
 4. optionally improve specifically Glamorgan tenant-level female-name evidence, though the current Welsh name pool is already usable;
