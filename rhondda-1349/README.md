@@ -1,6 +1,6 @@
 # Rhondda 1349 — Medieval Plague Novel
 
-> Working project name. Final title and character names are deliberately not locked yet.
+> Working project name. Final title is deliberately not locked yet.
 
 ## Premise
 
@@ -50,12 +50,12 @@ Research lives in `research/`:
 - `LOCKED-RULES.md` — authenticity constraints
 - `SOURCES.md` — core bibliography and evidence notes
 
-## Pass One current working locks
+## Pass One working locks
 
 ### Geography
 
-- **Permanent home:** fictional modest tenant holding on the lower **western side of the Rhondda Fawr in the Ystradyfodwg–Gelli orbit**, on rising ground just above the better river-terrace land
-- **Upland work/refuge:** higher ground toward **Mynydd Gelli / Mynydd Ton**, using the real medieval cattle/hafod landscape as the model
+- **Permanent home:** fictional modest tenant holding on the lower western side of the Rhondda Fawr in the Ystradyfodwg–Gelli orbit, on rising ground just above the better river-terrace land
+- **Upland work/refuge:** higher ground toward Mynydd Gelli / Mynydd Ton, using the real medieval cattle/hafod landscape as the model
 - **Ordinary church:** Ystradyfodwg
 - **Sacred/travel location:** Penrhys
 - **Administrative anchor:** Llantrisant
@@ -70,7 +70,7 @@ The exact house coordinate remains fictional and must not overwrite a known arch
 ### House
 
 - exact family house is a reconstruction because later industrial development destroyed/buried much valley-floor medieval evidence
-- closest strong architectural comparator: excavated native Welsh houses on **Gelligaer Common**, late 13th/early 14th century
+- closest strong architectural comparator: excavated native Welsh houses on Gelligaer Common, late 13th/early 14th century
 - defensible building vocabulary: turf/stone components, timber roof structure, thatch, open hearth, earth/limited stone floor, deliberate drainage, sparse furnishings
 - upland cattle shelter can draw more directly on known platform-house/hafod archaeology
 - boy sleeps apart because of repeated bed-wetting; altered position/bedding may change exposure but never creates immunity
@@ -79,9 +79,9 @@ The exact house coordinate remains fictional and must not overwrite a known arch
 
 - **Glamorgan outbreak year:** 1349
 - **rumours in the story:** March–April 1349
-- **story outbreak month:** **May 1349**
+- **story outbreak month:** May 1349
 - broader historical reconstruction window remains late April–June
-- May is a **story lock**, not a claim that surviving evidence records the first Ystradyfodwg case in May
+- May is a story lock, not a claim that surviving evidence records the first Ystradyfodwg case in May
 
 ### Christian calendar
 
@@ -93,8 +93,6 @@ The exact house coordinate remains fictional and must not overwrite a known arch
 - Michaelmas: 29 September
 - All Souls: 2 November
 
-Exact local ceremonies/processional routes remain reconstruction.
-
 ### Bed-wetting / medicine
 
 - underlying cause is unknown and will not be retro-diagnosed
@@ -104,58 +102,62 @@ Exact local ceremonies/processional routes remain reconstruction.
 - urine does **not** biologically protect against plague
 - any survivor-urine belief is an emergent fictional superstition rooted in real medieval medical thinking, never narrator-endorsed medicine
 
-### Names
-
-Final names remain for Pass Two, but the pool is now historically grounded.
-
-Strong male pool includes:
-
-- Ieuan
-- Madog
-- Dafydd
-- Hywel
-- Llywelyn
-- Gruffudd
-
-Strong female pool includes:
-
-- Gwladus
-- Gwenllian
-- Margred
-- Angharad
-
-Welsh patronymics (`ap`, `ferch`) are the default; no modern inherited surname is given to the family.
-
-### Material world
-
-- Gelligaer remains the primary upland architectural comparator
-- Cosmeston and other South Glamorgan archaeology supply broader pottery/tool/material-culture comparisons
-- a modest household should own relatively few, useful, repairable objects
-- do not repeat the older simplistic claim that Cosmeston was proved to have been wholly abandoned because of the Black Death; later ceramic research rejects that interpretation
-
 ### Lordship backdrop
 
 - Hugh le Despenser, lord of Glamorgan, died **8 February 1349**; his cause of death is not securely known
 - his nephew Edward le Despenser inherited as a minor, approximately twelve years old
 - the lordship was therefore administered through custodians during the opening period of the novel
 - Sir Roger de Berkerolles and Simon Basset are historically important 1349 custodial/administrative figures and are research leads for Pass Three, not yet plot characters
-- Hugh's surviving 1349 Inquisition Post Mortem contains detailed Glamorgan estate information and is now the highest-value archival lead for sharpening Glynrhondda tenure
-
-## Pass One — remaining research gaps
-
-Pass One is now **near closure**. Remaining gaps are narrow rather than foundational:
-
-1. recover the Llantrisant/Glynrhondda detail, if present and accessible, from Hugh le Despenser's **1349 Inquisition Post Mortem** or a closely related rental/account;
-2. recover a secure named priest/chaplain for Ystradyfodwg near 1349 if possible (otherwise use a fictional cleric);
-3. create a compact evidence map/route sheet for chapter planning;
-4. optionally improve specifically Glamorgan tenant-level female-name evidence, though the current Welsh name pool is already usable;
-5. test whether any additional local food/crop archaeology materially changes the current cattle/oats/barley/pulses model.
-
-None of these gaps currently prevents Pass Two from beginning once Pass One is formally closed.
 
 ## Pass Two — Characters
 
-Not started. This will lock the boy, parents, sister, neighbours, family status, exact fictional holding, emotional relationships, household possessions and chronology of the family deaths.
+**STARTED.** Character work lives in `characters/`.
+
+### Working family lock
+
+- **Ieuan ap Dafydd** — protagonist, age 14
+- **Dafydd ap Hywel** — father, about 38
+- **Angharad ferch Madog** — mother, about 34
+- **Gwenllian ferch Dafydd** — sister, age 8
+
+### Character files
+
+- `characters/README.md` — Pass Two index and family lock
+- `characters/01-ieuan-ap-dafydd.md` — protagonist skills, shame, wetting, flaws, faith and long arc
+- `characters/02-family.md` — Dafydd, Angharad, Gwenllian and family dynamics
+- `characters/03-community.md` — neighbours, local contemporaries, priest and first rumour-carrier roles
+- `characters/04-family-death-chronology.md` — working May–June 1349 family plague sequence
+
+### Working family chronology
+
+- complete family Easter: **12 April 1349**
+- local mortality clearly underway: **18–21 May**
+- Dafydd ill: **23–24 May**
+- Dafydd dies: **27 May**
+- Angharad ill: **29–30 May**
+- Whitsunday household crisis: **31 May**
+- Angharad dies: **2 June**
+- Ieuan and Gwenllian leave the holding: **2–3 June**
+- Gwenllian becomes ill: **5 June**
+- working death: **7 June**
+
+These are chapter-planning locks, not claimed historical local death dates.
+
+### Key emotional locks
+
+- Dafydd is frustrated by the bed-wetting but is not a cruel father.
+- Angharad manages Ieuan's shame mostly through practical discretion rather than modern therapeutic speeches.
+- Gwenllian teases her brother but never reveals his secret outside the household.
+- Dafydd's ordinary work knife passes to Ieuan without a ceremonial inheritance scene and remains important across the novel.
+- Ieuan's ordinary farm/pastoral competencies become survival skills only because the adults who structured those tasks disappear.
+
+## Pass Two — next targets
+
+1. finish the wider community and decide who survives, flees or disappears;
+2. finalise the family's exact fictional holding layout and daily routine;
+3. define Ieuan's first 2–4 weeks completely alone after Gwenllian's death;
+4. design the person/household who eventually pulls him from solitary survival into service;
+5. once those are strong, hand off to Pass Three for the full 1349–1356 rise toward Poitiers.
 
 ## Pass Three — 1349 to 1356 bridge
 
