@@ -1,200 +1,186 @@
 # Rhondda 1349 — Medieval Plague Novel
 
-> Working project name. Final title is deliberately not locked yet.
+> Working project name. Final title remains deliberately unlocked.
 
 ## Premise
 
-In 1349, fourteen-year-old **Ieuan ap Dafydd** lives in Glynrhondda, Glamorgan. A Black Death outbreak destroys his immediate family. His long-standing bed-wetting indirectly changes where and how he sleeps, possibly altering exposure; urine is never treated as a cure or biological immunity. After losing his parents and eight-year-old sister, Ieuan survives alone in the Rhondda landscape, enters working household/estate service, advances gradually into military service, and ultimately reaches the Battle of Poitiers in 1356, where his path may culminate in knighthood.
+In 1349, fourteen-year-old **Ieuan ap Dafydd** lives in Glynrhondda, Glamorgan. A Black Death outbreak destroys his immediate family. His persistent bed-wetting indirectly changes where/how he sleeps and may alter exposure; urine is never treated as a cure or immunity. Ieuan survives alone, enters working household service, advances gradually into armed service, reaches the Black Prince's 1355–56 Gascon campaigns, and ultimately stands at Poitiers in 1356, where historically plausible but exceptional knighthood becomes the long-range ending target.
 
-## Intended shape
+## Novel shape
 
 - Period: **1349–1356**
 - Opening age: **14**
-- Ending age: about **21–22**
+- Ending age: **21–22**
 - Opening setting: **Glynrhondda, Lordship of Glamorgan**
-- Target length: **15–20 chapters**, current working structure 18
-- Tone: plague survival horror → post-plague survival/coming-of-age → household/martial service → war horror → earned knighthood
+- Target: **15–20 chapters**, working structure 18
+- Tone: plague survival horror → survival/coming-of-age → household service → armed service → war horror → earned knighthood
 
 ## Evidence system
 
-Every major planning detail is treated as:
+- **A** — documented/local/direct evidence
+- **B** — strong regional/period reconstruction
+- **C** — fiction built not to contradict known history
 
-1. **A — documented/local or direct historical evidence**
-2. **B — strong regional/period reconstruction**
-3. **C — fictional invention designed not to contradict known history**
-
-No invented detail is promoted to historical fact merely because it sounds medieval.
+No invented detail becomes “fact” just because it sounds medieval.
 
 ---
 
 # Pass One — Historical World
 
-**Status: foundation complete; narrow archival gaps remain.**
+**Status: COMPLETE for structural planning.**
 
 Research lives in `research/`.
 
 Core locks:
 
-- opening plague year: **1349**
-- story outbreak month: **May 1349** — a planning lock, not a documented first Ystradyfodwg case date
-- Easter Sunday: **12 April 1349, Julian calendar**
-- permanent-home landscape: lower western **Ystradyfodwg–Gelli** orbit, Rhondda Fawr
+- Glamorgan plague year: **1349**
+- story outbreak month: **May 1349** (planning lock, not a documented first Ystradyfodwg case)
+- Easter Sunday: **12 April 1349**, Julian calendar
+- home landscape: western **Ystradyfodwg–Gelli** orbit, Rhondda Fawr
 - upland cattle/refuge landscape: **Mynydd Gelli / Mynydd Ton**
-- ordinary parish church: **Ystradyfodwg**
+- parish church: **Ystradyfodwg**
 - sacred/travel location: **Penrhys**
 - administrative anchor: **Llantrisant**
-- household status: modest Welsh tenant household within the marcher Lordship of Glamorgan
-- closest strong architectural comparator: late-13th/early-14th-century native Welsh platform houses on **Gelligaer Common**
-- pastoral economy: cattle especially important; sheep also present
-- survival food: agriculture, stored food, dairy, livestock and abandoned resources, not fantasy woodland foraging
-- language: primarily Welsh-speaking childhood; English/Anglo-Norman/Latin appear according to social context
-- bed-wetting is historically compatible with medieval medical thinking but **does not** biologically protect Ieuan from plague
+- family status: modest Welsh tenant household inside the marcher Lordship of Glamorgan
+- strongest house comparator: late-13th/early-14th-century native Welsh platform houses on **Gelligaer Common**
+- cattle are central to the upland economy; sheep also matter
+- survival depends on stored food, dairy, livestock and abandoned resources rather than fantasy foraging
+- Ieuan begins primarily Welsh-speaking
+- bed-wetting changes sleeping/bedding patterns but does **not** biologically protect against plague
 
 Lordship backdrop:
 
 - Hugh le Despenser dies **8 February 1349**
-- his nephew Edward le Despenser inherits as a minor, approximately twelve
+- Edward le Despenser inherits as a minor
 - Glamorgan is administered through custodial/estate structures during the opening crisis
-- the surviving 1349 Despenser Inquisition Post Mortem remains an important archival lead for tightening Llantrisant/Glynrhondda tenure
-
-See `research/README`-level material and files `01` through `18`, plus `LOCKED-RULES.md` and `SOURCES.md`.
 
 ---
 
 # Pass Two — Characters and Survival
 
-**Status: advanced / near closure.**
+**Status: CLOSED for structural planning.**
 
-Character work lives in `characters/`.
+Character bible lives in `characters/`.
 
-## Core family
+## Family
 
 - **Ieuan ap Dafydd** — 14
-- **Dafydd ap Hywel** — father, about 38
-- **Angharad ferch Madog** — mother, about 34
+- **Dafydd ap Hywel** — father, ~38
+- **Angharad ferch Madog** — mother, ~34
 - **Gwenllian ferch Dafydd** — sister, 8
 
-The family is affectionate, practical and imperfect. Nobody exists merely to become a corpse.
+## Death chronology
 
-## Family chronology
-
-- final complete-family Easter: **12 April 1349**
-- local mortality obvious: **18–21 May**
-- Dafydd ill: **23–24 May**
+- final family Easter: **12 April**
+- Madog ap Rhys dies: **20–21 May**
 - Dafydd dies: **27 May**
-- Angharad ill: **29–30 May**
-- Whitsunday household crisis: **31 May**
 - Angharad dies: **2 June**
-- Ieuan and Gwenllian flee uphill: **2–3 June**
-- Gwenllian ill: **5 June**
+- Ieuan/Gwenllian flee uphill: **2–3 June**
+- Gwenllian becomes ill: **5 June**
 - Gwenllian dies: **7 June**
 
-These are story-planning dates, not claimed historical local death dates.
+## Holding
 
-## Family home
+Working internal name: **Hendre Gelli** (fictional/renameable).
 
-Working internal name: **Hendre Gelli** — fictional and renameable.
+Ieuan sleeps in a colder, lightly separated downhill service bay — **the little end** — because repeated wet bedding makes shared family bedding impractical.
 
-The family occupies a modest reconstructed tenant holding below the Mynydd Gelli pastoral landscape.
+Dafydd's ordinary work knife becomes Ieuan's central inherited object.
 
-Ieuan sleeps in a colder, lightly separated downhill **service bay / 'little end'** because repeated bed-wetting makes shared bedding impractical. This is practical family accommodation rather than abusive banishment. Different sleeping position and bedding turnover may alter exposure but never guarantee survival.
+## First month alone
 
-Dafydd's ordinary work knife becomes Ieuan's most important inherited object.
-
-## Ieuan's first month alone
-
-After Gwenllian's death:
-
-- Ieuan buries her near the upland refuge because he cannot safely/physically carry her to Ystradyfodwg churchyard;
-- he feels lasting guilt over burial outside consecrated ground;
-- he spends several days waiting for his own plague symptoms;
-- another bed-wetting episode becomes an unwanted sign that ordinary bodily life continues;
-- hunger and thirst force him back toward the lower settlement world;
-- his family dwelling becomes emotionally uninhabitable;
-- he scavenges stored food, tools and livestock from abandoned holdings;
-- he concentrates on one manageable dairy cow rather than becoming master of an implausible herd;
-- June hay/fodder pressure teaches him that surviving summer is not the same as surviving winter;
-- by early July, he has stopped simply waiting to die.
+- Ieuan buries Gwenllian near the upland refuge and carries guilt because she is outside consecrated ground
+- spends days expecting his own plague symptoms
+- a further wet night becomes an unwanted sign that ordinary bodily life continues
+- returns to the lower holdings when hunger/thirst force him
+- scavenges food/tools/livestock from abandoned homes
+- manages one useful dairy cow rather than an implausible herd
+- learns that summer survival does not solve winter fodder/hunger
+- meets survivor/scavenger **Goronwy ap Tudur**
+- by early July, stops simply waiting to die
 
 ## Community outcomes
 
-- **Madog ap Rhys** — dies around 20–21 May, first familiar local plague death
-- **Nest ferch Hywel** — flees; fate unknown to Ieuan
-- **Elen ferch Madog** — leaves with Nest; fate unknown
-- **Gruffudd ap Ieuan** — away/down-valley before the worst; immediate fate unknown and preserved as a possible later survivor
-- **Meurig ap Cynan** — fictional Ystradyfodwg priest; disappears during the crisis, presumed dead by Ieuan
-- **Goronwy ap Tudur** — survivor/scavenger met in late June; teaches Ieuan that living strangers may be competitors rather than rescuers
+- **Nest ferch Hywel** — fled; unknown
+- **Elen ferch Madog** — fled; unknown
+- **Gruffudd ap Ieuan** — away/down-valley; unknown, possible future survivor
+- **Meurig ap Cynan** — fictional priest; missing/presumed dead by Ieuan
 
-The social horror is uncertainty, not a perfectly complete death list.
+## Doorway into service
 
-## First doorway into service
+**Rhys ap Llywelyn**, ~34, is a fictional practical livestock/horse/transport servant connected to the Llantrisant estate world.
 
-**Rhys ap Llywelyn**, about 32–36, is a fictional practical livestock/horse servant connected to the wider Llantrisant estate-administration world.
+He values Ieuan because he knows routes, cattle and work — not because he sees a future knight.
 
-He first notices Ieuan because the boy:
+Ieuan eventually accepts temporary stock work because one boy cannot preserve a household, animals, harvest and winter future alone.
 
-- knows upland routes;
-- knows local stock and holdings;
-- can work;
-- remains calm around cattle;
-- is still alive.
+Additional continuity is locked in:
 
-Rhys offers temporary food/work helping to identify and move stock.
-
-Ieuan initially refuses because leaving means abandoning Gwenllian's grave, surrendering control of his old home and risking discovery of his bed-wetting in shared sleeping conditions.
-
-He eventually accepts because one fourteen-year-old cannot preserve a household, hay crop, livestock and winter future alone.
-
-This is the intended endpoint of Pass Two.
-
-## Pass Two files
-
-- `characters/README.md` — current character-bible index
-- `characters/01-ieuan-ap-dafydd.md` — protagonist psychology, skills, flaws and long arc
-- `characters/02-family.md` — family members and relationships
-- `characters/03-community.md` — opening social world
-- `characters/04-family-death-chronology.md` — disease/death sequence
-- `characters/05-first-month-alone.md` — 7 June to early July survival arc
-- `characters/06-family-holding-layout.md` — specific fictional holding and sleeping arrangement
-- `characters/07-community-outcomes.md` — death, flight, disappearance and survival
-- `characters/08-transition-out-of-isolation.md` — Rhys and the first work offer
+- `characters/09-ieuan-voice-habits-and-memory.md`
+- `characters/10-rhys-ap-llywelyn.md`
 
 ---
 
 # Pass Three — 1349 to 1356 Bridge
 
-**Not started yet.**
+**Status: STARTED.**
 
-Pass Three will prove the complete social/military ladder:
+Work lives in `bridge/`.
 
-1. temporary livestock/route work;
-2. Llantrisant service world;
-3. pack/stable/horse skills;
-4. attachment to a stronger household or affinity;
-5. armed service / esquire trajectory;
-6. connection to the Despenser / Black Prince military world only where historically defensible;
-7. Gascony campaign;
-8. Battle of Poitiers, **19 September 1356**;
-9. conditions under which knighthood is genuinely plausible.
+## Current historical anchors
 
-No secret noble ancestry and no instant adoption by a knight.
+- mid-fourteenth-century English armies increasingly use contractual/household retinues and commissions
+- the Prince of Wales's 1355 force includes men-at-arms, mounted/foot archers, Welsh soldiers and household/support personnel
+- **Edward le Despenser** is historically part of the Prince's military world and fights at **Poitiers, 19 September 1356**
+- Poitiers creates real opportunities through booty, prisoners, ransom and patronage
+- knighthood for a man of Ieuan's birth is **rare**, so social promotion must happen visibly before the battle
+
+## Working ladder
+
+**1349, 14** — Rhys's stock/route helper  
+**1350, 15** — Llantrisant stable/pack servant  
+**1351, 16** — recommended into a knightly/upper household connection  
+**1352, 17** — mounted household servant; armour/weapon maintenance and riding  
+**1353, 18** — beginning armed-retainer service  
+**1354, 19** — approaching esquire-level household recognition  
+**1355, 20** — Gascony as armed household retainer/esquire-level servant  
+**winter 1355–56** — campaign-tested; social/military promotion must be earned here  
+**1356, 21** — Poitiers
+
+See:
+
+- `bridge/README.md`
+- `bridge/01-ladder-1349-1356.md`
+- `bridge/02-knighthood-plausibility-test.md`
+
+## Knighthood rule
+
+Ieuan may only be knighted if the final outline establishes:
+
+1. years of household service;
+2. genuine horse competence;
+3. armed service before Poitiers;
+4. a recognised knightly/high-status patron;
+5. esquire/man-at-arms-level standing before the battle;
+6. exceptional but believable service at Poitiers;
+7. enough reward/ransom/income to support the new status.
+
+Current preferred final mechanism: **patronage + conspicuous Poitiers service + prisoner/ransom or other reward**, followed by knighting by his immediate senior patron or Edward le Despenser if the relationship has been earned beforehand.
+
+The Prince of Wales should not personally knight an obscure Ieuan merely for dramatic effect.
+
+## Pass Three next research target
+
+The biggest unresolved rung is now:
+
+> **How exactly does Ieuan move from competent mounted household servant to socially recognised esquire/man-at-arms between roughly 1352 and 1355?**
+
+That middle transition gets researched next.
 
 ---
 
 # Pass Four — Chapter Architecture
 
-Not started.
+**Not started.**
 
-Each chapter will receive:
-
-- date/season;
-- Ieuan's age;
-- location;
-- main event;
-- survival/social problem;
-- historical anchors;
-- character change;
-- continuity details;
-- A/B/C evidence tags.
-
-Only after this architecture is stable will finished prose drafting begin.
+Every chapter will eventually receive date/season, age, location, historical anchors, survival/social problem, character change, continuity notes and A/B/C evidence tags before finished prose begins.
