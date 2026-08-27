@@ -2,123 +2,167 @@
 
 Pass Three proves the complete route from **fourteen-year-old plague survivor** to a man who can plausibly stand among the armed household/esquire class at Poitiers in 1356.
 
-The goal is not merely to create exciting events. Every social promotion must have a mechanism.
+Every social promotion must have a mechanism. Ieuan's low birth makes knighthood exceptional rather than impossible.
 
-## Central problem
-
-Ieuan is born into a modest Welsh tenant household.
-
-Knighthood in fourteenth-century England/Wales is strongly associated with gentility, land, wealth, household patronage and military service.
-
-A low-born man **could** rise through war/service, but it was exceptional.
-
-Therefore the novel must earn three transformations separately:
+## Three transformations to earn
 
 1. **worker → trusted household servant**
-2. **household servant → armed/genteel esquire-level retainer**
+2. **household servant → esquire/man-at-arms**
 3. **esquire/man-at-arms → knight**
 
-If any of those steps is skipped, the ending becomes fantasy rather than historical fiction.
+---
+
+# Major breakthrough: Sir Matthew de Soor
+
+The strongest historical bridge now found is **Sir Matthew de Soor**.
+
+Documentary evidence places Matthew:
+
+- in Hugh le Despenser's Glamorgan administration in the 1340s;
+- as Sheriff of Glamorgan;
+- on Welsh administrative business in the early 1350s;
+- on **26 April 1355** gathering supplies in Wales with a Welshman, **Ieuan ap Ruyn**, for Thomas Beauchamp, Earl of Warwick's Gascony retinue;
+- in modern reconstruction of the **1355 Warwick vanguard**, under the spelling Matthew de Sooz.
+
+The historical Ieuan ap Ruyn is not our fictional Ieuan ap Dafydd; the coincidence demonstrates that Welsh service personnel were genuinely moving through exactly this network.
+
+## Working patronage lock
+
+- **Rhys ap Llywelyn** gets Ieuan into the Llantrisant/estate work network.
+- **Sir Matthew de Soor** becomes Ieuan's principal knightly patron from approximately 1352 through the 1355 campaign.
+- Matthew's secure 1356/Poitiers presence has **not** yet been proven.
+- Ieuan's continued place in **Warwick's broader retinue/affinity** therefore carries him through 1356 without falsely claiming Matthew fought at Poitiers.
+- Edward le Despenser remains the later high-level Glamorgan connection rather than the boyhood patron.
 
 ---
 
-# Historical anchors already established
+# Middle-rung lock
 
-## 1349 Glamorgan
+Ieuan does **not** become an esquire merely because he reaches the right age.
 
-- Hugh le Despenser dies on 8 February 1349.
-- Edward le Despenser inherits as a child/minor.
-- Glamorgan is administered through custodial/estate structures.
-- plague creates vacancies, abandoned holdings and severe labour disruption.
+His working progression is:
 
-## Black Prince recruitment
+**1349, age 14** — Rhys's stock/route helper  
+**1350, 15** — groom/service boy in Llantrisant orbit  
+**1351–52, 16–17** — groom moving into valet/yeoman-level household service  
+**1353–54, 18–19** — experienced mounted valet / increasingly armed household servant  
+**spring–summer 1355, 20** — trusted mounted valet/armed servant in Warwick mobilisation  
+**autumn 1355** — campaign trial on the grande chevauchée  
+**winter 1355–56** — formal regrading to **esquire/man-at-arms**  
+**1356, 21** — accepted man-at-arms in Warwick's broader military company
 
-By the 1350s English armies are increasingly raised through contractual/household retinues and commissions rather than a simple old-fashioned feudal levy.
+The winter 1355–56 promotion is now the formal status change.
 
-The Black Prince's 1355 expedition included:
-
-- men-at-arms;
-- mounted archers;
-- foot archers;
-- Welsh soldiers;
-- household/administrative support;
-- magnate retinues and personal companies.
-
-Modern scholarship on the 1355 army records roughly 170 Welshmen in older estimates, while stressing uncertainty in surviving numbers.
-
-## Edward le Despenser
-
-Edward le Despenser (born 24 March 1336) is almost Ieuan's generation.
-
-Evidence places Despenser:
-
-- in the Black Prince's military circle;
-- in the prince's army in 1355–56;
-- at the Battle of Poitiers on 19 September 1356.
-
-This creates a historically real Glamorgan-to-Poitiers thread.
-
-The novel does **not** require Ieuan to know Edward personally in childhood.
+It must bring practical consequences: higher military expectation, appropriate horse, improved armour/weapons, changed pay/status and resentment from better-born men.
 
 ---
 
-# Pass Three working target
+# 1355 mobilisation and embarkation
 
-The most credible current route is:
+The Gascon Rolls give unusually vivid logistics.
 
-**Glynrhondda cattle boy**  
-→ **Rhys ap Llywelyn's stock/route helper**  
-→ **Llantrisant stable/pack servant**  
-→ **service in a knightly/affinity household connected to Glamorgan**  
-→ **mounted household servant / armed retainer**  
-→ **esquire-level recognition through several years of service**  
-→ **Gascony 1355**  
-→ **experienced campaigner during winter 1355–56**  
-→ **Poitiers 1356**  
-→ **exceptional deed + patronage + financial means**  
-→ **knighthood**
+- Matthew de Soor and Ieuan ap Ruyn were sent through Wales gathering supplies for Warwick's retinue.
+- On **6 May 1355**, thousands of wooden hurdles and gangplanks were ordered for transporting horses by ship.
+- Warwick and Suffolk's horse shipping was specifically provisioned at **Southampton**; the Prince's own transport also used Plymouth.
 
-Every arrow requires its own evidence and story event.
+Therefore the exact embarkation route must follow the retinue evidence rather than assuming every man sailed from Plymouth.
+
+Ieuan's horse background makes him valuable during sea transport long before he earns distinction in combat.
 
 ---
 
-# Critical authenticity rules
+# Equipment/status lock
 
-- Ieuan does not become a page at seven; he missed the conventional elite childhood pipeline.
-- He does not become a squire simply because he is the correct age.
-- Horse skill develops from cattle/pack/stable work over years.
-- Weapon skill develops only after he enters armed household service.
-- Social acceptance matters as much as physical skill.
-- A patron must risk reputation/resources by advancing him.
-- Ieuan needs some practical means of supporting knightly status; booty/ransom/reward at Poitiers may help solve this.
-- Edward le Despenser may become a high-level historical patron/connection, but he must not function as a magical shortcut.
-- Edward of Woodstock should remain the **Prince of Wales / prince** in contemporary viewpoint; the familiar nickname 'Black Prince' is later.
+By September 1356 Ieuan must possess the **functional package of a man-at-arms** through patronage, wages and accumulated service:
+
+- suitable campaign horse;
+- substantial mid-fourteenth-century armour;
+- lance/spear;
+- sword/sidearm;
+- recognised place in an armed retinue.
+
+His equipment develops gradually from maintaining other men's kit to receiving/using second-hand or household-funded protection and finally a genuine man-at-arms package.
 
 ---
 
-# Key source findings
+# Poitiers lock
 
-- Mollie M. Madden, *The Black Prince and the Grande Chevauchée of 1355*: recruitment, army composition, household personnel and campaign logistics.
-- David Green / Poitiers scholarship: Welsh contingent and Black Prince retinue context.
-- Edward Despenser appears among the prince's army personnel and is independently recorded at Poitiers.
-- Froissart's Poitiers narrative includes a squire whose wartime profit/ransom subsequently enables his knighthood. This is not a direct social parallel for Ieuan, but it proves that Poitiers could materially transform an esquire's prospects.
-- Scholarship on the emerging fourteenth-century esquire class emphasises household/military service and a range of backgrounds, while stronger work on knighthood warns that genuinely low-born knighting remained rare.
+Battle: **19 September 1356**.
+
+Secure framework:
+
+- the Prince chooses a strong hedged/difficult position;
+- archers help break the opening French cavalry attacks;
+- successive assaults become savage hand-to-hand fighting;
+- Thomas Beauchamp, Earl of Warwick, commands the vanguard/first battle;
+- King John II is captured.
+
+Exact battlefield deployment remains disputed in the sources, so the novel will not invent false map-level certainty.
+
+## Ieuan at Poitiers
+
+**LOCKED:** Ieuan fights **dismounted as an esquire/man-at-arms in Warwick's wider vanguard**.
+
+Working conspicuous deed:
+
+- protects/recovers a wounded immediate superior during close fighting;
+- fights a respectable but non-famous French knight;
+- accepts that knight's surrender and takes him prisoner rather than killing him;
+- gets the wounded man and prisoner clear while remaining useful to the formation.
+
+This combines Ieuan's animal/terrain awareness, plague-survivor nerve and trained military discipline without superhero kill-count logic.
+
+The prisoner supplies a plausible ransom/reward mechanism for the economic problem of knighthood.
+
+---
+
+# Matthew de Soor caution
+
+Matthew is real.
+
+Known offices, administrative activity, 1355 mobilisation and 1355 army placement may be used as evidence.
+
+His personality, dialogue and private mentorship of Ieuan are historical fiction.
+
+**Do not state that Matthew fought at Poitiers unless stronger evidence is found.**
+
+---
+
+# Knighthood rule
+
+Ieuan may only be knighted after all of these have been shown:
+
+1. years of household service;
+2. real horse competence;
+3. armed service before Poitiers;
+4. recognised patronage;
+5. man-at-arms/esquire status before the battle;
+6. conspicuous witnessed service at Poitiers;
+7. credible financial support through wages, reward, ransom, annuity or patronage.
+
+The accolade should occur **after** battle rather than as a romantic mid-melee dubbing.
+
+Edward le Despenser remains a strong possible participant because he is lord of Glamorgan and independently recorded at Poitiers, but the exact person who knights Ieuan is not yet locked.
 
 ---
 
 # Files
 
-- `01-ladder-1349-1356.md` — working year-by-year social/military progression
-- `02-knighthood-plausibility-test.md` — what must be true before the ending can honestly knight Ieuan
-
-More files will be added for:
-
-- specific Glamorgan affinity/household route;
-- Gascony embarkation and 1355 campaign;
-- winter 1355–56 service;
-- Poitiers deployment and exact battlefield role;
-- final patron/knighting mechanism.
+- `01-ladder-1349-1356.md` — year-by-year progression
+- `02-knighthood-plausibility-test.md` — mandatory conditions for knighthood
+- `03-middle-rung-household-to-man-at-arms.md` — solves groom/valet → esquire/man-at-arms transition
+- `04-sir-matthew-de-soor-route.md` — historical Glamorgan → Warwick → Gascony patronage chain
+- `05-equipment-pay-and-embarkation-1355.md` — horse, armour, pay and sea-transport reality
+- `06-poitiers-role-and-battlefield-constraints.md` — battlefield uncertainty, Warwick vanguard and Ieuan's working deed
 
 ## Status
 
-**STARTED.**
+**WELL ADVANCED.**
+
+Remaining major Pass Three targets:
+
+1. map Ieuan's exact **1355 chevauchée experience** and the events that earn his winter promotion;
+2. build winter 1355–56 household relationships and the fictional immediate superior who carries him into Warwick's Poitiers vanguard;
+3. choose the French prisoner/ransom scale;
+4. settle the final knighting patron/mechanism;
+5. then close Pass Three and build the 18-chapter architecture.
