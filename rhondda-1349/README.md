@@ -37,6 +37,7 @@ Research lives in `research/`:
 - `06-records-names-and-placeforms.md` — recorded Rhondda spellings, contemporary South-East Welsh personal names and patronymics
 - `07-parish-faith-and-penrhys.md` — Ystradyfodwg parish functions, Penrhys shrine/grange, burial and religious geography
 - `08-travel-routes-and-isolation.md` — ridgeways, pack/foot travel, Llantrisant/Cardiff links and plague-era isolation
+- `09-candidate-home-zones.md` — ranks the strongest permanent-home and seasonal-upland zones; current favourite is Ystradyfodwg–Gelli
 - `LOCKED-RULES.md` — authenticity rules already strong enough to treat as constraints
 - `SOURCES.md` — research bibliography and evidence notes
 
@@ -44,10 +45,18 @@ Research lives in `research/`:
 
 Substantial foundation complete, but **not yet closed**.
 
+Current geographical working lock:
+
+- **Permanent-home zone:** Ystradyfodwg–Gelli orbit, Rhondda Fawr
+- **Likely upland work:** Mynydd Gelli / Mynydd Ton or related higher-ground cattle landscape
+- **Parish church:** Ystradyfodwg
+- **Sacred/travel location:** Penrhys
+- **Administrative anchor:** Llantrisant
+
 Still to resolve before Pass Two:
 
 - strongest defensible month/season for the first local plague deaths;
-- exact candidate zone for the protagonist's family holding;
+- exact fictional holding within the chosen home zone;
 - nearest fourteenth-century domestic archaeology suitable for the house reconstruction;
 - Glynrhondda-specific tenant/rent evidence if surviving records can be found;
 - female personal names from fourteenth-century Glamorgan records;
