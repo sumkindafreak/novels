@@ -4,15 +4,15 @@
 
 ## Premise
 
-In 1349, fourteen-year-old **Ieuan ap Dafydd** lives in Glynrhondda, Glamorgan. The pestilence destroys his immediate family. His persistent bed-wetting indirectly changes where/how he sleeps and may alter exposure; urine is never a cure or immunity. Ieuan survives, enters household service, rises gradually into armed service, joins the Prince of Wales's Gascon campaigns and reaches Poitiers in 1356, where an exceptional but historically defensible route to knighthood becomes possible.
+In 1349, fourteen-year-old **Ieuan ap Dafydd** lives in Glynrhondda, Glamorgan. The pestilence destroys his immediate family. His persistent bed-wetting indirectly changes where/how he sleeps and may alter exposure; urine is never a cure or immunity. Ieuan survives, enters household service, rises gradually into armed service, joins the Prince of Wales's Gascon campaigns, fights at Poitiers in 1356, and is finally knighted in 1357 after years of service, battlefield reputation, ransom profit and patronage make that elevation socially and economically credible.
 
 ## Shape
 
-- **Period:** 1349–1356
+- **Period:** 1349–1357
 - **Opening age:** 14
-- **Ending age:** 21–22
+- **Ending age:** about 22
 - **Opening setting:** Glynrhondda, Lordship of Glamorgan
-- **Target:** 15–20 chapters; working structure 18
+- **Target:** 15–20 chapters; working structure **18**
 - **Tone:** plague survival horror → survival/coming-of-age → household service → armed service → war horror → earned knighthood
 
 ## Evidence system
@@ -90,17 +90,20 @@ Pass Two endpoint: Ieuan leaves home telling himself he is going **only to work*
 
 ---
 
-# Pass Three — 1349 to 1356 Bridge
+# Pass Three — 1349 to 1357 Bridge
 
-**WELL ADVANCED.** Work lives in `bridge/`.
+**CLOSED for structural planning.** Work lives in `bridge/`.
 
-## Continuous service chain
+Full closure: `bridge/13-pass-three-closure.md`.
+
+## Final service chain
 
 **Rhys ap Llywelyn**  
 → **Sir Matthew de Soor**  
 → **Iorwerth ap Morgan** (fictional Warwick esquire)  
 → **Thomas Beauchamp, Earl of Warwick's wider retinue/vanguard**  
-→ **Poitiers**
+→ **Poitiers**  
+→ **Edward le Despenser**
 
 ### Sir Matthew de Soor — real historical bridge
 
@@ -112,7 +115,7 @@ Evidence places Matthew:
 - on **26 April 1355** gathering supplies in Wales with historical Welshman **Ieuan ap Ruyn** for Warwick's Gascony retinue;
 - in reconstruction of **Warwick's 1355 vanguard** as Matthew de Sooz.
 
-Matthew's presence at Poitiers itself is **not securely proven**, so the novel will not claim it. He opens the military route; Warwick's wider company carries Ieuan onward.
+Matthew's personal presence at Poitiers is **not securely proven**, so the novel does not claim it. He opens the route; Warwick's wider company carries Ieuan onward.
 
 ## Locked rise
 
@@ -124,12 +127,12 @@ Matthew's presence at Poitiers itself is **not securely proven**, so the novel w
 **1355, 20** — Warwick mobilisation and Gascony as trusted armed household servant  
 **autumn 1355** — grande chevauchée trial  
 **winter 1355–56** — formal/functioning **esquire/man-at-arms** promotion  
-**early 1356** — frontier/garrison operations  
-**19 September 1356, 21** — Poitiers
+**1356, 21** — second campaign and Poitiers  
+**spring/summer 1357, ~22** — knighthood
 
 ## 1355 campaign
 
-The campaign is an endurance/logistics/moral trial rather than continuous battle.
+The grande chevauchée is an endurance/logistics/moral trial rather than continuous battle.
 
 Ieuan experiences:
 
@@ -139,8 +142,6 @@ Ieuan experiences:
 - the horror of an army deliberately creating the empty homes that plague once created around him.
 
 His promotion-defining deed occurs during a historically plausible fictional late-November skirmish/alarm: he solves a horse/route blockage, preserves a remount/pack group, obeys under pressure, fights when required and returns to the job rather than chasing glory.
-
-The campaign supplies the evidence; winter supplies the promotion.
 
 ## Winter 1355–56
 
@@ -154,72 +155,80 @@ The status change becomes real through:
 
 Promotion also makes Ieuan's lingering bed-wetting more socially dangerous because he now sleeps among higher-status armed men.
 
-## Iorwerth ap Morgan — fictional immediate superior
+### Iorwerth ap Morgan
 
-Iorwerth is a Welsh uchelwr/esquire, about thirty, already secure in Warwick's armed world.
+Fictional Welsh uchelwr/esquire and Ieuan's immediate military superior.
 
-He:
-
-- witnesses Ieuan's campaign usefulness;
-- helps turn the winter promotion into practical soldiering;
-- discovers Ieuan's wet bedding and treats it as a practical nuisance rather than disgrace;
-- becomes the first outsider to know the secret without Ieuan's world collapsing;
-- fights beside Ieuan in Warwick's vanguard;
-- is the wounded superior Ieuan protects at Poitiers.
+Iorwerth discovers Ieuan's secret without humiliating him, professionalises his new status, fights beside him, and is wounded at Poitiers.
 
 Their relationship is professional trust, not substitute fatherhood.
 
-## Poitiers lock
+## 1356 road to Poitiers
 
-**19 September 1356.**
+Major route anchors:
+
+**Bordeaux → La Réole → Bergerac → Vienne/Manot → Romorantin → Loire/Tours theatre → Chauvigny → Nouaillé-Maupertuis/Poitiers → Bordeaux**.
+
+Exact minor routes remain cautious where the historical itinerary is uncertain.
+
+## Poitiers — 19 September 1356
 
 Ieuan fights **dismounted as an esquire/man-at-arms in Warwick's wider vanguard**.
 
-The exact battlefield map remains intentionally cautious because the sources disagree on deployment details.
+Climax:
 
-Working climax:
+1. Iorwerth is badly wounded.
+2. Ieuan stays disciplined until able/order permits him to act.
+3. He helps recover Iorwerth.
+4. He fights fictional minor French knight **Sir Guillaume de la Motte**.
+5. Guillaume yields; Ieuan accepts surrender rather than killing him once surrender is possible.
+6. Ieuan gets both Iorwerth and his prisoner clear.
 
-1. Iorwerth is wounded in the close fighting.
-2. Ieuan stays disciplined rather than immediately breaking formation.
-3. He reaches/protects Iorwerth when able.
-4. A respectable but non-famous French knight attacks the group.
-5. Ieuan defeats him and accepts surrender rather than killing him once surrender is possible.
-6. Ieuan gets Iorwerth and the prisoner clear.
+The deed produces witnesses, loyalty, chivalric credibility and ransom rather than a superhero kill count.
 
-The prisoner creates a plausible ransom/reward mechanism without giving Ieuan a famous historical captive.
+## Ransom lock
 
-## Knighthood constraints
+Working Guillaume ransom: **100 marks (£66 13s 4d)**.
 
-Ieuan can only be knighted after the story demonstrates:
+Ieuan's eventual effective benefit after superior/retinue claims, prisoner costs and obligations: about **40–50 marks**.
 
-1. years of household service;
-2. real horse competence;
-3. prior armed service;
-4. recognised patronage;
-5. esquire/man-at-arms status before Poitiers;
-6. witnessed exceptional service at Poitiers;
-7. enough financial support through wages/reward/ransom/patronage to sustain knightly status.
+The ransom is capital, not permanent knightly income.
 
-The accolade should happen **after** the battle, not in a romantic mid-melee dubbing.
+## Final patron — Edward le Despenser
 
-**Edward le Despenser**, lord of Glamorgan and historically present at Poitiers, remains a strong possible high-level participant in the final elevation, but the exact knighting mechanism is still open.
+Edward le Despenser:
 
-See `bridge/README.md` for the current full Pass Three locks.
+- is only about a year younger than Ieuan;
+- is explicitly listed as **Edward Despenser, knight** in the 1355 Prince of Wales army;
+- is historically at Poitiers;
+- completes his seven-year minority in **March 1357** and returns/does homage for the Despenser inheritance.
 
----
+This makes him the final Glamorgan patron without inventing a childhood friendship.
 
-# Pass Three — remaining jobs
+## Final economic mechanism
 
-1. design Ieuan's **French prisoner** and credible ransom value/share;
-2. settle the final **knighting patron and income mechanism**;
-3. tighten the **1356 route to Poitiers** for chapter planning;
-4. close Pass Three.
+Spring/summer 1357 working reward package:
+
+- **£20 annual Despenser life fee/annuity**;
+- additional productive Glamorgan estate role/lease creating recurring income;
+- Ieuan's ransom capital;
+- knight-level military wages when serving in future campaigns.
+
+The exact legal form of the estate reward remains a Pass Four wording/detail question.
+
+## Final accolade
+
+**Patron/dubber:** Edward le Despenser  
+**Timing:** spring/summer **1357**  
+**Result:** **Sir Ieuan ap Dafydd**
+
+Poitiers makes him worthy; 1357 makes the status sustainable.
 
 ---
 
 # Pass Four — Chapter Architecture
 
-**NOT STARTED.**
+**NEXT.**
 
 The final 18-chapter architecture will assign every chapter:
 
@@ -227,9 +236,10 @@ The final 18-chapter architecture will assign every chapter:
 - Ieuan's age;
 - location;
 - historical anchors;
-- survival/social problem;
+- survival/social/military problem;
 - character change;
 - continuity notes;
-- A/B/C evidence tags.
+- A/B/C evidence tags;
+- final beat/cliffhanger.
 
 Finished prose begins only after that architecture is stable.
