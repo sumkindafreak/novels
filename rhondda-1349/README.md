@@ -39,6 +39,9 @@ Research lives in `research/`:
 - `08-travel-routes-and-isolation.md` — ridgeways, pack/foot travel, Llantrisant/Cardiff links and plague-era isolation
 - `09-candidate-home-zones.md` — ranks the strongest permanent-home and seasonal-upland zones; current favourite is Ystradyfodwg–Gelli
 - `10-tenure-rents-and-household-status.md` — tests the family's legal/economic status and replaces the over-specific “poor free tenant” label with a safer modest Welsh tenant model
+- `11-house-reconstruction.md` — uses late-13th/early-14th-century Gelligaer platform-house archaeology as the closest strong domestic comparator and builds a cautious permanent-home/upland-refuge model
+- `12-plague-arrival-window.md` — establishes 1349 Glamorgan and recommends May 1349 as the working local outbreak month while keeping the precise Glynrhondda date explicitly undocumented
+- `13-urine-medicine-and-bedwetting.md` — medieval uroscopy, Welsh urinary remedies, historical recognition of bed-wetting and rules for keeping the plague-survival superstition fictional rather than pseudo-medical
 - `LOCKED-RULES.md` — authenticity rules already strong enough to treat as constraints
 - `SOURCES.md` — research bibliography and evidence notes
 
@@ -49,7 +52,7 @@ Substantial foundation complete, but **not yet closed**.
 Current geographical working lock:
 
 - **Permanent-home zone:** Ystradyfodwg–Gelli orbit, Rhondda Fawr
-- **Likely upland work:** Mynydd Gelli / Mynydd Ton or related higher-ground cattle landscape
+- **Likely upland work/refuge:** Mynydd Gelli / Mynydd Ton or related higher-ground cattle landscape
 - **Parish church:** Ystradyfodwg
 - **Sacred/travel location:** Penrhys
 - **Administrative anchor:** Llantrisant
@@ -59,16 +62,37 @@ Current household-status wording:
 - **modest Welsh tenant household in the uplands of the Lordship of Glamorgan**
 - exact legal tenure remains deliberately unlocked until stronger c.1300–1360 local rental/court evidence is found
 
+Current domestic reconstruction:
+
+- exact family house remains fictional because valley-floor medieval archaeology is heavily lost to later development;
+- closest strong comparator is the excavated Gelligaer Common native Welsh settlement dated to the late 13th / early 14th century;
+- defensible material vocabulary includes turf/stone walling, timber ridge structure, thatch, open hearth, earth/limited paved floor and deliberate drainage;
+- the family's upland cattle shelter can draw more directly on known platform-house/hafod archaeology;
+- the boy's wetting changes sleeping arrangements and bedding turnover but never provides magical immunity.
+
+Current outbreak working model:
+
+- **rumours:** March–April 1349
+- **working local outbreak month:** May 1349
+- **defensible broader window:** late April–June 1349
+- exact first case/date in Ystradyfodwg/Glynrhondda remains undocumented and must not be presented as fact
+
+Current bed-wetting/medical model:
+
+- uncontrolled urination and bed-wetting were recognised medical problems in the medieval medical tradition;
+- uroscopy was an important fourteenth-century diagnostic practice;
+- late-medieval Welsh medical texts contain multiple urinary remedies;
+- any belief that the boy's urine protects against plague is **fictional superstition**, not historical or biological fact.
+
 Still to resolve before Pass Two:
 
-- strongest defensible month/season for the first local plague deaths;
-- exact fictional holding within the chosen home zone;
-- nearest fourteenth-century domestic archaeology suitable for the house reconstruction;
+- exact fictional holding within the chosen Ystradyfodwg–Gelli home zone;
 - Glynrhondda-specific tenant/rent evidence if surviving records can be found;
-- female personal names from fourteenth-century Glamorgan records;
+- stronger female personal-name evidence from fourteenth-century Glamorgan records;
 - parish clergy evidence for Ystradyfodwg/Llanwynno close to 1349;
 - exact Julian-calendar dates for major feasts in the chosen story year;
-- working map distinguishing documented sites from reconstructed routes/home zones.
+- working map distinguishing documented sites from reconstructed routes/home zones;
+- final decision whether May 1349 becomes a formal story lock or remains only the planning default.
 
 ## Pass Two — Characters
 
