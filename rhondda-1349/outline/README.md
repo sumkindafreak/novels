@@ -1,6 +1,6 @@
 # Pass Four — Chapter Architecture
 
-**Status: ADVANCED — Chapters 1–9 scene-built; service/military half in progress.**
+**Status: CLOSED for structural planning — all 18 chapters scene-built.**
 
 Pass Four converts the historical and character bibles into the final novel structure.
 
@@ -16,18 +16,6 @@ The book remains primarily:
 
 The military ending must not swallow the family story that made Ieuan who he is.
 
-## Every chapter must lock
-
-- date/season;
-- Ieuan's age;
-- location;
-- main external problem;
-- emotional change;
-- skill/theme carried forward;
-- continuity object/memory;
-- historical evidence grading (A/B/C);
-- closing beat/hook.
-
 ## Files
 
 - `01-18-chapter-architecture.md` — master 18-chapter plan
@@ -37,57 +25,66 @@ The military ending must not swallow the family story that made Ieuan who he is.
 - `05-scene-cards-chapters-1-3.md` — The Little End, Easter, The First Bell
 - `06-scene-cards-chapters-4-6.md` — Under the Arm, Whitsun, Up the Mountain
 - `07-scene-cards-chapters-7-9.md` — The Waiting, Empty Houses, Only to Work
+- `08-scene-cards-chapters-10-12.md` — The Horse Boy, A Man's Place, The Sea
+- `09-scene-cards-chapters-13-15.md` — Fire, The Return, Winter Arms
+- `10-scene-cards-chapters-16-18.md` — The Road North, Maupertuis, Sir Ieuan
+- `11-pass-four-closure.md` — final structural locks and prose-drafting rules
 
-## Opening-half status
+## Structural status
 
-**Chapters 1–9 are draft-ready at structural level.**
+**All Chapters 1–18 are draft-ready.**
 
-The plague half now has:
+The novel now has:
 
-- exact internal dates;
+- exact internal plague dates;
 - disease/incubation continuity;
 - burial continuity;
-- food and livestock logic;
-- exact scene progression;
-- recurring-object/motif rules;
-- chapter-end hooks;
-- the full handoff from family life to solitary survival to Rhys's work network.
+- food/livestock logic;
+- recurring-object and motif rules;
+- full social/military promotion mechanism;
+- exact major campaign anchors;
+- historically cautious Poitiers framework;
+- prisoner/ransom economics;
+- sustainable 1357 knighthood mechanism;
+- scene-by-scene progression and chapter hooks.
 
-Finished prose has **not** started yet.
+## Opening hard dates
 
-## Current hard continuity corrections
+- **2 April 1349** — Chapter 1 opening
+- **12 April** — final family Easter
+- **21 May** — Madog dies
+- **23 May** — Dafydd clearly ill
+- **27 May** — Dafydd dies
+- **28 May** — Dafydd buried
+- **29 May** — Angharad ill
+- **31 May** — Whitsunday
+- **2 June** — Angharad dies
+- **3 June** — Ieuan/Gwenllian leave
+- **5 June** — Gwenllian ill
+- **7 June** — Gwenllian dies
+- **8 June** — Ieuan buries her
+- **14 June** — Ieuan returns downhill
+- **early July** — Rhys enters
 
-- Chapter 1 opens **Thursday 2 April 1349**.
-- Final family Easter is **Sunday 12 April 1349**.
-- Madog dies **Thursday 21 May**.
-- Dafydd becomes clearly ill **Saturday 23 May**, dies **Wednesday 27 May**, and receives an improvised/reduced burial **Thursday 28 May**.
-- Angharad becomes ill **Friday 29 May** and dies **Tuesday 2 June**.
-- Ieuan and Gwenllian leave **Wednesday 3 June**.
-- Gwenllian becomes ill **Friday 5 June**, dies **Sunday 7 June**, and is buried by Ieuan **Monday 8 June**.
-- Ieuan waits through **Sunday 14 June** before returning downhill.
-- Angharad's body is later removed/buried by unknown surviving people; her exact grave remains unknown to Ieuan.
-- Rhys enters in **early July 1349**.
+## Military hard anchors
 
-These dates are story-continuity locks. The exact first Ystradyfodwg plague date remains a reconstruction, not a claimed medieval record.
+- **26 April 1355** — Matthew de Soor / Welsh supply mobilisation context
+- **5 October 1355** — grande chevauchée leaves Bordeaux
+- **8 November** — Narbonne
+- **late November** — fictional historically compatible promotion-defining skirmish
+- **2 December** — La Réole / winter phase
+- **winter 1355–56** — Ieuan becomes functioning esquire/man-at-arms
+- **6 July 1356** — next campaign phase
+- **18 September** — immediate pre-Poitiers crisis
+- **19 September** — Battle of Poitiers
+- **spring/summer 1357** — Edward le Despenser-backed knighthood
 
-## Second-half historical anchors
+## Next phase — prose
 
-- **5 October 1355** — grande chevauchée leaves Bordeaux.
-- **8 November 1355** — army reaches Narbonne.
-- **2 December 1355** — return reaches La Réole / winter phase begins.
-- **6 July 1356** — Prince leaves Bordeaux to join the next army at La Réole.
-- **5–17 September 1356** — tightening manoeuvre toward Poitiers.
-- **18 September 1356** — immediate pre-battle crisis/negotiation phase.
-- **19 September 1356** — Battle of Poitiers.
-- **20 September–2 October 1356** — initial return south.
-- **spring/summer 1357** — Ieuan's fictional Despenser-backed knighting window.
+Draft sequentially, beginning with:
 
-## Pass Four next step
+**Chapter 1 — The Little End**.
 
-Build scene cards for **Chapters 10–12**:
+Do not draft later favourite scenes first. Later memories and echoes must grow from exact prose established earlier.
 
-- Chapter 10 — the multi-year horse/stable/service apprenticeship;
-- Chapter 11 — the visible social transition into armed household service;
-- Chapter 12 — Welsh mobilisation, horse shipping and the sea crossing to Gascony.
-
-The key drafting problem is to make 1350–1355 feel **lived**, not like a résumé montage.
+The novel should open inside Ieuan's private shame and ordinary family life — **not** with a plague lecture, battle flash-forward or historical exposition.
