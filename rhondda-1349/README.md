@@ -2,6 +2,14 @@
 
 > Working project name. Final title remains unlocked.
 
+## Project status
+
+**COMPLETE FIRST PROSE DRAFT — 18 chapters.**
+
+All historical research, character planning, 1349–1357 social/military bridge work, chapter architecture and the full sequential prose draft are stored in this project.
+
+The next stage is a **full-manuscript editorial/revision pass**, not additional structural invention.
+
 ## Premise
 
 In 1349, fourteen-year-old **Ieuan ap Dafydd** lives in Glynrhondda, Glamorgan. The pestilence destroys his immediate family. His persistent bed-wetting indirectly changes where/how he sleeps and may alter exposure; urine is never a cure or immunity. Ieuan survives, enters household service, rises gradually into armed service, joins the Prince of Wales's Gascon campaigns, fights at Poitiers in 1356, and is finally knighted in 1357 after years of service, battlefield reputation, ransom profit and patronage make that elevation socially and economically credible.
@@ -12,7 +20,7 @@ In 1349, fourteen-year-old **Ieuan ap Dafydd** lives in Glynrhondda, Glamorgan. 
 - **Opening age:** 14
 - **Ending age:** about 22
 - **Opening setting:** Glynrhondda, Lordship of Glamorgan
-- **Target:** 18 chapters
+- **Length:** 18 chapters
 - **Tone:** plague survival horror → survival/coming-of-age → household service → armed service → war horror → earned knighthood
 
 ## Evidence system
@@ -25,33 +33,29 @@ In 1349, fourteen-year-old **Ieuan ap Dafydd** lives in Glynrhondda, Glamorgan. 
 
 # Pass One — Historical World
 
-**COMPLETE for structural planning.** Research lives in `research/`.
+**COMPLETE.** Research lives in `research/`.
 
-Core locks:
+Core locks include:
 
 - Glamorgan plague year **1349**; story outbreak month **May** as a planning reconstruction
-- final family Easter: **12 April 1349** Julian calendar
+- final family Easter: **12 April 1349**, Julian calendar
 - home landscape: western **Ystradyfodwg–Gelli** orbit, Rhondda Fawr
 - upland cattle/refuge landscape: **Mynydd Gelli / Mynydd Ton**
 - parish church: Ystradyfodwg
 - sacred/travel place: Penrhys
 - administrative anchor: Llantrisant
 - modest Welsh tenant household inside the marcher Lordship of Glamorgan
-- strongest domestic comparator: late-13th/early-14th-century Gelligaer Common native Welsh houses
+- strongest domestic comparator: late-13th/early-14th-century native Welsh houses on Gelligaer Common
 - cattle central to the upland economy
-- Welsh first language
+- Ieuan begins Welsh-speaking
 - bed-wetting changes sleeping/bedding exposure but never biologically protects Ieuan
-
-Political backdrop:
-
-- Hugh le Despenser dies **8 February 1349**
-- young Edward le Despenser inherits Glamorgan during his minority
+- Hugh le Despenser dies **8 February 1349** and young Edward le Despenser inherits Glamorgan during his minority
 
 ---
 
 # Pass Two — Characters and Survival
 
-**CLOSED for structural planning.** Work lives in `characters/`.
+**COMPLETE.** Work lives in `characters/`.
 
 ## Family
 
@@ -60,39 +64,30 @@ Political backdrop:
 - **Angharad ferch Madog** — mother, ~34
 - **Gwenllian ferch Dafydd** — sister, 8
 
-## Catastrophe
+## Catastrophe chronology
 
 - Dafydd dies **27 May 1349**
+- Dafydd receives reduced/improvised burial **28 May**
 - Angharad dies **2 June**
-- Ieuan and Gwenllian flee uphill **2–3 June**
+- Ieuan and Gwenllian leave **3 June**
 - Gwenllian becomes ill **5 June**
 - Gwenllian dies **7 June**
+- Ieuan buries her **8 June** near the upland refuge outside consecrated ground
+- Ieuan returns downhill **14 June**
 
-Working home name: **Hendre Gelli** (fictional/renameable).
+Working home name: **Hendre Gelli**.
 
 Ieuan's colder separated service sleeping bay — **the little end** — exists because repeated wet bedding makes shared family sleep impractical.
 
-Dafydd's ordinary work knife remains Ieuan's central inherited object.
+Dafydd's ordinary folding work knife becomes Ieuan's central inherited object without ever ceasing to be a practical tool.
 
-After Gwenllian's death Ieuan:
-
-- buries her outside consecrated ground near the upland refuge;
-- spends days expecting his own plague symptoms;
-- survives from abandoned stores/tools/livestock;
-- learns summer survival does not solve winter;
-- stops simply waiting to die by early July.
-
-## Doorway out
-
-**Rhys ap Llywelyn**, fictional livestock/horse/transport servant connected to Llantrisant, gives Ieuan temporary stock work because the boy is useful — not because anybody predicts greatness.
-
-Pass Two endpoint: Ieuan leaves home telling himself he is going **only to work**.
+**Rhys ap Llywelyn**, fictional livestock/horse/transport servant connected to Llantrisant, provides Ieuan's first doorway back into organised human society through work rather than rescue.
 
 ---
 
 # Pass Three — 1349 to 1357 Bridge
 
-**CLOSED for structural planning.** Work lives in `bridge/`.
+**COMPLETE.** Work lives in `bridge/`.
 
 Full closure: `bridge/13-pass-three-closure.md`.
 
@@ -132,10 +127,10 @@ Edward is historically a knight in the 1355 army, present at Poitiers, and reach
 
 Working spring/summer 1357 reward package:
 
-- **£20 annual Despenser life fee/annuity**;
-- productive Glamorgan estate role/lease;
-- Ieuan's ransom capital;
-- future knight-level military wages.
+- **£20 annual Despenser life fee/annuity**
+- productive Glamorgan estate/pastoral responsibility or lease
+- Ieuan's ransom capital
+- future knight-level military wages
 
 **Patron/dubber:** Edward le Despenser  
 **Result:** **Sir Ieuan ap Dafydd**
@@ -144,11 +139,26 @@ Working spring/summer 1357 reward package:
 
 # Pass Four — Chapter Architecture
 
-**CLOSED for structural planning.** Work lives in `outline/`.
+**COMPLETE.** Work lives in `outline/`.
 
 Full closure: `outline/11-pass-four-closure.md`.
 
-## Master structure
+The complete scene-card sets remain available for continuity and revision:
+
+- `outline/05-scene-cards-chapters-1-3.md`
+- `outline/06-scene-cards-chapters-4-6.md`
+- `outline/07-scene-cards-chapters-7-9.md`
+- `outline/08-scene-cards-chapters-10-12.md`
+- `outline/09-scene-cards-chapters-13-15.md`
+- `outline/10-scene-cards-chapters-16-18.md`
+
+---
+
+# First-Draft Manuscript
+
+**COMPLETE — all eighteen chapters live in `chapters/`.**
+
+Reading index: [`chapters/README.md`](chapters/README.md)
 
 1. **The Little End**
 2. **Easter**
@@ -169,47 +179,35 @@ Full closure: `outline/11-pass-four-closure.md`.
 17. **Maupertuis**
 18. **Sir Ieuan**
 
-All eighteen chapters now have full scene cards.
+## Draft continuity locks carried into prose
 
-### Scene-card sets
-
-- `outline/05-scene-cards-chapters-1-3.md`
-- `outline/06-scene-cards-chapters-4-6.md`
-- `outline/07-scene-cards-chapters-7-9.md`
-- `outline/08-scene-cards-chapters-10-12.md`
-- `outline/09-scene-cards-chapters-13-15.md`
-- `outline/10-scene-cards-chapters-16-18.md`
-
-The entire novel is **draft-ready**.
-
----
-
-# Prose Drafting
-
-**STARTED.** Finished/draft chapter prose lives in `chapters/`.
-
-Current files:
-
-- `chapters/01-the-little-end.md` — first full prose draft
-
-## Drafting rule
-
-Draft sequentially.
-
-Later memory, repeated phrases, object significance and emotional echoes must grow from prose that actually appeared earlier rather than from outline-only facts.
-
-The opening deliberately begins with Ieuan's private shame and ordinary work rather than historical exposition:
-
-> Ieuan knows he has wet the bedding before he opens his eyes.
-
-The pestilence remains only a distant rumour at the edge of Chapter One.
+- the church bell evolves from ordinary background → warning/death → silence/uncertainty → final ordinary life again
+- Dafydd's knife is introduced as mundane work equipment and remains practical through the ending
+- `watch the beast before you move it` grows from cattle handling into Ieuan's approach to horses, terrain, fighting and judgement
+- Gwenllian's grave remains an unresolved emotional centre rather than a plot token
+- Ieuan's bed-wetting continues into adulthood, becomes less frequent, and remains socially difficult without becoming a magical survival explanation
+- Iorwerth discovering the secret in winter 1355–56 does not produce a modern therapeutic scene; he simply treats it as a practical problem
+- Poitiers is experienced locally from Ieuan's limited position rather than narrated through a false omniscient battle map
+- the military victory does not instantly create knighthood; ransom, reputation, patronage and recurring income are allowed time to operate into 1357
+- the novel ends back in the Rhondda, with the bell motif closing the circle
 
 ---
 
-# Research/prose QA rule
+# Next Stage — Full-Book Revision
 
-As prose is drafted, small material details are checked rather than assumed.
+The manuscript should now be read **as one novel** before polishing individual favourite chapters.
 
-Example: Chapter One currently treats Dafydd's utility knife as folding. Medieval archaeological evidence from London includes folding knives dated to the late thirteenth and late fourteenth centuries, so this is defensible rather than automatically modern.
+Priority editorial checks:
 
-No prose detail becomes immune from revision merely because it has already been written.
+1. continuity and chronology across all 18 chapters
+2. chapter-length/pacing balance, especially the transition from Chapter 9 to Chapter 10
+3. repeated phrase/motif frequency so echoes remain powerful rather than overused
+4. material-history and vocabulary QA inside prose
+5. Welsh/English/French dialogue representation
+6. Ieuan's voice/age progression from 14 to 22
+7. secondary-character continuity and payoff
+8. trimming explanatory lines where scenes already communicate the point
+9. Poitiers action clarity without false tactical certainty
+10. title shortlist, cover concept and final manuscript formatting after revision
+
+No prose chapter is treated as publication-final until this full-book pass is complete.
